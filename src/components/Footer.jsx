@@ -1,6 +1,5 @@
 import React from 'react';
-import SocialLinks from './SocialLinks';
-
+import SocialLinks from './components/SocialLinks';
 function Copyright() {
   return (
     <p className="text-sm mt-2  dark:text-white">
