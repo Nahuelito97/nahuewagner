@@ -1,8 +1,11 @@
-import React from 'react';
-import { Logo, Sections } from './components'; 
-
+import React, { useState } from 'react';
+import { Dialog, DialogPanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Logo, Sections } from './components';
 
 const Navbar = ({ theme, handleThemeSwitch }) => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const sun = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -38,19 +41,59 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
   );
 
   return (
-    <nav className="fixed top-4 left-0 w-full z-10">
-      <div className="container mx-auto px-10 flex items-center justify-between">
-        <Logo />
-        <Sections />
-        <button
-          type="button"
-          onClick={handleThemeSwitch}
-          className="bg-violet-300 dark:bg-orange-300 text-lg p-2 rounded-md"
-        >
-          {theme === 'dark' ? sun : moon}
-        </button>
-      </div>
-    </nav>
+    <header>
+      <nav className="fixed top-4 left-0 w-full z-10">
+        <div className="container mx-auto px-10 flex items-center justify-between">
+          <Logo />
+          <div className="hidden lg:flex items-center space-x-6">
+            <Sections />
+            <button
+              type="button"
+              onClick={handleThemeSwitch}
+              className="bg-violet-300 dark:bg-orange-300 text-lg p-2 rounded-md"
+            >
+              {theme === 'dark' ? sun : moon}
+            </button>
+          </div>
+
+          <button
+            className="lg:hidden p-2.5 rounded-md text-gray-700 dark:text-gray-300"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <Bars3Icon className="w-6 h-6" />
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      <Dialog
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+        className="lg:hidden"
+      >
+        <div className="fixed inset-0 z-10 bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter" />
+        <DialogPanel className="fixed inset-y-0 right-0 z-20 w-3/4 bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
+          <div className="flex items-center justify-between p-4">
+            <button
+              onClick={() => setMobileMenuOpen(false)}
+              className="p-2 text-gray-700 dark:text-gray-300"
+            >
+              <XMarkIcon className="w-6 h-6" />
+            </button>
+          </div>
+          <div className="mt-6">
+            <Sections />
+            <button
+              type="button"
+              onClick={handleThemeSwitch}
+              className="bg-violet-300 dark:bg-orange-300 text-lg p-2 rounded-md bg-center"
+            >
+              {theme === 'dark' ? sun : moon}
+            </button>
+          </div>
+        </DialogPanel>
+      </Dialog>
+    </header>
   );
 };
 

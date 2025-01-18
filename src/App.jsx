@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Contact, Footer, Intro, Portfolio, Timeline, Navbar } from './components';
-import Hero from './components/Hero';
+import {
+  Contact,
+  Footer,
+  Intro,
+  Portfolio,
+  Timeline,
+  Navbar,
+} from './components';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ProjectDetails from './components/components/ProjectDetails';
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -26,18 +34,27 @@ function App() {
   }, [theme]);
 
   return (
-    <>
-      <Navbar theme={theme} handleThemeSwitch={handleThemeSwitch} />
+    <Router>
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
-        <div className="max-w-5xl w-11/12 mx-auto">
-          <Intro />
-          <Portfolio />
-          <Timeline />
-          <Contact />
-          <Footer />
-        </div>
+        <Navbar theme={theme} handleThemeSwitch={handleThemeSwitch} />
+
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="max-w-5xl w-11/12 mx-auto">
+                <Intro />
+                <Portfolio />
+                <Timeline />
+                <Contact />
+                <Footer />
+              </div>
+            }
+          />
+          <Route path="/projects/:title" element={<ProjectDetails />} />
+        </Routes>
       </div>
-    </>
+    </Router>
   );
 }
 
