@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython } from 'react-icons/fa';
 import { SiTailwindcss, SiVite, SiCplusplus } from 'react-icons/si';
 
@@ -16,10 +15,7 @@ const techIcons = {
 
 function PortfolioItem({ title, imgUrl, stack }) {
   return (
-    <Link
-      to={`/projects/${encodeURIComponent(title)}`}
-      className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden group hover:shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out"
-    >
+    <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden group hover:shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
       <div className="relative">
         <img
           src={imgUrl}
@@ -40,13 +36,12 @@ function PortfolioItem({ title, imgUrl, stack }) {
               key={item}
               className="flex items-center space-x-2 px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md"
             >
-              {techIcons[item.toLowerCase()]}{' '}
-              <span>{item}</span>
+              {techIcons[item.toLowerCase()]} <span>{item}</span>
             </span>
           ))}
         </p>
       </div>
-    </Link>
+    </div>
   );
 }
 
