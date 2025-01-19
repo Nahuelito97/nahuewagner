@@ -1,37 +1,29 @@
 export default [
-   {
-      year: 'Today',
-      title: 'YouTube Content Creator',
-      duration: '6 years',
-      details: 
-         'My humble attempt at building my version of the digital world one step at a time by documenting my coding journey and creating software engineering and computer science content to help those coming behind me.',
-   },
-   {
-		year: 'Today',
-		title: 'Solo Indie Developer',
-		duration: '4 years',
+	{
+		year: 'Full Stack developer',
+		title: '@Gearthlogic',
+		duration: '09/2023 - Present',
 		details:
-			"I'm a solo indie developer building software for myself and clients to showcase on YouTube. All coding projects are built from the ground up, from planning and designing all the way to solving real-life problems with code.",
+			'Building full stack apps from scratch using this tecnologies: React, Node.js, Express, and MongoDB.',
+		achievements: [
+			'Developed and implemented UX/UI-focused web front ends using SCSS and styling frameworks, ensuring optimal speed and performance.',
+			'Developed multiple secure full-stack applications using NestJs and React.',
+			'Developed multiple secure full-stack applications using Laravel and React.',
+			'Working hand-to-hand with clients to translate specific business logic & needs into systems.',
+			'Teamwork and version control using Git.',
+			'Implemented AWS and/or Google Cloud to enable scalable and reliable solutions for web applications, efficiently managing deployments & services across multiple projects.',
+		],
 	},
 	{
-		year: '2019',
-		title: 'Software Engineer',
-		duration: '2 years',
+		year: 'Frontend Developer',
+		title: '@TechCorp',
+		duration: '06/2019 - 08/2021',
 		details:
-			'I helped build an enterprise application for a Fortune 500 company in an Agile team setting. Our tech stack consisted of TypeSciprt, Angular, Java, Gradle, and a handful of other languages and tools.',
-	},
-	{
-		year: '2018',
-		title: "Bachelor's Degree in Computer Science",
-		duration: '5 years',
-		details:
-			'I pursued the knowledge that a computer science degree had to offer. I learned about computer architecture, computer science theory, an array of programming, and aspects of artificial intelligence.',
-	},
-	{
-		year: '2013',
-		title: 'First Line of Code',
-		duration: 'the beginning',
-		details:
-			"I wrote my first line of real code that started this journey into digital craftsmanship that I never could've imagined, especially as someone who never saw themselves as anything other than a blue collar worker.",
+			'Worked on building and maintaining responsive user interfaces using React and TailwindCSS.',
+		achievements: [
+			'Redesigned the company’s primary e-commerce platform, increasing user engagement by 30%.',
+			'Developed reusable components to streamline the development process.',
+			'Collaborated closely with designers and backend developers to deliver high-quality products.',
+		],
 	},
 ]

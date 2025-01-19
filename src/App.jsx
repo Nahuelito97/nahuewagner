@@ -6,6 +6,7 @@ import {
   Portfolio,
   Timeline,
   Navbar,
+  TechStack,
 } from './components';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Intro />
         <Portfolio />
         <Timeline />
+        <TechStack />
         <Contact />
         <Footer />
       </div>
