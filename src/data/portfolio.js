@@ -1,20 +1,10 @@
 export default [
    {
-      title: 'El Profe',
-      imgUrl: '/assets/terminal-website.jpg',
-      stack: ['html', 'css', 'javascript'],
-      link: 'https://fkcodes.com',
-   },
-   {
-      title: 'Developer Portfolio',
-      imgUrl: '/assets/dev-portfolio.jpg',
+      title: 'Nahue Wagner portfolio',
+      imgUrl: '/assets/dp.jpg',
       stack: ['react', 'tailwind', 'vite'],
       link: 'https://thehackershideout.com',
-   },
-   {
-      title: 'AI Nerf Gun',
-      imgUrl: '/assets/ai-nerf-gun.jpg',
-      stack: ['python', 'cplusplus', 'robotics'],
-      link: 'https://youtu.be/A8eegxL82PI',
+      description: 'Un portfolio para desarrolladores que destaca tus habilidades y proyectos de manera profesional.',
+      sourceCodeLink: 'https://github.com/Nahuelito97/nahuewagner',
    },
 ];
