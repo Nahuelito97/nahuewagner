@@ -1,0 +1,14 @@
+export { default as About } from './About';
+export { default as Clients } from './Clients';
+export { default as Commitments } from './Commitments';
+export { default as Contact } from './Contact';
+export { default as FAQ } from './FAQ';
+export { default as Footer } from './Footer';
+export { default as FreeAudit } from './FreeAudit';
+export { default as Intro } from './Intro';
+export { default as Portfolio } from './Portfolio';
+export { default as Process } from './Process';
+export { default as Services } from './Services';
+export { default as Timeline } from './Timeline';
+export { default as Navbar } from './Navbar';
+export { default as TechStack } from './TechStack';

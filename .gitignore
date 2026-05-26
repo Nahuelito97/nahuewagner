@@ -12,6 +12,23 @@ dist
 dist-ssr
 *.local
 
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Local Claude Code settings
+.claude/
+
+# Scratch (personal notes + reference files)
+docs/_projects-research.md
+docs/rss.md
+docs/*.pdf
+docs/*.docx
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -1,0 +1,13 @@
+{
+	"name": "Nahuel Wagner — Backend / Full Stack Engineer",
+	"short_name": "Nahuel Wagner",
+	"description": "Portfolio of Nahuel Wagner, backend / full stack engineer.",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#312C51",
+	"theme_color": "#312C51",
+	"icons": [
+		{ "src": "/assets/logo512.png", "sizes": "192x192", "type": "image/png" },
+		{ "src": "/assets/logo512.png", "sizes": "512x512", "type": "image/png" }
+	]
+}
