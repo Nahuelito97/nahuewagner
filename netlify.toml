@@ -1,0 +1,16 @@
+# Netlify configuration — see https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA fallback: client-side routes serve the built index.html so deep links work.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Map the contact form endpoint to the Edge Function at netlify/edge-functions/contact.ts
+[[edge_functions]]
+  function = "contact"
+  path = "/api/contact"

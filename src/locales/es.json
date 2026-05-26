@@ -1,0 +1,693 @@
+{
+	"langName": "Español",
+	"langToggleLabel": "Cambiar idioma",
+	"skipToContent": "Saltar al contenido",
+
+	"nav": {
+		"about": "Sobre mí",
+		"services": "Servicios",
+		"projects": "Proyectos",
+		"experience": "Experiencia",
+		"skills": "Stack",
+		"contact": "Contacto"
+	},
+
+	"common": {
+		"current": "Actual",
+		"present": "Actual",
+		"source": "Código",
+		"live": "Live",
+		"close": "Cerrar",
+		"hireMe": "Contratame",
+		"openMenu": "Abrir menú",
+		"closeMenu": "Cerrar menú",
+		"scrollToTop": "Subir"
+	},
+
+	"hero": {
+		"openBadge": "Abierto a nuevas oportunidades",
+		"hi": "Hola, soy",
+		"iBuild": "construyo",
+		"buildWords": [
+			"APIs escalables",
+			"sistemas en tiempo real",
+			"plataformas de delivery",
+			"librerías open-source"
+		],
+		"rolePrefix": "Backend / Full Stack Engineer  ·  Tech Lead  ·  Founder de ",
+		"founderSuffix": "",
+		"bioStart": "5+ años construyendo APIs escalables, sistemas distribuidos y productos full-stack. Foco fuerte en ",
+		"cleanArch": "Clean Architecture",
+		"ddd": "DDD",
+		"solid": "SOLID",
+		"principles": "como principios.",
+		"location": "Posadas, Misiones, Argentina  ·  100% remoto",
+		"viewWork": "Ver mis proyectos",
+		"getInTouch": "Contactame",
+		"downloadCv": "Descargar CV",
+		"trust": {
+			"reply": "Respondo en menos de 24h",
+			"tz": "GMT-3 · Remoto",
+			"available": "Disponible ahora"
+		}
+	},
+
+	"clients": {
+		"eyebrow": "Trabajé con",
+		"subtitle": "{{count}}+ empresas y equipos para los que envié código a producción"
+	},
+
+	"about": {
+		"eyebrow": "Sobre mí",
+		"title": "Un poco sobre mí",
+		"p1": "Soy un ingeniero full-stack con base en backend, con 5+ años enviando sistemas a producción — desde plataformas de movilidad para miles de usuarios hasta apps de delivery, herramientas internas y librerías open-source. Como Tech Lead en TUTU lideré un equipo de 8 personas, manejando arquitectura, calidad de código y entregas.",
+		"p2Start": "Me importan ",
+		"p2Middle1": ", ",
+		"p2Middle2": " y ",
+		"p2End": " — armar servicios fáciles de razonar y escalar. También llevo adelante ",
+		"p2EndFinal": ", mi estudio freelance, entregando productos end-to-end para clientes. Vivo en Posadas, Argentina, 100% remoto.",
+		"stats": {
+			"years": "Años construyendo",
+			"projects": "Proyectos enviados",
+			"companies": "Empresas y clientes",
+			"remote": "Remoto"
+		}
+	},
+
+	"services": {
+		"eyebrow": "Servicios",
+		"title": "Cómo te puedo ayudar",
+		"subtitle": "Tres formas de trabajar con founders, agencias y equipos de producto. Todo remoto, todo senior.",
+		"list": {
+			"mvp": {
+				"title": "MVP en 4 semanas",
+				"summary": "De cero a MVP deployable — backend, frontend, integraciones, deploy y docs.",
+				"bullets": [
+					"Stack NestJS + React / Next.js",
+					"Auth, pagos y dashboards listos",
+					"CI/CD + documentación de arquitectura incluidos"
+				],
+				"cta": "Empezar un proyecto"
+			},
+			"audit": {
+				"title": "Backend audit",
+				"summary": "Review de arquitectura y código de tu codebase NestJS / Node.js, con un roadmap claro.",
+				"bullets": [
+					"Performance, seguridad y DX revisados",
+					"Roadmap de refactor concreto",
+					"Reporte de mejores prácticas priorizado"
+				],
+				"cta": "Reservar audit"
+			},
+			"lead": {
+				"title": "Tech leadership",
+				"summary": "CTO fraccional / Tech Lead integrado a tu equipo de ingeniería.",
+				"bullets": [
+					"Sprint planning, PR review y estándares",
+					"Decisiones de arquitectura y roadmap",
+					"Mentoría + soporte al hiring"
+				],
+				"cta": "Hablemos"
+			}
+		}
+	},
+
+	"process": {
+		"eyebrow": "Proceso",
+		"title": "Cómo trabajo",
+		"subtitle": "Del primer call a producción — el mismo ritmo simple en cada proyecto.",
+		"steps": {
+			"discovery": {
+				"title": "Discovery",
+				"summary": "Workshops, requerimientos y un roadmap claro con timeline y presupuesto."
+			},
+			"architecture": {
+				"title": "Arquitectura",
+				"summary": "Stack, modelo de datos, integraciones, ambientes y pipeline de CI/CD."
+			},
+			"build": {
+				"title": "Build & ship",
+				"summary": "Demos semanales, updates async, deploys a staging y PRs reviewable."
+			},
+			"handover": {
+				"title": "Handover",
+				"summary": "Docs, training, deploy a producción y 30 días de soporte."
+			}
+		}
+	},
+
+	"portfolio": {
+		"eyebrow": "Portfolio",
+		"title": "Proyectos destacados",
+		"subtitle": "Una selección de sistemas en producción, trabajo con clientes y open source. Abrí cualquiera para ver el caso completo.",
+		"filterAll": "Todos",
+		"caseStudy": "Ver caso",
+		"openLabel": "Abrir caso de {{title}}",
+		"categories": {
+			"fullstack": "Full-stack",
+			"backend": "Backend",
+			"oss": "Open Source"
+		},
+		"tags": {
+			"flagship": "Destacado",
+			"production": "Producción",
+			"sideProject": "Side project",
+			"openSource": "Open source"
+		},
+		"projects": {
+			"apiMonitor": {
+				"title": "API Monitor",
+				"tagline": "Monitoreo centralizado de uso, costo y disponibilidad para 35+ APIs",
+				"description": "Plataforma en NestJS con arquitectura de plugins por proveedor que consulta 35+ servicios externos, trackea uso, costo y riesgo de cuota en tiempo real, y dispara alertas. Incluye dashboard en Next.js y docs autogenerados.",
+				"heroMetric": "35+ proveedores monitoreados en tiempo real",
+				"year": "2026",
+				"role": "Proyecto estrella personal",
+				"highlights": [
+					"Sistema de plugins por proveedor con auto-descubrimiento por DI (35+ integraciones)",
+					"Pipeline BullMQ + cron con detección de anomalías a 3σ",
+					"Credenciales cifradas con AES-256-GCM, JWT con rotación de refresh",
+					"Tiempo real con Socket.IO + alertas multicanal (FCM / SMTP / Twilio)"
+				],
+				"problem": "Los equipos dependen de decenas de APIs pagas (LLMs, cloud, pagos, comms) sin una vista unificada de consumo, costo o riesgo de cuota — las sorpresas aparecen recién en la factura.",
+				"solution": "Backend NestJS con arquitectura de plugins que consulta 35+ servicios por cron, guarda historial de uso y muestra analítica de costos, alertas de anomalía y disponibilidad en tiempo real, todo detrás de un dashboard Next.js con docs autogenerados.",
+				"outcomes": [
+					"35+ proveedores detrás de un único sistema de plugins extensible",
+					"Alertas en tiempo real vía FCM / SMTP / Twilio + webhooks firmados con HMAC",
+					"Credenciales cifradas en reposo (AES-256-GCM), nunca se devuelven al cliente"
+				],
+				"myRole": [
+					"Diseñé la arquitectura de plugins por proveedor con auto-descubrimiento por DI",
+					"Armé el pipeline de monitoreo BullMQ + cron con detección de anomalías (3σ)",
+					"Implementé el cifrado de credenciales con AES-256-GCM y JWT con rotación",
+					"Escribí el panel admin en Next.js y el sitio de docs autogenerado"
+				],
+				"team": "Solo — proyecto estrella personal"
+			},
+			"eimoCampus": {
+				"title": "EIMO Campus",
+				"tagline": "Academia médica: LMS, e-commerce, lecciones en Vimeo, chat en tiempo real",
+				"description": "Campus en producción para la Escuela Iberoamericana de Medicina Ortomolecular. Backend Strapi v5 + admin React 18, con lecciones en Vimeo, ateneos clínicos, membresías pagas y un checkout con conversión USD↔ARS.",
+				"year": "Mar 2026 – Actual",
+				"role": "Full Stack @ EIMO",
+				"highlights": [
+					"Player de Vimeo + lecciones con drip y gating de módulos",
+					"Ateneos clínicos + concurrencias (módulos de casos)",
+					"Chat en tiempo real (Socket.IO) + dashboard de analítica financiera",
+					"Checkout Stripe + MercadoPago con auto-conversión USD↔ARS"
+				],
+				"problem": "EIMO necesitaba un campus académico de nivel médico: másters y cursos, ateneos clínicos, foro, e-commerce, checkout multimoneda — todo integrado, todo nivel producción.",
+				"solution": "Aporte Full Stack continuo a la plataforma Strapi v5 + React 18 — a cargo de lecciones en Vimeo, ateneos, concurrencias, chat en tiempo real, checkout multimoneda (Stripe + MercadoPago con auto-conversión USD↔ARS), planes y suscripciones, certificados, y un landing satélite (EIMO Elevate) con CI/CD en GitHub Actions + Slack.",
+				"outcomes": [
+					"50+ commits en módulos críticos (Vimeo, ateneos, chat, checkout)",
+					"Checkout multimoneda en producción (USD↔ARS, cupones, IVA)",
+					"Landing satélite (Elevate) con CI/CD en GitHub Actions + Slack"
+				],
+				"myRole": [
+					"A cargo de la integración del player de Vimeo y el gating con drip por módulos",
+					"Construí los módulos de ateneos clínicos y concurrencias end-to-end",
+					"Implementé el checkout Stripe + MercadoPago con auto-conversión USD↔ARS",
+					"Envié a producción el landing satélite (EIMO Elevate) con CI/CD en GitHub Actions + Slack"
+				],
+				"team": "Colaborador Full Stack en el equipo de GearthLogic"
+			},
+			"tribuSaludable": {
+				"title": "Tribu Saludable",
+				"tagline": "SaaS de bienestar: cursos, comunidad y un wizard de diagnóstico de salud",
+				"description": "Plataforma de bienestar para Jorge López — cursos, comunidad y un \"Diagnosticador\" multi-paso con resultados parciales (gratis) y completos (pagos) que recomiendan cursos. Rebrand a partir de la base de EIMO.",
+				"year": "2026",
+				"role": "Full Stack @ GearthLogic",
+				"highlights": [
+					"A cargo del rebrand completo desde la base de EIMO hacia Tribu Saludable",
+					"Diseñé y construí el módulo Diagnosticador end-to-end",
+					"Checkout Stripe + MercadoPago, PWA, chat en tiempo real",
+					"Cursos con drip + comunidad + export de resultados a PDF"
+				],
+				"problem": "Un coach de bienestar necesitaba su propia plataforma: cursos, comunidad, y un wizard de evaluación de salud que recomiende cursos y convierta al checkout pago.",
+				"solution": "Lideré el rebrand completo de la base de EIMO Campus a Tribu Saludable, y después diseñé e implementé la feature del Diagnosticador desde cero: landing → wizard multi-paso → resultados parciales (gratis) y completos (pagos) con PDF, integrados con los cursos recomendados y el checkout.",
+				"outcomes": [
+					"A cargo del rebrand: rename de paquetes, branding, pipeline de deploy",
+					"Wizard de diagnóstico en vivo: parcial gratis + completo pago con PDF",
+					"Único autor de la rama feature/tribu-rebrand del proyecto"
+				],
+				"myRole": [
+					"Lideré el rebrand completo de la base de EIMO a Tribu Saludable",
+					"Diseñé e implementé el wizard del Diagnosticador end-to-end (landing → wizard → resultados → checkout)",
+					"Cableé el checkout Stripe + MercadoPago para los cursos de bienestar",
+					"Único autor de la rama feature/tribu-rebrand (back + front)"
+				],
+				"team": "Solo — autor del rebrand + feature Diagnosticador"
+			},
+			"tutu": {
+				"title": "TUTU",
+				"tagline": "Backend de ride-hailing para miles de usuarios",
+				"description": "Backend NestJS (Clean Architecture, DDD) para una plataforma de movilidad: onboarding de conductores y KYC, matching en tiempo real, ciclo de vida del viaje, pagos y reconciliación automática.",
+				"heroMetric": "−25% de transacciones fallidas · lideré equipo de 8",
+				"year": "2024 – 2025",
+				"role": "Tech Lead @ TUTU",
+				"highlights": [
+					"~35 módulos de dominio; matching de conductores en tiempo real por Socket.IO",
+					"Pipeline de KYC con AWS Rekognition + Textract",
+					"Pagos MercadoPago multi-método, −25% de transacciones fallidas",
+					"Kubernetes (Helm multi-env) + Jenkins CI/CD"
+				],
+				"problem": "Operar un servicio de ride-hailing a escala implica onboarding de conductores y KYC, matching en tiempo real, todo el ciclo de vida del viaje, pagos y reconciliación — todo confiable bajo carga pesada.",
+				"solution": "Backend NestJS sobre Clean Architecture (DDD + SOLID): ~35 módulos de dominio, workers async con BullMQ, búsqueda de conductores en tiempo real por Socket.IO, pagos MercadoPago y un pipeline de KYC con AWS, desplegado en Kubernetes.",
+				"outcomes": [
+					"Sirvió a miles de usuarios en producción",
+					"Bajó ~25% las transacciones fallidas con reconciliación automática",
+					"Verificación automatizada de identidad con AWS Rekognition + Textract",
+					"Lideré un equipo de ingeniería de 8 personas como Tech Lead"
+				],
+				"myRole": [
+					"Lideré el equipo de ingeniería, sprint planning y proceso de code review",
+					"Diseñé Clean Architecture (DDD + SOLID) en ~35 módulos de dominio",
+					"Construí la integración con MercadoPago (Wallet, efectivo, links) + auto-reconciliación",
+					"A cargo del panel admin y el pipeline de KYC (AWS Rekognition + Textract)"
+				],
+				"team": "Tech Lead de un equipo de ingeniería de 8 personas"
+			},
+			"jennyGas": {
+				"title": "JennyGas",
+				"tagline": "Delivery de gas end-to-end: apps móviles, admin y backend",
+				"description": "Plataforma completa de delivery — apps Flutter para cliente y conductor, panel admin en React, y backend NestJS con tracking en tiempo real y pagos online. Desplegado en DigitalOcean.",
+				"year": "2025 – 2026",
+				"role": "Full Stack @ GearthLogic",
+				"highlights": [
+					"Dos apps Flutter (cliente + conductor) compartiendo una librería Dart",
+					"Pagos MercadoPago; Socket.IO con Redis entre 3 clientes",
+					"Pedidos sobre mapa, despacho GPS, reclamos y reportes"
+				],
+				"problem": "Un distribuidor de gas necesitaba pedidos, despacho y tracking de entrega en vivo end-to-end para tres usuarios muy distintos: clientes, conductores y operadores.",
+				"solution": "Plataforma completa: dos apps Flutter (cliente + conductor) compartiendo una librería Dart, un panel admin en React, y un backend NestJS con updates en tiempo real apoyados en Redis, pagos MercadoPago y despacho GPS — desplegado en DigitalOcean.",
+				"outcomes": [
+					"Tres clientes (cliente, conductor, admin) sobre un único backend en tiempo real",
+					"Pagos online + pedidos y despacho sobre mapa",
+					"En producción para un distribuidor real"
+				],
+				"myRole": [
+					"Construí el backend NestJS (pedidos, despacho, pagos, tiempo real)",
+					"Envié la integración con MercadoPago y Socket.IO con Redis",
+					"Contribuí a ambas apps Flutter a través de la librería Dart compartida",
+					"Desplegué y operé la plataforma en DigitalOcean"
+				],
+				"team": "Colaborador Full Stack en el equipo de GearthLogic",
+				"linkLabel": "Admin en vivo"
+			},
+			"gearthCrm": {
+				"title": "GearthLogic CRM",
+				"tagline": "CRM + bot de WhatsApp/ChatGPT para calificación de leads",
+				"description": "El CRM propio de mi agencia: los leads llegan desde el sitio, un bot de WhatsApp (Twilio + ChatGPT) los califica, y si califican, agenda una reunión. Backend NestJS + panel admin React desplegado en Firebase.",
+				"year": "2024 – 2025",
+				"role": "Founder @ GearthLogic",
+				"highlights": [
+					"Calificación de leads por WhatsApp vía Twilio + ChatGPT",
+					"Notificaciones automáticas por email + WhatsApp ante nuevos leads",
+					"Panel admin con Firebase auth, gráficos y tracking de funnel",
+					"Pipeline con BullMQ + updates en tiempo real con Socket.IO"
+				],
+				"problem": "Mi agencia necesitaba un funnel de leads automatizado: form → DB → bot de WhatsApp califica → si califica, agenda una reunión. Más un panel para manejar todo.",
+				"solution": "Backend NestJS con Twilio + OpenAI para el bot de calificación, BullMQ para jobs async, Socket.IO para updates en vivo, y un panel admin React + MUI desplegado en Firebase Hosting.",
+				"outcomes": [
+					"CRM + bot de calificación en producción para la agencia",
+					"Panel admin desplegado en gearth-admin.web.app",
+					"Producto end-to-end arquitecturado por mí solo"
+				],
+				"myRole": [
+					"Arquitecturé el funnel de leads end-to-end (form web → DB → WhatsApp → reunión)",
+					"Integré Twilio (WhatsApp Business) + OpenAI para calificación automática de leads",
+					"Construí el pipeline BullMQ y los updates en tiempo real con Socket.IO",
+					"Construí el panel admin React + MUI con Firebase auth"
+				],
+				"team": "Solo — founder + único builder",
+				"linkLabel": "Admin en vivo"
+			},
+			"powerStaffing": {
+				"title": "Power Staffing",
+				"tagline": "Plataforma de agencia de reclutamiento — candidatos, roles y roster",
+				"description": "Plataforma web para una agencia de reclutamiento/staffing (Barbas SRL) — backend NestJS + admin React. Aporté features y manejé el deploy a producción.",
+				"year": "2025",
+				"role": "Colaborador @ GearthLogic",
+				"highlights": [
+					"Backend NestJS + TypeORM con tooling admin por roles",
+					"Admin React + MUI para gestión de candidatos, roles y clientes",
+					"A cargo del deploy a producción y ops en back & front"
+				],
+				"problem": "Una agencia de staffing necesitaba una plataforma interna para trackear candidatos, roles y clientes en un solo lugar.",
+				"solution": "Aporté features en una plataforma NestJS + React y me hice cargo del deploy a producción.",
+				"outcomes": [
+					"En producción y mantenido para la agencia"
+				],
+				"myRole": [
+					"Aporté features en el backend NestJS y el admin React",
+					"A cargo del deploy a producción y los ops post-deploy"
+				],
+				"team": "Colaborador en el equipo de GearthLogic"
+			},
+			"nodePermissions": {
+				"title": "node-permissions",
+				"tagline": "Librería RBAC para Node.js, Express y NestJS",
+				"description": "Paquete open-source de roles y permisos — wildcard permissions, middleware Express y guards NestJS sobre TypeORM, con capa de caché incluida. Publicado en npm bajo @wagner-labs.",
+				"heroMetric": "Publicado en npm · MIT",
+				"year": "2026",
+				"role": "WagnerLabs · OSS",
+				"highlights": [
+					"Permisos wildcard (ej. articles.*)",
+					"Middlewares Express + guards y decoradores NestJS (@Roles / @Permissions)",
+					"Capa de caché configurable · testeado con Jest · docs en VitePress"
+				],
+				"problem": "Las apps Node y NestJS no tienen una capa RBAC batteries-included — la mayoría de los equipos termina escribiendo roles y permisos a mano en cada proyecto.",
+				"solution": "Paquete TypeScript open-source: roles, permisos directos y wildcards sobre TypeORM, expuestos vía middleware Express, guards/decoradores NestJS y una capa de caché configurable — publicado en npm con documentación completa.",
+				"outcomes": [
+					"Publicado en npm (@wagner-labs/node-permissions, MIT)",
+					"Adaptadores Express + NestJS con permisos wildcard",
+					"Testeado con Jest y con documentación en VitePress"
+				],
+				"myRole": [
+					"Diseñé y publiqué el paquete end-to-end",
+					"Implementé middleware Express + guards/decoradores NestJS (@Roles / @Permissions)",
+					"Construí la capa de caché y la integración con TypeORM",
+					"Escribí las docs en VitePress y la suite de tests con Jest"
+				],
+				"team": "Solo — autor + mantenedor",
+				"linkLabel": "npm"
+			},
+			"personal": {
+				"title": "Portfolio personal",
+				"tagline": "Este mismo sitio — tema Orix dark, React + Vite, contacto con Resend",
+				"description": "Portfolio hecho a mano sobre la paleta Orix dark — hero animado con typewriter, command palette ⌘K, modales de case study, navegación con scrollspy en tiempo real y form de contacto con Resend en una función serverless de Vercel.",
+				"year": "2026",
+				"role": "Personal",
+				"highlights": [
+					"TypeScript estricto + Vite 6 + React 19 + Tailwind v3 (Geist + Geist Mono)",
+					"Tema Orix custom vía Tailwind config (naming semántico)",
+					"Palette ⌘K, scrollspy, contadores animados, hero tipo terminal",
+					"Form de contacto con Resend + función serverless de Vercel"
+				],
+				"myRole": [
+					"Diseñé el tema Orix dark y la config de Tailwind (naming semántico)",
+					"Construí la palette ⌘K, la nav con scrollspy, los contadores animados y el hero typewriter",
+					"Cableé el form de contacto con Resend + serverless de Vercel (+ plugin Vite para dev)",
+					"Armé el CI en GitHub Actions (lint, typecheck, test, build)"
+				],
+				"team": "Solo — diseñado y construido end-to-end"
+			}
+		}
+	},
+
+	"experience": {
+		"eyebrow": "Experiencia",
+		"title": "Historial laboral",
+		"subtitle": "5+ años entre startups, agencias y mi propio estudio. Abrí cualquier rol para ver el impacto.",
+		"viewAchievements": "Ver logros",
+		"entries": {
+			"correoArgentino": {
+				"role": "Full Stack Developer",
+				"company": "Correo Argentino",
+				"duration": "May 2026 – Actual",
+				"type": "Full-time · Remoto",
+				"details": "Me sumé al equipo de ingeniería digital del Correo Argentino para construir herramientas internas de logística, tracking y operaciones a lo largo de la red postal nacional.",
+				"headline": "Tooling interno para logística nacional · NestJS + React",
+				"achievements": [
+					"Aporto a dashboards internos y herramientas de tracking usadas a diario por operaciones.",
+					"Diseño y envío APIs REST para tracking de paquetes y flujos logísticos.",
+					"Colaboro con equipos cross-funcionales en integraciones con sistemas legacy."
+				]
+			},
+			"eimo": {
+				"role": "Full Stack Developer",
+				"company": "EIMO",
+				"duration": "Mar 2026 – Actual",
+				"type": "Full-time · Remoto",
+				"details": "In-house en el equipo digital de EIMO, a cargo y extendiendo la plataforma EIMO Campus (LMS, e-commerce, ateneos clínicos) y los landings y webinars satélite.",
+				"headline": "Features de LMS end-to-end · Strapi v5 + React 18",
+				"achievements": [
+					"Continúo a cargo del player de Vimeo, ateneos clínicos y concurrencias.",
+					"Envié mejoras al checkout multimoneda (Stripe + MercadoPago, USD↔ARS).",
+					"Mentoreo al equipo en Clean Architecture, TypeScript y proceso de review.",
+					"Mantengo el CI/CD (GitHub Actions + Slack) en el campus y en el landing Elevate."
+				]
+			},
+			"tutuLead": {
+				"role": "Tech Lead",
+				"company": "TUTU",
+				"duration": "Ene 2025 – Jul 2025",
+				"type": "Full-time · Remoto",
+				"details": "Lideré un equipo de ingeniería cross-funcional, manejando decisiones de arquitectura, calidad de código y estándares de entrega.",
+				"headline": "Lideré un equipo de 8 personas · +20% de velocidad de entrega",
+				"achievements": [
+					"Lideré un equipo de desarrollo de 8 personas, aumentando la velocidad de entrega ~20% con mejores procesos de sprint planning y code review.",
+					"Definí estrategia técnica, decisiones de arquitectura y estándares de desarrollo.",
+					"Revisé PRs, mentoreé developers y aseguré la calidad de código en los servicios.",
+					"Coordiné con producto y operaciones para planear roadmaps, requerimientos y releases.",
+					"Mejoré las prácticas de mantenibilidad y documentación entre los servicios."
+				]
+			},
+			"tutuFullStack": {
+				"role": "Full Stack Developer",
+				"company": "TUTU",
+				"duration": "Jul 2024 – Dic 2024",
+				"type": "Full-time · Remoto",
+				"details": "Construí servicios backend escalables y features end-to-end para una plataforma de movilidad con miles de usuarios.",
+				"headline": "Integración con MercadoPago · −25% de transacciones fallidas",
+				"achievements": [
+					"Implementé Clean Architecture con DDD + SOLID en los módulos core, bajando ~30% los issues de mantenibilidad.",
+					"Construí servicios backend escalables con NestJS + Firebase/Auth, habilitando onboarding seguro para miles de usuarios con flujos basados en roles.",
+					"Integré MercadoPago (Wallet Connect, efectivo, links), bajando ~25% las transacciones fallidas y automatizando la reconciliación.",
+					"Creé templates de email HTML custom con React Email y los envié vía AWS SES.",
+					"Construí un panel admin operativo completo (conductores, pasajeros, incidentes, datos de empresa), bajando ~40% la carga operativa."
+				]
+			},
+			"gearthLogic": {
+				"role": "Full Stack Developer",
+				"company": "GearthLogic",
+				"duration": "Sep 2023 – Actual",
+				"type": "Full-time · Remoto",
+				"details": "Entregando features end-to-end en múltiples proyectos de clientes (EIMO Campus, Tribu Saludable, JennyGas, Power Staffing) usando NestJS, React, Strapi, Laravel y Vue.",
+				"headline": "Entrega multi-stack · ciclos +15% más rápidos",
+				"achievements": [
+					"Entregué features end-to-end en stacks de NestJS, React, Strapi, Laravel y Vue, aportando a un ciclo de entrega ~15% más rápido.",
+					"A cargo de proyectos de cliente durante ciclos de producto completos: planning, desarrollo, testing y deploy.",
+					"Diseñé y construí APIs REST robustas y schemas de base de datos usados por múltiples servicios internos y UIs frontend.",
+					"Mejoré la estabilidad del código, bajando ~20% los bugs reportados en QA."
+				]
+			},
+			"adsmovil": {
+				"role": "Backend Developer",
+				"company": "Adsmovil",
+				"duration": "Jun 2022 – Dic 2022",
+				"type": "Full-time · Remoto",
+				"details": "Desarrollé y optimicé sistemas backend y endpoints de API para herramientas y plataformas relacionadas a publicidad.",
+				"headline": "Refactor de APIs · +20–30% en tiempo de respuesta",
+				"achievements": [
+					"Diseñé features del backend en Laravel y refactoreé endpoints de API, mejorando ~20–30% los tiempos de respuesta en rutas de alto uso.",
+					"Colaboré con equipos de producto y data para desarrollar herramientas y sistemas vinculados a publicidad.",
+					"Participé de code reviews y sprints ágiles."
+				]
+			},
+			"wagnerLabs": {
+				"role": "Founder & Full Stack Developer",
+				"company": "WagnerLabs",
+				"duration": "Sep 2020 – Actual",
+				"type": "Freelance · Remoto",
+				"details": "Fundé WagnerLabs, un estudio de software personal entregando soluciones full-stack a medida para clientes de industrias diversas.",
+				"headline": "Productos end-to-end · ~50% de mejora en automatización para clientes",
+				"achievements": [
+					"Entregué soluciones full-stack a medida para clientes de educación, movilidad, e-commerce y operaciones.",
+					"Diseñé y desarrollé aplicaciones end-to-end usando NestJS, React, Laravel, PostgreSQL y TailwindCSS.",
+					"Proveí servicios de consultoría, review de arquitectura, debugging, optimización de performance y deploy.",
+					"Manejé comunicación con clientes, análisis de requerimientos, planning y documentación técnica.",
+					"Mejoré workflows de clientes con automatización, bajando tareas manuales hasta un 50%."
+				]
+			}
+		}
+	},
+
+	"testimonials": {
+		"eyebrow": "Testimonios",
+		"title": "Qué dicen sobre mí"
+	},
+
+	"freeAudit": {
+		"eyebrow": "Audit gratis",
+		"title": "Audit de arquitectura gratis · 30 min",
+		"subtitle": "Traé tu repo, un esquema de arquitectura o un problema que te traba. Te mando un Loom corto con recomendaciones concretas — sin compromiso.",
+		"bullets": [
+			"Code review backend / NestJS · flags de performance · escalabilidad",
+			"Opinión honesta sobre el stack, la estructura y los próximos pasos",
+			"Te quedás con la grabación que podés compartir con tu equipo"
+		],
+		"cta": "Reservá tu audit gratis de 30 min",
+		"footnote": "Si conectamos, hablamos del proyecto. Si no, te queda la grabación igual."
+	},
+
+	"commitments": {
+		"eyebrow": "Cómo trabajo",
+		"title": "Con qué contás de mi parte",
+		"items": {
+			"reply": {
+				"title": "Respondo en 24h",
+				"summary": "Toda consulta seria tiene respuesta en un día hábil."
+			},
+			"nda": {
+				"title": "NDA-friendly",
+				"summary": "NDA mutuo estándar, sin drama. Tuyo o mi template."
+			},
+			"bugfix": {
+				"title": "1 semana de bugfix post-launch",
+				"summary": "Bugfix gratis después de cada proyecto que envío."
+			},
+			"availability": {
+				"title": "Próxima disponibilidad",
+				"summary": "Tomando proyectos desde Jul 2026 en adelante."
+			}
+		}
+	},
+
+	"skills": {
+		"eyebrow": "Stack",
+		"title": "Tecnologías",
+		"subtitle": "Herramientas y tech que uso, agrupadas por dónde viven en el stack. Las resaltadas son las del día a día.",
+		"categories": {
+			"backend": "APIs, servicios e integraciones",
+			"frontend": "UIs web y dashboards",
+			"database": "Modelado y persistencia",
+			"devops": "Build, ship y deploy"
+		}
+	},
+
+	"faq": {
+		"eyebrow": "FAQ",
+		"title": "Preguntas comunes",
+		"subtitle": "Respuestas rápidas antes de tener una llamada.",
+		"items": {
+			"nda": {
+				"q": "¿Firmás NDAs?",
+				"a": "Sí — NDA mutuo estándar, sin drama. Uso el tuyo o mi template."
+			},
+			"bill": {
+				"q": "¿Cómo facturás?",
+				"a": "Precio fijo para scope bien definido, por hora para trabajo en curso. USD por Wise, Payoneer o transferencia local."
+			},
+			"tz": {
+				"q": "¿Qué zona horaria tenés?",
+				"a": "GMT−3 (Argentina). Solapo bien con equipos de Europa y América; trabajo async sin problema. Respondo en menos de 24h hábiles."
+			},
+			"stack": {
+				"q": "¿Qué stack preferís?",
+				"a": "NestJS + React / Next.js + PostgreSQL + Docker en AWS o DigitalOcean. Flexible si tu proyecto necesita otra cosa — envié a producción Laravel, Vue, Strapi y Flutter."
+			},
+			"design": {
+				"q": "¿Hacés diseño de producto?",
+				"a": "Trabajo con tu diseñador si lo tenés. Puedo armar UIs limpias (como este sitio) pero no reemplazo a un diseñador de producto para cosas complejas."
+			},
+			"equity": {
+				"q": "¿Equity en vez de plata?",
+				"a": "Usualmente no — prefiero trabajo pagado. Abierto a charlar para el founder + proyecto correcto."
+			}
+		}
+	},
+
+	"contact": {
+		"eyebrow": "Contacto",
+		"title": "Armemos algo juntos",
+		"subtitle": "¿Tenés un producto, un rol o un brief freelance? Mandame un mensaje — respondo en el día.",
+		"methods": {
+			"email": "Email",
+			"basedIn": "Vivo en",
+			"basedValue": "Posadas, AR · 100% remoto",
+			"github": "GitHub",
+			"linkedin": "LinkedIn"
+		},
+		"openBadge": "Actualmente abierto a nuevas oportunidades",
+		"bookCall": "Reservar call de 30 min",
+		"whatsapp": "Hablemos por WhatsApp",
+		"form": {
+			"name": "Nombre",
+			"namePlaceholder": "Tu nombre",
+			"email": "Email",
+			"emailPlaceholder": "vos@ejemplo.com",
+			"reason": "Motivo",
+			"selectPlaceholder": "Elegí…",
+			"reasonOptions": {
+				"job": "Oportunidad laboral",
+				"freelance": "Proyecto freelance",
+				"collaboration": "Colaboración",
+				"question": "Consulta",
+				"other": "Otro"
+			},
+			"projectType": "Tipo de proyecto",
+			"projectTypeOptions": {
+				"backend": "Backend",
+				"fullstack": "Full-stack",
+				"frontend": "Frontend",
+				"mobile": "Mobile",
+				"architecture": "Arquitectura / consultoría",
+				"other": "Otro"
+			},
+			"message": "Mensaje",
+			"messagePlaceholder": "¿En qué estás trabajando?",
+			"sendCv": "También mandame tu CV",
+			"submit": "Enviar mensaje",
+			"submitting": "Enviando…",
+			"success": "¡Gracias! Te respondo en breve.",
+			"error": "No se pudo enviar — escribime a {{email}}."
+		}
+	},
+
+	"footer": {
+		"tagline": "Backend / Full Stack Engineer · Tech Lead. Posadas, Argentina · 100% remoto.",
+		"quickLinks": "Links rápidos",
+		"findMe": "Encontrame",
+		"backToTop": "Volver arriba",
+		"copyright": "© {{year}} Nahuel Wagner. Todos los derechos reservados.",
+		"updated": "Actualizado {{date}}",
+		"cta": {
+			"eyebrow": "Abierto a nuevos proyectos",
+			"title": "¿Tenés algo para construir?",
+			"subtitle": "Respondo en 24h · GMT-3 · 100% remoto",
+			"emailMe": "Escribime",
+			"bookCall": "Reservar call"
+		}
+	},
+
+	"modal": {
+		"close": "Cerrar",
+		"problem": "Problema",
+		"solution": "Solución",
+		"outcomes": "Resultados",
+		"highlights": "Highlights",
+		"myRole": "Mi rol",
+		"stack": "Stack",
+		"team": "Equipo",
+		"achievements": "Logros clave"
+	},
+
+	"palette": {
+		"placeholder": "Saltar a una sección o ejecutar una acción…",
+		"noResults": "Sin resultados.",
+		"esc": "ESC",
+		"openLabel": "Abrir command palette",
+		"items": {
+			"about": "Ir a Sobre mí",
+			"services": "Ir a Servicios",
+			"work": "Ir a Proyectos",
+			"experience": "Ir a Experiencia",
+			"skills": "Ir a Stack",
+			"testimonials": "Ir a Testimonios",
+			"contact": "Ir a Contacto",
+			"cv": "Descargar CV",
+			"email": "Escribime un mail",
+			"github": "GitHub",
+			"linkedin": "LinkedIn"
+		}
+	},
+
+	"mobileNav": {
+		"ariaLabel": "Navegación de secciones",
+		"about": "Sobre mí",
+		"work": "Proyectos",
+		"experience": "Roles",
+		"skills": "Stack",
+		"contact": "Hola"
+	}
+}
