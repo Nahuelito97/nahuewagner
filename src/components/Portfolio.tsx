@@ -1,5 +1,5 @@
 import { lazy, Suspense, useMemo, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import portfolio, { type Project, type ProjectCategoryKey } from '../data/portfolio';
 import PortfolioItem from './components/PortfolioItem';
@@ -22,7 +22,7 @@ function Portfolio() {
 
 	return (
 		<section id="work" className="py-20 scroll-mt-20">
-			<motion.div
+			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ amount: 0.2 }}
@@ -36,7 +36,7 @@ function Portfolio() {
 					{t('portfolio.title')}
 				</h2>
 				<p className="text-content-muted max-w-xl">{t('portfolio.subtitle')}</p>
-			</motion.div>
+			</m.div>
 
 			<div className="flex flex-wrap gap-2 mb-8">
 				{(
@@ -59,10 +59,10 @@ function Portfolio() {
 				))}
 			</div>
 
-			<motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-5">
+			<m.div layout className="grid grid-cols-1 md:grid-cols-2 gap-5">
 				<AnimatePresence mode="popLayout">
 					{visible.map((project) => (
-						<motion.div
+						<m.div
 							key={project.id}
 							layout
 							initial={{ opacity: 0, scale: 0.96 }}
@@ -72,10 +72,10 @@ function Portfolio() {
 							className={project.featured ? 'md:col-span-2' : ''}
 						>
 							<PortfolioItem project={project} onOpenDetails={() => setSelected(project)} />
-						</motion.div>
+						</m.div>
 					))}
 				</AnimatePresence>
-			</motion.div>
+			</m.div>
 
 			{selected && (
 				<Suspense fallback={null}>

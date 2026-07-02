@@ -1,0 +1,184 @@
+[
+  {
+    "key": "nestjs",
+    "iconLib": "si",
+    "iconName": "SiNestjs",
+    "color": "#e0234e",
+    "order": 0
+  },
+  {
+    "key": "typescript",
+    "iconLib": "si",
+    "iconName": "SiTypescript",
+    "color": "#007acc",
+    "order": 1
+  },
+  {
+    "key": "javascript",
+    "iconLib": "fa",
+    "iconName": "FaJs",
+    "color": "#f7df1e",
+    "order": 2
+  },
+  {
+    "key": "react",
+    "iconLib": "fa",
+    "iconName": "FaReact",
+    "color": "#61dafb",
+    "order": 3
+  },
+  {
+    "key": "nextjs",
+    "iconLib": "si",
+    "iconName": "SiNextdotjs",
+    "color": "#f5f3fb",
+    "order": 4
+  },
+  {
+    "key": "nodejs",
+    "iconLib": "fa",
+    "iconName": "FaNodeJs",
+    "color": "#339933",
+    "order": 5
+  },
+  {
+    "key": "postgresql",
+    "iconLib": "si",
+    "iconName": "SiPostgresql",
+    "color": "#4169e1",
+    "order": 6
+  },
+  {
+    "key": "redis",
+    "iconLib": "si",
+    "iconName": "SiRedis",
+    "color": "#ff4438",
+    "order": 7
+  },
+  {
+    "key": "firebase",
+    "iconLib": "si",
+    "iconName": "SiFirebase",
+    "color": "#ffca28",
+    "order": 8
+  },
+  {
+    "key": "flutter",
+    "iconLib": "si",
+    "iconName": "SiFlutter",
+    "color": "#02569b",
+    "order": 9
+  },
+  {
+    "key": "mongodb",
+    "iconLib": "si",
+    "iconName": "SiMongodb",
+    "color": "#47a248",
+    "order": 10
+  },
+  {
+    "key": "graphql",
+    "iconLib": "si",
+    "iconName": "SiGraphql",
+    "color": "#e10098",
+    "order": 11
+  },
+  {
+    "key": "docker",
+    "iconLib": "fa",
+    "iconName": "FaDocker",
+    "color": "#2496ed",
+    "order": 12
+  },
+  {
+    "key": "aws",
+    "iconLib": "fa",
+    "iconName": "FaAws",
+    "color": "#ff9900",
+    "order": 13
+  },
+  {
+    "key": "laravel",
+    "iconLib": "si",
+    "iconName": "SiLaravel",
+    "color": "#ff2d20",
+    "order": 14
+  },
+  {
+    "key": "php",
+    "iconLib": "fa",
+    "iconName": "FaPhp",
+    "color": "#777bb4",
+    "order": 15
+  },
+  {
+    "key": "vue",
+    "iconLib": "si",
+    "iconName": "SiVuedotjs",
+    "color": "#42b883",
+    "order": 16
+  },
+  {
+    "key": "tailwind",
+    "iconLib": "si",
+    "iconName": "SiTailwindcss",
+    "color": "#38b2ac",
+    "order": 17
+  },
+  {
+    "key": "tailwindcss",
+    "iconLib": "si",
+    "iconName": "SiTailwindcss",
+    "color": "#38b2ac",
+    "order": 18
+  },
+  {
+    "key": "mysql",
+    "iconLib": "si",
+    "iconName": "SiMysql",
+    "color": "#4479a1",
+    "order": 19
+  },
+  {
+    "key": "vite",
+    "iconLib": "si",
+    "iconName": "SiVite",
+    "color": "#a855f7",
+    "order": 20
+  },
+  {
+    "key": "html",
+    "iconLib": "fa",
+    "iconName": "FaHtml5",
+    "color": "#e34f26",
+    "order": 21
+  },
+  {
+    "key": "css",
+    "iconLib": "fa",
+    "iconName": "FaCss3Alt",
+    "color": "#1572b6",
+    "order": 22
+  },
+  {
+    "key": "strapi",
+    "iconLib": "si",
+    "iconName": "SiStrapi",
+    "color": "#4945ff",
+    "order": 23
+  },
+  {
+    "key": "stripe",
+    "iconLib": "si",
+    "iconName": "SiStripe",
+    "color": "#635bff",
+    "order": 24
+  },
+  {
+    "key": "twilio",
+    "iconLib": "si",
+    "iconName": "SiTwilio",
+    "color": "#f22f46",
+    "order": 25
+  }
+]

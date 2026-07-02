@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FiArrowRight, FiCheck } from 'react-icons/fi';
 import services from '../data/services';
@@ -7,7 +7,7 @@ function Services() {
 	const { t } = useTranslation();
 	return (
 		<section id="services" className="py-20 scroll-mt-20">
-			<motion.div
+			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ amount: 0.2 }}
@@ -21,13 +21,13 @@ function Services() {
 					{t('services.title')}
 				</h2>
 				<p className="text-content-muted max-w-xl">{t('services.subtitle')}</p>
-			</motion.div>
+			</m.div>
 
 			<div className="grid md:grid-cols-3 gap-5">
 				{services.map((s, i) => {
 					const bullets = t(`services.list.${s.id}.bullets`, { returnObjects: true }) as string[];
 					return (
-						<motion.article
+						<m.article
 							key={s.id}
 							initial={{ opacity: 0, y: 32 }}
 							whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ function Services() {
 							>
 								{t(`services.list.${s.id}.cta`)} <FiArrowRight className="w-4 h-4" />
 							</a>
-						</motion.article>
+						</m.article>
 					);
 				})}
 			</div>

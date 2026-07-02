@@ -1,0 +1,317 @@
+[
+  {
+    "id": "correoArgentino",
+    "current": true,
+    "tech": [
+      "NestJS",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "logo": null,
+    "order": 0,
+    "translations": {
+      "en": {
+        "role": "Full Stack Developer",
+        "type": "Full-time · Remote",
+        "company": "Correo Argentino",
+        "details": "Joined the digital engineering team at Correo Argentino to build internal tools for logistics, tracking and operations across the national postal network.",
+        "duration": "May 2026 – Present",
+        "headline": "Internal tools for national logistics · NestJS + React",
+        "achievements": [
+          "Contribute to internal dashboards and tracking tools used daily by operations.",
+          "Design and ship REST APIs for parcel tracking and logistics flows.",
+          "Collaborate with cross-functional teams on integrations with legacy systems."
+        ]
+      },
+      "es": {
+        "role": "Full Stack Developer",
+        "type": "Full-time · Remoto",
+        "company": "Correo Argentino",
+        "details": "Me sumé al equipo de ingeniería digital del Correo Argentino para construir herramientas internas de logística, tracking y operaciones a lo largo de la red postal nacional.",
+        "duration": "May 2026 – Actual",
+        "headline": "Tooling interno para logística nacional · NestJS + React",
+        "achievements": [
+          "Aporto a dashboards internos y herramientas de tracking usadas a diario por operaciones.",
+          "Diseño y envío APIs REST para tracking de paquetes y flujos logísticos.",
+          "Colaboro con equipos cross-funcionales en integraciones con sistemas legacy."
+        ]
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.411Z",
+    "updatedAt": "2026-06-07T22:34:58.002Z"
+  },
+  {
+    "id": "eimo",
+    "current": true,
+    "tech": [
+      "React",
+      "TypeScript",
+      "Strapi",
+      "PostgreSQL",
+      "Stripe"
+    ],
+    "logo": "/assets/projects/eimo-logo.png",
+    "order": 1,
+    "translations": {
+      "en": {
+        "role": "Full Stack Developer",
+        "type": "Full-time · Remote",
+        "company": "EIMO",
+        "details": "In-house on the EIMO digital team, owning and extending the EIMO Campus platform (LMS, e-commerce, clinical \"ateneos\") and the satellite landings & webinars.",
+        "duration": "Mar 2026 – Present",
+        "headline": "LMS features end-to-end · Strapi v5 + React 18",
+        "achievements": [
+          "Continued ownership of Vimeo player, ateneos clínicos and concurrencias.",
+          "Shipped multi-currency checkout improvements (Stripe + MercadoPago, USD↔ARS).",
+          "Mentor the team on Clean Architecture, TypeScript and review process.",
+          "Maintain CI/CD (GitHub Actions + Slack) across the campus and the Elevate landing."
+        ]
+      },
+      "es": {
+        "role": "Full Stack Developer",
+        "type": "Full-time · Remoto",
+        "company": "EIMO",
+        "details": "In-house en el equipo digital de EIMO, a cargo y extendiendo la plataforma EIMO Campus (LMS, e-commerce, ateneos clínicos) y los landings y webinars satélite.",
+        "duration": "Mar 2026 – Actual",
+        "headline": "Features de LMS end-to-end · Strapi v5 + React 18",
+        "achievements": [
+          "Continúo a cargo del player de Vimeo, ateneos clínicos y concurrencias.",
+          "Envié mejoras al checkout multimoneda (Stripe + MercadoPago, USD↔ARS).",
+          "Mentoreo al equipo en Clean Architecture, TypeScript y proceso de review.",
+          "Mantengo el CI/CD (GitHub Actions + Slack) en el campus y en el landing Elevate."
+        ]
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.413Z",
+    "updatedAt": "2026-06-07T22:34:58.004Z"
+  },
+  {
+    "id": "tutuLead",
+    "current": false,
+    "tech": [
+      "NestJS",
+      "React",
+      "Firebase",
+      "AWS"
+    ],
+    "logo": "/assets/projects/tutu-logo.webp",
+    "order": 2,
+    "translations": {
+      "en": {
+        "role": "Tech Lead",
+        "type": "Full-time · Remote",
+        "company": "TUTU",
+        "details": "Led a cross-functional engineering team, driving architecture decisions, code quality, and delivery standards.",
+        "duration": "Jan 2025 – Jul 2025",
+        "headline": "Led an 8-person team · +20% delivery speed",
+        "achievements": [
+          "Led an 8-person development team, increasing delivery speed by ~20% through improved sprint planning and code review processes.",
+          "Defined technical strategy, architecture decisions, and development standards.",
+          "Reviewed PRs, mentored developers, and ensured code quality across services.",
+          "Coordinated with product and operations to plan roadmaps, requirements, and releases.",
+          "Improved maintainability and documentation practices across services."
+        ]
+      },
+      "es": {
+        "role": "Tech Lead",
+        "type": "Full-time · Remoto",
+        "company": "TUTU",
+        "details": "Lideré un equipo de ingeniería cross-funcional, manejando decisiones de arquitectura, calidad de código y estándares de entrega.",
+        "duration": "Ene 2025 – Jul 2025",
+        "headline": "Lideré un equipo de 8 personas · +20% de velocidad de entrega",
+        "achievements": [
+          "Lideré un equipo de desarrollo de 8 personas, aumentando la velocidad de entrega ~20% con mejores procesos de sprint planning y code review.",
+          "Definí estrategia técnica, decisiones de arquitectura y estándares de desarrollo.",
+          "Revisé PRs, mentoreé developers y aseguré la calidad de código en los servicios.",
+          "Coordiné con producto y operaciones para planear roadmaps, requerimientos y releases.",
+          "Mejoré las prácticas de mantenibilidad y documentación entre los servicios."
+        ]
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.415Z",
+    "updatedAt": "2026-06-07T22:34:58.006Z"
+  },
+  {
+    "id": "tutuFullStack",
+    "current": false,
+    "tech": [
+      "NestJS",
+      "React",
+      "Firebase",
+      "MercadoPago",
+      "AWS SES"
+    ],
+    "logo": "/assets/projects/tutu-logo.webp",
+    "order": 3,
+    "translations": {
+      "en": {
+        "role": "Full Stack Developer",
+        "type": "Full-time · Remote",
+        "company": "TUTU",
+        "details": "Built scalable backend services and end-to-end features for a mobility platform serving thousands of users.",
+        "duration": "Jul 2024 – Dec 2024",
+        "headline": "MercadoPago integration · −25% failed transactions",
+        "achievements": [
+          "Implemented Clean Architecture with DDD + SOLID across core modules, reducing maintainability issues by ~30%.",
+          "Built scalable backend services with NestJS + Firebase/Auth, enabling secure onboarding for thousands of users with role-based flows.",
+          "Integrated MercadoPago (Wallet Connect, cash, links), reducing failed transactions by ~25% and automating reconciliation.",
+          "Created custom HTML email templates using React Email and sent them via AWS SES.",
+          "Built a full operational admin panel (drivers, passengers, incidents, company data), reducing operational workload by ~40%."
+        ]
+      },
+      "es": {
+        "role": "Full Stack Developer",
+        "type": "Full-time · Remoto",
+        "company": "TUTU",
+        "details": "Construí servicios backend escalables y features end-to-end para una plataforma de movilidad con miles de usuarios.",
+        "duration": "Jul 2024 – Dic 2024",
+        "headline": "Integración con MercadoPago · −25% de transacciones fallidas",
+        "achievements": [
+          "Implementé Clean Architecture con DDD + SOLID en los módulos core, bajando ~30% los issues de mantenibilidad.",
+          "Construí servicios backend escalables con NestJS + Firebase/Auth, habilitando onboarding seguro para miles de usuarios con flujos basados en roles.",
+          "Integré MercadoPago (Wallet Connect, efectivo, links), bajando ~25% las transacciones fallidas y automatizando la reconciliación.",
+          "Creé templates de email HTML custom con React Email y los envié vía AWS SES.",
+          "Construí un panel admin operativo completo (conductores, pasajeros, incidentes, datos de empresa), bajando ~40% la carga operativa."
+        ]
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.416Z",
+    "updatedAt": "2026-06-07T22:34:58.007Z"
+  },
+  {
+    "id": "gearthLogic",
+    "current": false,
+    "tech": [
+      "NestJS",
+      "React",
+      "Strapi",
+      "Laravel",
+      "PostgreSQL",
+      "TailwindCSS"
+    ],
+    "logo": "/assets/projects/gearth.webp",
+    "order": 4,
+    "translations": {
+      "en": {
+        "role": "Full Stack Developer",
+        "type": "Full-time · Remote",
+        "company": "GearthLogic",
+        "details": "Delivering end-to-end features across multiple client projects (EIMO Campus, Tribu Saludable, JennyGas, Power Staffing) using NestJS, React, Strapi, Laravel and Vue.",
+        "duration": "Sep 2023 – Present",
+        "headline": "Multi-stack delivery · +15% faster cycles",
+        "achievements": [
+          "Delivered end-to-end features across NestJS, React, Strapi, Laravel and Vue stacks, contributing to a ~15% faster delivery cycle.",
+          "Owned client projects through full product cycles: planning, development, testing and deployment.",
+          "Designed and built robust REST APIs and database schemas used by multiple internal services and front-end UIs.",
+          "Improved code stability, reducing bugs reported during QA by ~20%."
+        ]
+      },
+      "es": {
+        "role": "Full Stack Developer",
+        "type": "Full-time · Remoto",
+        "company": "GearthLogic",
+        "details": "Entregando features end-to-end en múltiples proyectos de clientes (EIMO Campus, Tribu Saludable, JennyGas, Power Staffing) usando NestJS, React, Strapi, Laravel y Vue.",
+        "duration": "Sep 2023 – Actual",
+        "headline": "Entrega multi-stack · ciclos +15% más rápidos",
+        "achievements": [
+          "Entregué features end-to-end en stacks de NestJS, React, Strapi, Laravel y Vue, aportando a un ciclo de entrega ~15% más rápido.",
+          "A cargo de proyectos de cliente durante ciclos de producto completos: planning, desarrollo, testing y deploy.",
+          "Diseñé y construí APIs REST robustas y schemas de base de datos usados por múltiples servicios internos y UIs frontend.",
+          "Mejoré la estabilidad del código, bajando ~20% los bugs reportados en QA."
+        ]
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.417Z",
+    "updatedAt": "2026-06-07T22:34:58.008Z"
+  },
+  {
+    "id": "adsmovil",
+    "current": false,
+    "tech": [
+      "Laravel",
+      "MySQL",
+      "PHP"
+    ],
+    "logo": null,
+    "order": 5,
+    "translations": {
+      "en": {
+        "role": "Backend Developer",
+        "type": "Full-time · Remote",
+        "company": "Adsmovil",
+        "details": "Developed and optimized backend systems and API endpoints for advertising-related tools and platforms.",
+        "duration": "Jun 2022 – Dec 2022",
+        "headline": "Refactored APIs · +20–30% response time",
+        "achievements": [
+          "Designed Laravel backend features and refactored API endpoints, improving response times by ~20–30% on high-usage routes.",
+          "Collaborated with product and data teams to develop advertising-related tools and systems.",
+          "Participated in code reviews and agile sprints."
+        ]
+      },
+      "es": {
+        "role": "Backend Developer",
+        "type": "Full-time · Remoto",
+        "company": "Adsmovil",
+        "details": "Desarrollé y optimicé sistemas backend y endpoints de API para herramientas y plataformas relacionadas a publicidad.",
+        "duration": "Jun 2022 – Dic 2022",
+        "headline": "Refactor de APIs · +20–30% en tiempo de respuesta",
+        "achievements": [
+          "Diseñé features del backend en Laravel y refactoreé endpoints de API, mejorando ~20–30% los tiempos de respuesta en rutas de alto uso.",
+          "Colaboré con equipos de producto y data para desarrollar herramientas y sistemas vinculados a publicidad.",
+          "Participé de code reviews y sprints ágiles."
+        ]
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.419Z",
+    "updatedAt": "2026-06-07T22:34:58.009Z"
+  },
+  {
+    "id": "wagnerLabs",
+    "current": true,
+    "tech": [
+      "NestJS",
+      "React",
+      "Laravel",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "logo": null,
+    "order": 6,
+    "translations": {
+      "en": {
+        "role": "Founder & Full Stack Developer",
+        "type": "Freelance · Remote",
+        "company": "WagnerLabs",
+        "details": "Founded WagnerLabs, a personal software studio delivering custom full-stack solutions for clients across diverse industries.",
+        "duration": "Sep 2020 – Present",
+        "headline": "End-to-end products · ~50% automation gains for clients",
+        "achievements": [
+          "Delivered custom full-stack solutions for clients in education, mobility, e-commerce, and operations.",
+          "Designed and developed end-to-end applications using NestJS, React, Laravel, PostgreSQL, and TailwindCSS.",
+          "Provided consulting, architecture review, debugging, performance optimization, and deployment services.",
+          "Managed client communication, requirement analysis, planning, and technical documentation.",
+          "Improved client workflows through automation, reducing manual tasks by up to 50%."
+        ]
+      },
+      "es": {
+        "role": "Founder & Full Stack Developer",
+        "type": "Freelance · Remoto",
+        "company": "WagnerLabs",
+        "details": "Fundé WagnerLabs, un estudio de software personal entregando soluciones full-stack a medida para clientes de industrias diversas.",
+        "duration": "Sep 2020 – Actual",
+        "headline": "Productos end-to-end · ~50% de mejora en automatización para clientes",
+        "achievements": [
+          "Entregué soluciones full-stack a medida para clientes de educación, movilidad, e-commerce y operaciones.",
+          "Diseñé y desarrollé aplicaciones end-to-end usando NestJS, React, Laravel, PostgreSQL y TailwindCSS.",
+          "Proveí servicios de consultoría, review de arquitectura, debugging, optimización de performance y deploy.",
+          "Manejé comunicación con clientes, análisis de requerimientos, planning y documentación técnica.",
+          "Mejoré workflows de clientes con automatización, bajando tareas manuales hasta un 50%."
+        ]
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.420Z",
+    "updatedAt": "2026-06-07T22:34:58.010Z"
+  }
+]

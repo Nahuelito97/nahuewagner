@@ -1,0 +1,679 @@
+[
+  {
+    "id": "apiMonitor",
+    "category": "fullstack",
+    "tag": "flagship",
+    "stack": [
+      "nestjs",
+      "typescript",
+      "postgresql",
+      "redis",
+      "nextjs",
+      "docker"
+    ],
+    "link": null,
+    "sourceCodeLink": null,
+    "featured": true,
+    "order": 0,
+    "imgUrl": null,
+    "modalImage": null,
+    "logo": null,
+    "translations": {
+      "en": {
+        "role": "Personal flagship",
+        "team": "Solo — personal flagship project",
+        "year": "2026",
+        "title": "API Monitor",
+        "myRole": [
+          "Designed the provider plugin architecture with DI auto-discovery",
+          "Built the BullMQ + cron monitoring pipeline with anomaly detection (3σ)",
+          "Implemented AES-256-GCM credential encryption and JWT auth with rotation",
+          "Wrote the Next.js admin panel and the auto-generated docs site"
+        ],
+        "problem": "Teams rely on dozens of paid APIs (LLMs, cloud, payments, comms) with no unified view of consumption, cost or quota risk — the surprises only show up on the invoice.",
+        "tagline": "Centralized monitoring for usage, cost & availability across 35+ APIs",
+        "outcomes": [
+          "35+ providers behind one extensible plugin system",
+          "Real-time alerts via FCM / SMTP / Twilio + HMAC-signed webhooks",
+          "Credentials encrypted at rest (AES-256-GCM), never returned to clients"
+        ],
+        "solution": "A NestJS backend with a provider-plugin architecture that polls 35+ services on a schedule, stores usage history and surfaces cost analytics, anomaly alerts and availability in real time, all behind a Next.js dashboard with auto-generated docs.",
+        "heroMetric": "35+ providers monitored in real time",
+        "highlights": [
+          "Provider plugin system with DI auto-discovery (35+ integrations)",
+          "BullMQ + cron pipeline with 3σ anomaly detection",
+          "AES-256-GCM encrypted credentials, JWT with refresh rotation",
+          "Real-time Socket.IO + multi-channel alerts (FCM / SMTP / Twilio)"
+        ],
+        "description": "A NestJS platform with a provider-plugin architecture that polls 35+ external services, tracks usage, cost and quota risk in real time, and pushes alerts. Includes a Next.js dashboard and auto-generated docs."
+      },
+      "es": {
+        "role": "Proyecto estrella personal",
+        "team": "Solo — proyecto estrella personal",
+        "year": "2026",
+        "title": "API Monitor",
+        "myRole": [
+          "Diseñé la arquitectura de plugins por proveedor con auto-descubrimiento por DI",
+          "Armé el pipeline de monitoreo BullMQ + cron con detección de anomalías (3σ)",
+          "Implementé el cifrado de credenciales con AES-256-GCM y JWT con rotación",
+          "Escribí el panel admin en Next.js y el sitio de docs autogenerado"
+        ],
+        "problem": "Los equipos dependen de decenas de APIs pagas (LLMs, cloud, pagos, comms) sin una vista unificada de consumo, costo o riesgo de cuota — las sorpresas aparecen recién en la factura.",
+        "tagline": "Monitoreo centralizado de uso, costo y disponibilidad para 35+ APIs",
+        "outcomes": [
+          "35+ proveedores detrás de un único sistema de plugins extensible",
+          "Alertas en tiempo real vía FCM / SMTP / Twilio + webhooks firmados con HMAC",
+          "Credenciales cifradas en reposo (AES-256-GCM), nunca se devuelven al cliente"
+        ],
+        "solution": "Backend NestJS con arquitectura de plugins que consulta 35+ servicios por cron, guarda historial de uso y muestra analítica de costos, alertas de anomalía y disponibilidad en tiempo real, todo detrás de un dashboard Next.js con docs autogenerados.",
+        "heroMetric": "35+ proveedores monitoreados en tiempo real",
+        "highlights": [
+          "Sistema de plugins por proveedor con auto-descubrimiento por DI (35+ integraciones)",
+          "Pipeline BullMQ + cron con detección de anomalías a 3σ",
+          "Credenciales cifradas con AES-256-GCM, JWT con rotación de refresh",
+          "Tiempo real con Socket.IO + alertas multicanal (FCM / SMTP / Twilio)"
+        ],
+        "description": "Plataforma en NestJS con arquitectura de plugins por proveedor que consulta 35+ servicios externos, trackea uso, costo y riesgo de cuota en tiempo real, y dispara alertas. Incluye dashboard en Next.js y docs autogenerados."
+      }
+    },
+    "createdAt": "2026-06-07T20:01:14.583Z",
+    "updatedAt": "2026-06-07T22:34:57.984Z"
+  },
+  {
+    "id": "eimoCampus",
+    "category": "fullstack",
+    "tag": "production",
+    "stack": [
+      "react",
+      "typescript",
+      "strapi",
+      "postgresql",
+      "stripe"
+    ],
+    "link": null,
+    "sourceCodeLink": null,
+    "featured": true,
+    "order": 1,
+    "imgUrl": "/assets/projects/eimo.webp",
+    "modalImage": null,
+    "logo": "/assets/projects/eimo-logo.png",
+    "translations": {
+      "en": {
+        "role": "Full Stack @ EIMO",
+        "team": "Full Stack collaborator on the GearthLogic team",
+        "year": "Mar 2026 – Present",
+        "title": "EIMO Campus",
+        "myRole": [
+          "Owned the Vimeo player integration and drip-fed module gating",
+          "Built clinical \"ateneos\" and \"concurrencias\" modules end-to-end",
+          "Implemented Stripe + MercadoPago checkout with USD↔ARS auto-conversion",
+          "Shipped the companion landing (EIMO Elevate) with GitHub Actions + Slack CI/CD"
+        ],
+        "problem": "EIMO needed a medical-grade academic campus: masters & courses, clinical case-study sessions, forum, e-commerce, multi-currency checkout — all integrated, all production-grade.",
+        "tagline": "Medical academy: LMS, e-commerce, Vimeo lessons, real-time chat",
+        "outcomes": [
+          "50+ commits across critical modules (Vimeo, ateneos, chat, checkout)",
+          "Multi-currency checkout shipped (USD↔ARS, coupons, IVA)",
+          "Companion landing (Elevate) with GitHub Actions + Slack CI/CD"
+        ],
+        "solution": "Long-running Full Stack contribution to a Strapi v5 + React 18 platform — owning Vimeo lessons, ateneos, concurrencias, real-time chat, multi-currency checkout (Stripe + MercadoPago with USD↔ARS auto-conversion), planes y suscripciones, certificates, and a companion landing (EIMO Elevate) with GitHub Actions + Slack CI/CD.",
+        "highlights": [
+          "Vimeo player + drip-fed lessons & module gating",
+          "Clinical \"ateneos\" + \"concurrencias\" (case-study modules)",
+          "Real-time chat (Socket.IO) + financial analytics dashboard",
+          "Stripe + MercadoPago checkout with USD↔ARS auto-conversion"
+        ],
+        "description": "Production campus for the Iberoamerican School of Orthomolecular Medicine. Strapi v5 backend + React 18 admin, with Vimeo lessons, clinical \"ateneos\", paid memberships and a checkout that handles USD↔ARS conversion."
+      },
+      "es": {
+        "role": "Full Stack @ EIMO",
+        "team": "Colaborador Full Stack en el equipo de GearthLogic",
+        "year": "Mar 2026 – Actual",
+        "title": "EIMO Campus",
+        "myRole": [
+          "A cargo de la integración del player de Vimeo y el gating con drip por módulos",
+          "Construí los módulos de ateneos clínicos y concurrencias end-to-end",
+          "Implementé el checkout Stripe + MercadoPago con auto-conversión USD↔ARS",
+          "Envié a producción el landing satélite (EIMO Elevate) con CI/CD en GitHub Actions + Slack"
+        ],
+        "problem": "EIMO necesitaba un campus académico de nivel médico: másters y cursos, ateneos clínicos, foro, e-commerce, checkout multimoneda — todo integrado, todo nivel producción.",
+        "tagline": "Academia médica: LMS, e-commerce, lecciones en Vimeo, chat en tiempo real",
+        "outcomes": [
+          "50+ commits en módulos críticos (Vimeo, ateneos, chat, checkout)",
+          "Checkout multimoneda en producción (USD↔ARS, cupones, IVA)",
+          "Landing satélite (Elevate) con CI/CD en GitHub Actions + Slack"
+        ],
+        "solution": "Aporte Full Stack continuo a la plataforma Strapi v5 + React 18 — a cargo de lecciones en Vimeo, ateneos, concurrencias, chat en tiempo real, checkout multimoneda (Stripe + MercadoPago con auto-conversión USD↔ARS), planes y suscripciones, certificados, y un landing satélite (EIMO Elevate) con CI/CD en GitHub Actions + Slack.",
+        "highlights": [
+          "Player de Vimeo + lecciones con drip y gating de módulos",
+          "Ateneos clínicos + concurrencias (módulos de casos)",
+          "Chat en tiempo real (Socket.IO) + dashboard de analítica financiera",
+          "Checkout Stripe + MercadoPago con auto-conversión USD↔ARS"
+        ],
+        "description": "Campus en producción para la Escuela Iberoamericana de Medicina Ortomolecular. Backend Strapi v5 + admin React 18, con lecciones en Vimeo, ateneos clínicos, membresías pagas y un checkout con conversión USD↔ARS."
+      }
+    },
+    "createdAt": "2026-06-07T20:01:14.587Z",
+    "updatedAt": "2026-06-07T22:34:57.989Z"
+  },
+  {
+    "id": "tribuSaludable",
+    "category": "fullstack",
+    "tag": "production",
+    "stack": [
+      "react",
+      "typescript",
+      "strapi",
+      "postgresql",
+      "stripe"
+    ],
+    "link": null,
+    "sourceCodeLink": null,
+    "featured": true,
+    "order": 2,
+    "imgUrl": null,
+    "modalImage": "/assets/projects/tribu-coach.webp",
+    "logo": "/assets/projects/tribu-logo.webp",
+    "translations": {
+      "en": {
+        "role": "Full Stack @ GearthLogic",
+        "team": "Solo author on the rebrand + Diagnosticador feature",
+        "year": "2026",
+        "title": "Tribu Saludable",
+        "myRole": [
+          "Led the full rebrand of the EIMO base into Tribu Saludable",
+          "Designed and implemented the Diagnosticador wizard end-to-end (landing → wizard → results → checkout)",
+          "Wired Stripe + MercadoPago checkout for the wellness courses",
+          "Sole author on the feature/tribu-rebrand branch (back + front)"
+        ],
+        "problem": "A wellness coach needed his own platform: courses, community, and a health-assessment wizard that recommends courses and converts to paid checkout.",
+        "tagline": "Wellness SaaS: courses, community and a health diagnostic wizard",
+        "outcomes": [
+          "Owned the rebrand: package rename, branding, deploy pipeline",
+          "Diagnostic wizard live: free partial + paid full results with PDF",
+          "Single author on the project's feature/tribu-rebrand branch"
+        ],
+        "solution": "Led the full rebrand of the EIMO Campus base into Tribu Saludable, then designed + implemented the Diagnosticador feature from scratch: landing → multi-step wizard → partial (free) and full (paid) results with PDF, wired into the recommended courses and checkout.",
+        "highlights": [
+          "Owned the full rebrand of the EIMO base into Tribu Saludable",
+          "Designed + built the Diagnosticador module end-to-end",
+          "Stripe + MercadoPago checkout, PWA, real-time chat",
+          "Drip-fed video courses + community + PDF results export"
+        ],
+        "description": "Wellness platform for Jorge López — courses, community and a multi-step \"Diagnosticador\" with partial (free) and full (paid) results that recommend courses. Rebranded from the EIMO base."
+      },
+      "es": {
+        "role": "Full Stack @ GearthLogic",
+        "team": "Solo — autor del rebrand + feature Diagnosticador",
+        "year": "2026",
+        "title": "Tribu Saludable",
+        "myRole": [
+          "Lideré el rebrand completo de la base de EIMO a Tribu Saludable",
+          "Diseñé e implementé el wizard del Diagnosticador end-to-end (landing → wizard → resultados → checkout)",
+          "Cableé el checkout Stripe + MercadoPago para los cursos de bienestar",
+          "Único autor de la rama feature/tribu-rebrand (back + front)"
+        ],
+        "problem": "Un coach de bienestar necesitaba su propia plataforma: cursos, comunidad, y un wizard de evaluación de salud que recomiende cursos y convierta al checkout pago.",
+        "tagline": "SaaS de bienestar: cursos, comunidad y un wizard de diagnóstico de salud",
+        "outcomes": [
+          "A cargo del rebrand: rename de paquetes, branding, pipeline de deploy",
+          "Wizard de diagnóstico en vivo: parcial gratis + completo pago con PDF",
+          "Único autor de la rama feature/tribu-rebrand del proyecto"
+        ],
+        "solution": "Lideré el rebrand completo de la base de EIMO Campus a Tribu Saludable, y después diseñé e implementé la feature del Diagnosticador desde cero: landing → wizard multi-paso → resultados parciales (gratis) y completos (pagos) con PDF, integrados con los cursos recomendados y el checkout.",
+        "highlights": [
+          "A cargo del rebrand completo desde la base de EIMO hacia Tribu Saludable",
+          "Diseñé y construí el módulo Diagnosticador end-to-end",
+          "Checkout Stripe + MercadoPago, PWA, chat en tiempo real",
+          "Cursos con drip + comunidad + export de resultados a PDF"
+        ],
+        "description": "Plataforma de bienestar para Jorge López — cursos, comunidad y un \"Diagnosticador\" multi-paso con resultados parciales (gratis) y completos (pagos) que recomiendan cursos. Rebrand a partir de la base de EIMO."
+      }
+    },
+    "createdAt": "2026-06-07T20:01:14.588Z",
+    "updatedAt": "2026-06-07T22:34:57.991Z"
+  },
+  {
+    "id": "tutu",
+    "category": "backend",
+    "tag": "production",
+    "stack": [
+      "nestjs",
+      "typescript",
+      "postgresql",
+      "redis",
+      "aws",
+      "docker"
+    ],
+    "link": null,
+    "sourceCodeLink": null,
+    "featured": false,
+    "order": 3,
+    "imgUrl": "/assets/projects/tutu.webp",
+    "modalImage": null,
+    "logo": "/assets/projects/tutu-logo.webp",
+    "translations": {
+      "en": {
+        "role": "Tech Lead @ TUTU",
+        "team": "Tech Lead of an 8-person engineering team",
+        "year": "2024 – 2025",
+        "title": "TUTU",
+        "myRole": [
+          "Led the engineering team, sprint planning and code review process",
+          "Designed Clean Architecture (DDD + SOLID) across ~35 domain modules",
+          "Built MercadoPago integration (Wallet, cash, links) + auto reconciliation",
+          "Owned the admin panel and the KYC pipeline (AWS Rekognition + Textract)"
+        ],
+        "problem": "Running a ride-hailing service at scale means driver onboarding & KYC, real-time matching, the full trip lifecycle, payments and reconciliation — all reliable under heavy load.",
+        "tagline": "Ride-hailing backend serving thousands of users",
+        "outcomes": [
+          "Served thousands of users in production",
+          "Cut failed transactions ~25% with automated reconciliation",
+          "Automated identity verification with AWS Rekognition + Textract",
+          "Led an 8-person engineering team as Tech Lead"
+        ],
+        "solution": "A NestJS backend built on Clean Architecture (DDD + SOLID): ~35 domain modules, async workers with BullMQ, real-time driver finding over Socket.IO, MercadoPago payments and an AWS-powered KYC pipeline, deployed on Kubernetes.",
+        "heroMetric": "−25% failed transactions · 8-person team led",
+        "highlights": [
+          "~35 domain modules; real-time driver matching over Socket.IO",
+          "KYC pipeline with AWS Rekognition + Textract",
+          "MercadoPago multi-method payments, −25% failed transactions",
+          "Kubernetes (multi-env Helm) + Jenkins CI/CD"
+        ],
+        "description": "NestJS backend (Clean Architecture, DDD) for a mobility platform: driver onboarding & KYC, real-time matching, trip lifecycle, payments and automated reconciliation."
+      },
+      "es": {
+        "role": "Tech Lead @ TUTU",
+        "team": "Tech Lead de un equipo de ingeniería de 8 personas",
+        "year": "2024 – 2025",
+        "title": "TUTU",
+        "myRole": [
+          "Lideré el equipo de ingeniería, sprint planning y proceso de code review",
+          "Diseñé Clean Architecture (DDD + SOLID) en ~35 módulos de dominio",
+          "Construí la integración con MercadoPago (Wallet, efectivo, links) + auto-reconciliación",
+          "A cargo del panel admin y el pipeline de KYC (AWS Rekognition + Textract)"
+        ],
+        "problem": "Operar un servicio de ride-hailing a escala implica onboarding de conductores y KYC, matching en tiempo real, todo el ciclo de vida del viaje, pagos y reconciliación — todo confiable bajo carga pesada.",
+        "tagline": "Backend de ride-hailing para miles de usuarios",
+        "outcomes": [
+          "Sirvió a miles de usuarios en producción",
+          "Bajó ~25% las transacciones fallidas con reconciliación automática",
+          "Verificación automatizada de identidad con AWS Rekognition + Textract",
+          "Lideré un equipo de ingeniería de 8 personas como Tech Lead"
+        ],
+        "solution": "Backend NestJS sobre Clean Architecture (DDD + SOLID): ~35 módulos de dominio, workers async con BullMQ, búsqueda de conductores en tiempo real por Socket.IO, pagos MercadoPago y un pipeline de KYC con AWS, desplegado en Kubernetes.",
+        "heroMetric": "−25% de transacciones fallidas · lideré equipo de 8",
+        "highlights": [
+          "~35 módulos de dominio; matching de conductores en tiempo real por Socket.IO",
+          "Pipeline de KYC con AWS Rekognition + Textract",
+          "Pagos MercadoPago multi-método, −25% de transacciones fallidas",
+          "Kubernetes (Helm multi-env) + Jenkins CI/CD"
+        ],
+        "description": "Backend NestJS (Clean Architecture, DDD) para una plataforma de movilidad: onboarding de conductores y KYC, matching en tiempo real, ciclo de vida del viaje, pagos y reconciliación automática."
+      }
+    },
+    "createdAt": "2026-06-07T20:01:14.589Z",
+    "updatedAt": "2026-06-07T22:34:57.992Z"
+  },
+  {
+    "id": "jennyGas",
+    "category": "fullstack",
+    "tag": "production",
+    "stack": [
+      "flutter",
+      "nestjs",
+      "typescript",
+      "postgresql",
+      "firebase"
+    ],
+    "link": "https://gearth-admin.web.app",
+    "sourceCodeLink": null,
+    "featured": false,
+    "order": 4,
+    "imgUrl": null,
+    "modalImage": "/assets/projects/jennygas-app.webp",
+    "logo": "/assets/projects/jennygas-logo.webp",
+    "translations": {
+      "en": {
+        "role": "Full Stack @ GearthLogic",
+        "team": "Full Stack collaborator on the GearthLogic team",
+        "year": "2025 – 2026",
+        "title": "JennyGas",
+        "myRole": [
+          "Built the NestJS backend (orders, dispatch, payments, real-time)",
+          "Shipped MercadoPago integration and Redis-backed Socket.IO",
+          "Contributed to both Flutter apps via the shared Dart library",
+          "Deployed and operated the platform on DigitalOcean"
+        ],
+        "problem": "A gas distributor needed end-to-end ordering, dispatch and live delivery tracking across three very different users: customers, drivers and operators.",
+        "tagline": "End-to-end gas delivery: mobile apps, admin & backend",
+        "outcomes": [
+          "Three clients (customer, driver, admin) on one real-time backend",
+          "Online payments + map-based ordering and dispatch",
+          "Shipped to production for a real distributor"
+        ],
+        "solution": "A full platform: two Flutter apps (customer + driver) sharing a Dart library, a React admin panel, and a NestJS backend with Redis-backed real-time updates, MercadoPago payments and GPS dispatch — deployed on DigitalOcean.",
+        "linkLabel": "Live admin",
+        "highlights": [
+          "Two Flutter apps (customer + driver) sharing a Dart library",
+          "MercadoPago payments; Redis-backed Socket.IO across 3 clients",
+          "Map-based ordering, GPS dispatch, claims & reports"
+        ],
+        "description": "Full delivery platform — Flutter customer & driver apps, a React admin panel, and a NestJS backend with real-time tracking and online payments. Deployed on DigitalOcean."
+      },
+      "es": {
+        "role": "Full Stack @ GearthLogic",
+        "team": "Colaborador Full Stack en el equipo de GearthLogic",
+        "year": "2025 – 2026",
+        "title": "JennyGas",
+        "myRole": [
+          "Construí el backend NestJS (pedidos, despacho, pagos, tiempo real)",
+          "Envié la integración con MercadoPago y Socket.IO con Redis",
+          "Contribuí a ambas apps Flutter a través de la librería Dart compartida",
+          "Desplegué y operé la plataforma en DigitalOcean"
+        ],
+        "problem": "Un distribuidor de gas necesitaba pedidos, despacho y tracking de entrega en vivo end-to-end para tres usuarios muy distintos: clientes, conductores y operadores.",
+        "tagline": "Delivery de gas end-to-end: apps móviles, admin y backend",
+        "outcomes": [
+          "Tres clientes (cliente, conductor, admin) sobre un único backend en tiempo real",
+          "Pagos online + pedidos y despacho sobre mapa",
+          "En producción para un distribuidor real"
+        ],
+        "solution": "Plataforma completa: dos apps Flutter (cliente + conductor) compartiendo una librería Dart, un panel admin en React, y un backend NestJS con updates en tiempo real apoyados en Redis, pagos MercadoPago y despacho GPS — desplegado en DigitalOcean.",
+        "linkLabel": "Admin en vivo",
+        "highlights": [
+          "Dos apps Flutter (cliente + conductor) compartiendo una librería Dart",
+          "Pagos MercadoPago; Socket.IO con Redis entre 3 clientes",
+          "Pedidos sobre mapa, despacho GPS, reclamos y reportes"
+        ],
+        "description": "Plataforma completa de delivery — apps Flutter para cliente y conductor, panel admin en React, y backend NestJS con tracking en tiempo real y pagos online. Desplegado en DigitalOcean."
+      }
+    },
+    "createdAt": "2026-06-07T20:01:14.590Z",
+    "updatedAt": "2026-06-07T22:34:57.994Z"
+  },
+  {
+    "id": "gearthCrm",
+    "category": "fullstack",
+    "tag": "sideProject",
+    "stack": [
+      "nestjs",
+      "react",
+      "typescript",
+      "postgresql",
+      "twilio"
+    ],
+    "link": "https://gearth-admin.web.app",
+    "sourceCodeLink": "https://github.com/Nahuelito97/gearth-admin",
+    "featured": false,
+    "order": 5,
+    "imgUrl": "/assets/projects/gearth-admin.webp",
+    "modalImage": null,
+    "logo": "/assets/projects/gearth.webp",
+    "translations": {
+      "en": {
+        "role": "Founder @ GearthLogic",
+        "team": "Solo — founder + sole builder",
+        "year": "2024 – 2025",
+        "title": "GearthLogic CRM",
+        "myRole": [
+          "Architected the lead funnel end-to-end (web form → DB → WhatsApp → meeting)",
+          "Integrated Twilio (WhatsApp Business) + OpenAI for automated lead qualification",
+          "Built the BullMQ pipeline and Socket.IO real-time updates",
+          "Built the React + MUI admin panel with Firebase auth"
+        ],
+        "problem": "My agency needed an automated lead funnel: form → DB → WhatsApp bot qualifies → if qualified, book a meeting. Plus a panel to manage all of it.",
+        "tagline": "CRM + WhatsApp/ChatGPT bot for lead qualification",
+        "outcomes": [
+          "CRM + qualification bot in production for the agency",
+          "Admin panel deployed at gearth-admin.web.app",
+          "Solo-architected end-to-end product on my own"
+        ],
+        "solution": "A NestJS backend with Twilio + OpenAI for the qualification bot, BullMQ for async jobs, Socket.IO for live updates, and a React + MUI admin panel deployed on Firebase Hosting.",
+        "linkLabel": "Live admin",
+        "highlights": [
+          "WhatsApp lead qualification via Twilio + ChatGPT",
+          "Auto email + WhatsApp notifications on new leads",
+          "Admin panel with Firebase auth, charts and funnel tracking",
+          "BullMQ-backed pipeline + Socket.IO real-time updates"
+        ],
+        "description": "My agency's own CRM: leads land from the website, a WhatsApp bot (Twilio + ChatGPT) qualifies them, and if qualified, books a meeting. NestJS backend + React admin panel deployed on Firebase."
+      },
+      "es": {
+        "role": "Founder @ GearthLogic",
+        "team": "Solo — founder + único builder",
+        "year": "2024 – 2025",
+        "title": "GearthLogic CRM",
+        "myRole": [
+          "Arquitecturé el funnel de leads end-to-end (form web → DB → WhatsApp → reunión)",
+          "Integré Twilio (WhatsApp Business) + OpenAI para calificación automática de leads",
+          "Construí el pipeline BullMQ y los updates en tiempo real con Socket.IO",
+          "Construí el panel admin React + MUI con Firebase auth"
+        ],
+        "problem": "Mi agencia necesitaba un funnel de leads automatizado: form → DB → bot de WhatsApp califica → si califica, agenda una reunión. Más un panel para manejar todo.",
+        "tagline": "CRM + bot de WhatsApp/ChatGPT para calificación de leads",
+        "outcomes": [
+          "CRM + bot de calificación en producción para la agencia",
+          "Panel admin desplegado en gearth-admin.web.app",
+          "Producto end-to-end arquitecturado por mí solo"
+        ],
+        "solution": "Backend NestJS con Twilio + OpenAI para el bot de calificación, BullMQ para jobs async, Socket.IO para updates en vivo, y un panel admin React + MUI desplegado en Firebase Hosting.",
+        "linkLabel": "Admin en vivo",
+        "highlights": [
+          "Calificación de leads por WhatsApp vía Twilio + ChatGPT",
+          "Notificaciones automáticas por email + WhatsApp ante nuevos leads",
+          "Panel admin con Firebase auth, gráficos y tracking de funnel",
+          "Pipeline con BullMQ + updates en tiempo real con Socket.IO"
+        ],
+        "description": "El CRM propio de mi agencia: los leads llegan desde el sitio, un bot de WhatsApp (Twilio + ChatGPT) los califica, y si califican, agenda una reunión. Backend NestJS + panel admin React desplegado en Firebase."
+      }
+    },
+    "createdAt": "2026-06-07T20:01:14.592Z",
+    "updatedAt": "2026-06-07T22:34:57.996Z"
+  },
+  {
+    "id": "powerStaffing",
+    "category": "backend",
+    "tag": "production",
+    "stack": [
+      "nestjs",
+      "react",
+      "typescript",
+      "postgresql"
+    ],
+    "link": null,
+    "sourceCodeLink": null,
+    "featured": false,
+    "order": 6,
+    "imgUrl": null,
+    "modalImage": null,
+    "logo": "/assets/projects/powerstaffing-logo.svg",
+    "translations": {
+      "en": {
+        "role": "Contributor @ GearthLogic",
+        "team": "Contributor on the GearthLogic team",
+        "year": "2025",
+        "title": "Power Staffing",
+        "myRole": [
+          "Contributed features on the NestJS backend and React admin",
+          "Owned the production deploy and post-deploy ops"
+        ],
+        "problem": "A staffing agency needed an internal platform to track candidates, roles and clients in one place.",
+        "tagline": "Recruiting agency platform — candidates, roles & roster",
+        "outcomes": [
+          "Shipped and maintained in production for the agency"
+        ],
+        "solution": "Contributed features on a NestJS + React platform and owned the production deploy.",
+        "highlights": [
+          "NestJS backend + TypeORM with role-based admin tooling",
+          "React + MUI admin for candidate, role and client management",
+          "Owned the production deploy and ops on back & front"
+        ],
+        "description": "Web platform for a recruiting/staffing agency (Barbas SRL) — NestJS backend + React admin. Contributed features and handled the production deploy."
+      },
+      "es": {
+        "role": "Colaborador @ GearthLogic",
+        "team": "Colaborador en el equipo de GearthLogic",
+        "year": "2025",
+        "title": "Power Staffing",
+        "myRole": [
+          "Aporté features en el backend NestJS y el admin React",
+          "A cargo del deploy a producción y los ops post-deploy"
+        ],
+        "problem": "Una agencia de staffing necesitaba una plataforma interna para trackear candidatos, roles y clientes en un solo lugar.",
+        "tagline": "Plataforma de agencia de reclutamiento — candidatos, roles y roster",
+        "outcomes": [
+          "En producción y mantenido para la agencia"
+        ],
+        "solution": "Aporté features en una plataforma NestJS + React y me hice cargo del deploy a producción.",
+        "highlights": [
+          "Backend NestJS + TypeORM con tooling admin por roles",
+          "Admin React + MUI para gestión de candidatos, roles y clientes",
+          "A cargo del deploy a producción y ops en back & front"
+        ],
+        "description": "Plataforma web para una agencia de reclutamiento/staffing (Barbas SRL) — backend NestJS + admin React. Aporté features y manejé el deploy a producción."
+      }
+    },
+    "createdAt": "2026-06-07T20:01:14.594Z",
+    "updatedAt": "2026-06-07T22:34:57.997Z"
+  },
+  {
+    "id": "nodePermissions",
+    "category": "oss",
+    "tag": "openSource",
+    "stack": [
+      "typescript",
+      "nestjs",
+      "nodejs"
+    ],
+    "link": "https://www.npmjs.com/package/@wagner-labs/node-permissions",
+    "sourceCodeLink": "https://github.com/Nahuelito-Dev/node-permissions",
+    "featured": false,
+    "order": 7,
+    "imgUrl": null,
+    "modalImage": null,
+    "logo": null,
+    "translations": {
+      "en": {
+        "role": "WagnerLabs · OSS",
+        "team": "Solo — author + maintainer",
+        "year": "2026",
+        "title": "node-permissions",
+        "myRole": [
+          "Designed and published the package end-to-end",
+          "Implemented Express middleware + NestJS guards/decorators (@Roles / @Permissions)",
+          "Built the cache layer and TypeORM integration",
+          "Wrote VitePress docs and the Jest test suite"
+        ],
+        "problem": "Node and NestJS apps lack a batteries-included RBAC layer — most teams end up hand-rolling roles & permissions on every project.",
+        "tagline": "RBAC library for Node.js, Express & NestJS",
+        "outcomes": [
+          "Published to npm (@wagner-labs/node-permissions, MIT)",
+          "Express + NestJS adapters with wildcard permissions",
+          "Jest-tested with VitePress documentation"
+        ],
+        "solution": "An open-source TypeScript package: roles, direct permissions and wildcards over TypeORM, exposed through Express middleware, NestJS guards/decorators and a configurable cache layer — published to npm with full documentation.",
+        "linkLabel": "npm",
+        "heroMetric": "Published to npm · MIT licensed",
+        "highlights": [
+          "Wildcard permissions (e.g. articles.*)",
+          "Express middlewares + Nest guards & decorators (@Roles / @Permissions)",
+          "Configurable cache layer · Jest-tested · VitePress docs"
+        ],
+        "description": "Open-source roles & permissions package — wildcard permissions, Express middleware and NestJS guards over TypeORM, with a built-in cache layer. Published to npm under @wagner-labs."
+      },
+      "es": {
+        "role": "WagnerLabs · OSS",
+        "team": "Solo — autor + mantenedor",
+        "year": "2026",
+        "title": "node-permissions",
+        "myRole": [
+          "Diseñé y publiqué el paquete end-to-end",
+          "Implementé middleware Express + guards/decoradores NestJS (@Roles / @Permissions)",
+          "Construí la capa de caché y la integración con TypeORM",
+          "Escribí las docs en VitePress y la suite de tests con Jest"
+        ],
+        "problem": "Las apps Node y NestJS no tienen una capa RBAC batteries-included — la mayoría de los equipos termina escribiendo roles y permisos a mano en cada proyecto.",
+        "tagline": "Librería RBAC para Node.js, Express y NestJS",
+        "outcomes": [
+          "Publicado en npm (@wagner-labs/node-permissions, MIT)",
+          "Adaptadores Express + NestJS con permisos wildcard",
+          "Testeado con Jest y con documentación en VitePress"
+        ],
+        "solution": "Paquete TypeScript open-source: roles, permisos directos y wildcards sobre TypeORM, expuestos vía middleware Express, guards/decoradores NestJS y una capa de caché configurable — publicado en npm con documentación completa.",
+        "linkLabel": "npm",
+        "heroMetric": "Publicado en npm · MIT",
+        "highlights": [
+          "Permisos wildcard (ej. articles.*)",
+          "Middlewares Express + guards y decoradores NestJS (@Roles / @Permissions)",
+          "Capa de caché configurable · testeado con Jest · docs en VitePress"
+        ],
+        "description": "Paquete open-source de roles y permisos — wildcard permissions, middleware Express y guards NestJS sobre TypeORM, con capa de caché incluida. Publicado en npm bajo @wagner-labs."
+      }
+    },
+    "createdAt": "2026-06-07T20:01:14.595Z",
+    "updatedAt": "2026-06-07T22:34:57.999Z"
+  },
+  {
+    "id": "personal",
+    "category": "fullstack",
+    "tag": "sideProject",
+    "stack": [
+      "react",
+      "typescript",
+      "tailwind",
+      "vite"
+    ],
+    "link": null,
+    "sourceCodeLink": "https://github.com/Nahuelito97/nahuewagner",
+    "featured": false,
+    "order": 8,
+    "imgUrl": null,
+    "modalImage": null,
+    "logo": null,
+    "translations": {
+      "en": {
+        "role": "Personal",
+        "team": "Solo — designed and built end-to-end",
+        "year": "2026",
+        "title": "Personal Portfolio",
+        "myRole": [
+          "Designed the Orix dark theme and Tailwind config (semantic naming)",
+          "Built the ⌘K command palette, scrollspy nav, animated counters and typewriter hero",
+          "Wired the Resend + Vercel serverless contact form (+ Vite dev plugin)",
+          "Set up CI on GitHub Actions (lint, typecheck, test, build)"
+        ],
+        "tagline": "This very site — Orix dark theme, React + Vite, Resend contact",
+        "highlights": [
+          "Strict TypeScript + Vite 6 + React 19 + Tailwind v3 (Geist + Geist Mono)",
+          "Custom Orix theme via Tailwind config (semantic naming)",
+          "⌘K palette, scrollspy, animated counters, terminal-typed hero",
+          "Contact form via Resend + Vercel serverless function"
+        ],
+        "description": "Hand-built portfolio on the Orix dark palette — animated typewriter hero, ⌘K command palette, case-study modals, real-time scrollspy nav and a Resend-powered contact form on a Vercel serverless function."
+      },
+      "es": {
+        "role": "Personal",
+        "team": "Solo — diseñado y construido end-to-end",
+        "year": "2026",
+        "title": "Portfolio personal",
+        "myRole": [
+          "Diseñé el tema Orix dark y la config de Tailwind (naming semántico)",
+          "Construí la palette ⌘K, la nav con scrollspy, los contadores animados y el hero typewriter",
+          "Cableé el form de contacto con Resend + serverless de Vercel (+ plugin Vite para dev)",
+          "Armé el CI en GitHub Actions (lint, typecheck, test, build)"
+        ],
+        "tagline": "Este mismo sitio — tema Orix dark, React + Vite, contacto con Resend",
+        "highlights": [
+          "TypeScript estricto + Vite 6 + React 19 + Tailwind v3 (Geist + Geist Mono)",
+          "Tema Orix custom vía Tailwind config (naming semántico)",
+          "Palette ⌘K, scrollspy, contadores animados, hero tipo terminal",
+          "Form de contacto con Resend + función serverless de Vercel"
+        ],
+        "description": "Portfolio hecho a mano sobre la paleta Orix dark — hero animado con typewriter, command palette ⌘K, modales de case study, navegación con scrollspy en tiempo real y form de contacto con Resend en una función serverless de Vercel."
+      }
+    },
+    "createdAt": "2026-06-07T20:01:14.597Z",
+    "updatedAt": "2026-06-07T22:34:58.000Z"
+  }
+]

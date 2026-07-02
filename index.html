@@ -3,30 +3,37 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script>
+			// Aplica el tema guardado antes de pintar (evita el flash claro/oscuro).
+			try {
+				if (localStorage.getItem('theme') === 'light')
+					document.documentElement.classList.add('light');
+			} catch (e) {}
+		</script>
 		<title>Nahuel Wagner | Backend / Full Stack Engineer</title>
 		<meta
 			name="description"
 			content="Backend / Full Stack Engineer with 5+ years building scalable APIs, distributed systems and full-stack products. Tech Lead · Founder of WagnerLabs."
 		/>
 		<meta name="author" content="Nahuel Wagner" />
-		<link rel="canonical" href="https://nahue.dev/" />
+		<link rel="canonical" href="https://wagnerlabs.dev/" />
 		<meta name="theme-color" content="#312C51" />
 
 		<!-- Icons -->
-		<link rel="icon" type="image/png" href="/assets/nahu-logo.png" />
-		<link rel="apple-touch-icon" href="/assets/logo512.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-180.png" />
 		<link rel="manifest" href="/site.webmanifest" />
 
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="Nahuel Wagner" />
-		<meta property="og:url" content="https://nahue.dev/" />
+		<meta property="og:url" content="https://wagnerlabs.dev/" />
 		<meta property="og:title" content="Nahuel Wagner | Backend / Full Stack Engineer" />
 		<meta
 			property="og:description"
 			content="5+ years building scalable APIs, distributed systems and full-stack products. Tech Lead · Founder of WagnerLabs."
 		/>
-		<meta property="og:image" content="https://nahue.dev/og-image.png" />
+		<meta property="og:image" content="https://wagnerlabs.dev/og-image.jpg" />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 		<meta property="og:locale" content="en_US" />
@@ -40,7 +47,7 @@
 			name="twitter:description"
 			content="5+ years building scalable APIs, distributed systems and full-stack products. Tech Lead · Founder of WagnerLabs."
 		/>
-		<meta name="twitter:image" content="https://nahue.dev/og-image.png" />
+		<meta name="twitter:image" content="https://wagnerlabs.dev/og-image.jpg" />
 
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,7 +71,7 @@
 				"@context": "https://schema.org",
 				"@type": "Person",
 				"name": "Nahuel Wagner",
-				"url": "https://nahue.dev",
+				"url": "https://wagnerlabs.dev",
 				"jobTitle": "Backend / Full Stack Engineer",
 				"address": {
 					"@type": "PostalAddress",

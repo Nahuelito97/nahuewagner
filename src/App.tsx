@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { LazyMotion, m } from 'framer-motion';
 import { IconContext } from 'react-icons';
 import { useTranslation } from 'react-i18next';
 import {
@@ -22,6 +22,10 @@ import ScrollButton from './components/ScrollButton';
 import CommandPalette from './components/CommandPalette';
 import MobileNav from './components/MobileNav';
 import HireFloat from './components/HireFloat';
+import AdminAccess from './components/AdminAccess';
+
+// El runtime de animación se carga async para sacarlo del bundle inicial.
+const loadMotionFeatures = () => import('./lib/motionFeatures').then((mod) => mod.default);
 
 function App() {
 	const { t, i18n } = useTranslation();
@@ -37,10 +41,11 @@ function App() {
 	}, [i18n]);
 
 	return (
+		<LazyMotion features={loadMotionFeatures} strict>
 		<IconContext.Provider value={{ attr: { 'aria-hidden': true } }}>
 		<div className="min-h-screen pb-16 md:pb-0">
 			{/* Decorative backdrop — fades in on first load */}
-			<motion.div
+			<m.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 1.4, ease: 'easeOut' }}
@@ -50,7 +55,7 @@ function App() {
 				<div className="absolute inset-0 bg-grid opacity-60" />
 				<div className="absolute -top-32 right-[-10%] h-[480px] w-[480px] rounded-full bg-primary/10 blur-[120px]" />
 				<div className="absolute top-1/3 left-[-15%] h-[420px] w-[420px] rounded-full bg-secondary/10 blur-[130px]" />
-			</motion.div>
+			</m.div>
 
 			<a
 				href="#main"
@@ -81,8 +86,10 @@ function App() {
 			<CommandPalette />
 			<MobileNav />
 			<HireFloat />
+			<AdminAccess />
 		</div>
 		</IconContext.Provider>
+		</LazyMotion>
 	);
 }
 

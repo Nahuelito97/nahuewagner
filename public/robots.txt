@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nahue.dev/sitemap.xml
+Sitemap: https://wagnerlabs.dev/sitemap.xml

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { FiArrowUp, FiMail, FiCalendar } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import SocialLinks from './components/SocialLinks';
@@ -22,7 +22,7 @@ function Footer() {
 		<footer className="border-t border-outline/40 mt-10 pt-12 pb-8">
 			<div className="max-w-5xl w-11/12 mx-auto">
 				{/* Final CTA strip — last conversion touchpoint */}
-				<motion.div
+				<m.div
 					initial={{ opacity: 0, y: 40 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ amount: 0.2 }}
@@ -65,7 +65,7 @@ function Footer() {
 							)}
 						</div>
 					</div>
-				</motion.div>
+				</m.div>
 
 				<div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-8">
 					{/* Brand */}
@@ -75,7 +75,7 @@ function Footer() {
 								NW
 							</div>
 							<span className="font-space font-semibold text-content text-base">
-								nahue<span className="text-primary">.dev</span>
+								wagnerlabs<span className="text-primary">.dev</span>
 							</span>
 						</a>
 						<p className="text-sm text-content-muted mt-3 leading-relaxed max-w-xs">

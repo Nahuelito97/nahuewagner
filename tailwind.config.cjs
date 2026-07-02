@@ -12,40 +12,29 @@ module.exports = {
 				mono: ['"Geist Mono"', 'monospace'],
 			},
 			colors: {
-				// — superficies (índigo, dark) —
-				bg: '#312C51',
+				// Paleta Orix vía CSS variables (ver src/styles/tailwind.css).
+				// Dark = valores originales; light = override con la clase .light.
+				bg: 'rgb(var(--c-bg) / <alpha-value>)',
 				surface: {
-					DEFAULT: '#48426D',
-					variant: '#565081',
+					DEFAULT: 'rgb(var(--c-surface) / <alpha-value>)',
+					variant: 'rgb(var(--c-surface-variant) / <alpha-value>)',
 				},
-				outline: '#574F86',
-				// — texto —
+				outline: 'rgb(var(--c-outline) / <alpha-value>)',
 				content: {
-					DEFAULT: '#F5F3FB', // text
-					muted: '#B9B3D6',
+					DEFAULT: 'rgb(var(--c-content) / <alpha-value>)',
+					muted: 'rgb(var(--c-content-muted) / <alpha-value>)',
 				},
-				// — acentos —
 				primary: {
-					DEFAULT: '#F0C38E', // peach
-					pressed: '#E3A86E',
+					DEFAULT: 'rgb(var(--c-primary) / <alpha-value>)',
+					pressed: 'rgb(var(--c-primary-pressed) / <alpha-value>)',
 				},
-				secondary: '#F1AA9B', // coral
-				'on-accent': '#2A2547',
-				// — estados (rol semántico) —
-				success: '#34D399', // emerald
-				danger: '#F87171',
-				warn: '#FBBF24', // amber
-				syncing: '#56C6F5', // cyan
-				inactive: '#9D97C0', // zinc
-				// — neutrales modo claro (solo si se necesita light) —
-				light: {
-					bg: '#F3EFE9',
-					surface: '#FFFFFF',
-					'surface-variant': '#EDE7F2',
-					outline: '#DDD6E8',
-					content: '#2A2547',
-					muted: '#6B6577',
-				},
+				secondary: 'rgb(var(--c-secondary) / <alpha-value>)',
+				'on-accent': 'rgb(var(--c-on-accent) / <alpha-value>)',
+				success: 'rgb(var(--c-success) / <alpha-value>)',
+				danger: 'rgb(var(--c-danger) / <alpha-value>)',
+				warn: 'rgb(var(--c-warn) / <alpha-value>)',
+				syncing: 'rgb(var(--c-syncing) / <alpha-value>)',
+				inactive: 'rgb(var(--c-inactive) / <alpha-value>)',
 			},
 			animation: {
 				'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',

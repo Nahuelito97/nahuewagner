@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { FiSearch } from 'react-icons/fi';
 import { Logo, Sections } from './components';
 import LangToggle from './components/LangToggle';
+import ThemeToggle from './components/ThemeToggle';
 import { useActiveSection } from '../hooks/useActiveSection';
 
 const SECTION_IDS = ['about', 'services', 'work', 'experience', 'skills', 'contact'];
@@ -37,7 +38,8 @@ const Navbar = () => {
 				{/* Desktop nav */}
 				<div className="hidden lg:flex items-center gap-2">
 					<Sections active={active} />
-					<LangToggle className="ml-2" />
+					<ThemeToggle className="ml-2" />
+					<LangToggle />
 					<button
 						type="button"
 						onClick={openPalette}
@@ -53,6 +55,7 @@ const Navbar = () => {
 
 				{/* Mobile actions */}
 				<div className="lg:hidden flex items-center gap-1">
+					<ThemeToggle />
 					<LangToggle />
 					<button
 						type="button"

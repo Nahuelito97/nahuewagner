@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 const STEPS = [
@@ -12,7 +12,7 @@ function Process() {
 	const { t } = useTranslation();
 	return (
 		<section id="process" className="py-20 scroll-mt-20">
-			<motion.div
+			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ amount: 0.2 }}
@@ -26,11 +26,11 @@ function Process() {
 					{t('process.title')}
 				</h2>
 				<p className="text-content-muted max-w-xl">{t('process.subtitle')}</p>
-			</motion.div>
+			</m.div>
 
 			<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
 				{STEPS.map((s, i) => (
-					<motion.div
+					<m.div
 						key={s.id}
 						initial={{ opacity: 0, y: 32 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ function Process() {
 						<p className="text-sm text-content-muted leading-relaxed">
 							{t(`process.steps.${s.id}.summary`)}
 						</p>
-					</motion.div>
+					</m.div>
 				))}
 			</div>
 		</section>

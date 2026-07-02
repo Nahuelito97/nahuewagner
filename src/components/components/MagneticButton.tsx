@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { motion, useMotionValue, useSpring, useReducedMotion } from 'framer-motion';
+import { m, useMotionValue, useSpring, useReducedMotion } from 'framer-motion';
 import type { ReactNode, MouseEvent as ReactMouseEvent } from 'react';
 
 interface MagneticButtonProps {
@@ -35,7 +35,7 @@ function MagneticButton({ children, className, strength = 0.25 }: MagneticButton
 	};
 
 	return (
-		<motion.span
+		<m.span
 			ref={ref}
 			onMouseMove={handleMove}
 			onMouseLeave={handleLeave}
@@ -43,7 +43,7 @@ function MagneticButton({ children, className, strength = 0.25 }: MagneticButton
 			className={`inline-block ${className ?? ''}`}
 		>
 			{children}
-		</motion.span>
+		</m.span>
 	);
 }
 

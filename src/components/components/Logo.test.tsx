@@ -7,7 +7,7 @@ afterEach(cleanup);
 describe('Logo', () => {
 	it('renders the brand mark and name', () => {
 		const { container } = render(<Logo />);
-		expect(container.textContent).toContain('nahue.dev');
+		expect(container.textContent).toContain('wagnerlabs.dev');
 		expect(screen.getByText('NW')).toBeTruthy();
 	});
 });

@@ -1,5 +1,5 @@
 import { lazy, Suspense, useState } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import timeline, { type TimelineEntry } from '../data/timeline';
 import TimelineItem from './components/TimelineItem';
@@ -12,7 +12,7 @@ function Timeline() {
 
 	return (
 		<section id="experience" className="py-20 scroll-mt-20">
-			<motion.div
+			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ amount: 0.2 }}
@@ -26,9 +26,9 @@ function Timeline() {
 					{t('experience.title')}
 				</h2>
 				<p className="text-content-muted max-w-xl">{t('experience.subtitle')}</p>
-			</motion.div>
+			</m.div>
 
-			<motion.div
+			<m.div
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				viewport={{ amount: 0.2 }}
@@ -43,7 +43,7 @@ function Timeline() {
 						onOpen={() => setSelected(item)}
 					/>
 				))}
-			</motion.div>
+			</m.div>
 
 			{selected && (
 				<Suspense fallback={null}>

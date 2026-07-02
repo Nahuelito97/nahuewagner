@@ -1,0 +1,95 @@
+[
+  {
+    "id": "mvp",
+    "iconLib": "fi",
+    "iconName": "FiZap",
+    "price": "From USD $2,500",
+    "order": 0,
+    "translations": {
+      "en": {
+        "cta": "Start a project",
+        "title": "MVP in 4 weeks",
+        "bullets": [
+          "NestJS + React / Next.js stack",
+          "Auth, payments, dashboards out of the box",
+          "CI/CD + architecture docs included"
+        ],
+        "summary": "Zero to deployable MVP — backend, frontend, integrations, deploy and docs."
+      },
+      "es": {
+        "cta": "Empezar un proyecto",
+        "title": "MVP en 4 semanas",
+        "bullets": [
+          "Stack NestJS + React / Next.js",
+          "Auth, pagos y dashboards listos",
+          "CI/CD + documentación de arquitectura incluidos"
+        ],
+        "summary": "De cero a MVP deployable — backend, frontend, integraciones, deploy y docs."
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.421Z",
+    "updatedAt": "2026-06-07T22:34:58.011Z"
+  },
+  {
+    "id": "audit",
+    "iconLib": "fi",
+    "iconName": "FiSearch",
+    "price": "From USD $400",
+    "order": 1,
+    "translations": {
+      "en": {
+        "cta": "Book audit",
+        "title": "Backend audit",
+        "bullets": [
+          "Performance, security & DX review",
+          "Concrete refactor roadmap",
+          "Best-practices report with priorities"
+        ],
+        "summary": "Architecture & code review of your NestJS / Node.js codebase, with a clear roadmap."
+      },
+      "es": {
+        "cta": "Reservar audit",
+        "title": "Backend audit",
+        "bullets": [
+          "Performance, seguridad y DX revisados",
+          "Roadmap de refactor concreto",
+          "Reporte de mejores prácticas priorizado"
+        ],
+        "summary": "Review de arquitectura y código de tu codebase NestJS / Node.js, con un roadmap claro."
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.423Z",
+    "updatedAt": "2026-06-07T22:34:58.013Z"
+  },
+  {
+    "id": "lead",
+    "iconLib": "fi",
+    "iconName": "FiUsers",
+    "price": "From USD $80 / hr",
+    "order": 2,
+    "translations": {
+      "en": {
+        "cta": "Talk to me",
+        "title": "Tech leadership",
+        "bullets": [
+          "Sprint planning, PR review and standards",
+          "Architecture and roadmap decisions",
+          "Mentoring + hiring support"
+        ],
+        "summary": "Fractional CTO / Tech Lead embedded with your engineering team."
+      },
+      "es": {
+        "cta": "Hablemos",
+        "title": "Tech leadership",
+        "bullets": [
+          "Sprint planning, PR review y estándares",
+          "Decisiones de arquitectura y roadmap",
+          "Mentoría + soporte al hiring"
+        ],
+        "summary": "CTO fraccional / Tech Lead integrado a tu equipo de ingeniería."
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.424Z",
+    "updatedAt": "2026-06-07T22:34:58.014Z"
+  }
+]
