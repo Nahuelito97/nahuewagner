@@ -1,0 +1,59 @@
+[
+  {
+    "id": "t1",
+    "company": "Company",
+    "order": 0,
+    "translations": {
+      "en": {
+        "name": "Manager / Tech Lead",
+        "role": "Their role",
+        "quote": "Replace this with a real recommendation — e.g. how Nahuel led the team, the impact he had, and what he delivered."
+      },
+      "es": {
+        "name": "Manager / Tech Lead",
+        "role": "Their role",
+        "quote": "Replace this with a real recommendation — e.g. how Nahuel led the team, the impact he had, and what he delivered."
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.452Z",
+    "updatedAt": "2026-06-07T22:34:58.037Z"
+  },
+  {
+    "id": "t2",
+    "company": "Company",
+    "order": 1,
+    "translations": {
+      "en": {
+        "name": "Colleague",
+        "role": "Their role",
+        "quote": "A second testimonial goes here. Pull the best lines from your LinkedIn recommendations."
+      },
+      "es": {
+        "name": "Colleague",
+        "role": "Their role",
+        "quote": "A second testimonial goes here. Pull the best lines from your LinkedIn recommendations."
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.453Z",
+    "updatedAt": "2026-06-07T22:34:58.038Z"
+  },
+  {
+    "id": "t3",
+    "company": "Company",
+    "order": 2,
+    "translations": {
+      "en": {
+        "name": "Client",
+        "role": "Their role",
+        "quote": "A client testimonial works great here — focus on outcomes and reliability."
+      },
+      "es": {
+        "name": "Client",
+        "role": "Their role",
+        "quote": "A client testimonial works great here — focus on outcomes and reliability."
+      }
+    },
+    "createdAt": "2026-06-07T20:17:52.453Z",
+    "updatedAt": "2026-06-07T22:34:58.038Z"
+  }
+]

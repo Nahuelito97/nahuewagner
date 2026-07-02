@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import skills from '../data/skills';
 
@@ -6,7 +6,7 @@ function TechStack() {
 	const { t } = useTranslation();
 	return (
 		<section id="skills" className="py-20 scroll-mt-20">
-			<motion.div
+			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ amount: 0.2 }}
@@ -20,13 +20,13 @@ function TechStack() {
 					{t('skills.title')}
 				</h2>
 				<p className="text-content-muted max-w-xl">{t('skills.subtitle')}</p>
-			</motion.div>
+			</m.div>
 
 			<div className="grid sm:grid-cols-2 gap-4">
 				{Object.entries(skills).map(([category, { techs }], i) => {
 					const primaryCount = techs.filter((tech) => tech.primary).length;
 					return (
-						<motion.div
+						<m.div
 							key={category}
 							initial={{ opacity: 0, y: 32 }}
 							whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ function TechStack() {
 									</span>
 								))}
 							</div>
-						</motion.div>
+						</m.div>
 					);
 				})}
 			</div>

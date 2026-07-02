@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { FaQuoteLeft } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import testimonials from '../data/testimonials';
@@ -7,7 +7,7 @@ function Testimonials() {
 	const { t } = useTranslation();
 	return (
 		<section id="testimonials" className="py-20 scroll-mt-20">
-			<motion.div
+			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ amount: 0.2 }}
@@ -20,11 +20,11 @@ function Testimonials() {
 				<h2 className="text-3xl md:text-4xl font-space font-bold text-content mb-3">
 					{t('testimonials.title')}
 				</h2>
-			</motion.div>
+			</m.div>
 
 			<div className="grid md:grid-cols-3 gap-5">
 				{testimonials.map((t, i) => (
-					<motion.div
+					<m.div
 						key={t.name}
 						initial={{ opacity: 0, y: 40 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ function Testimonials() {
 								</div>
 							</div>
 						</div>
-					</motion.div>
+					</m.div>
 				))}
 			</div>
 		</section>

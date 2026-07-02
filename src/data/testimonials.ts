@@ -1,3 +1,7 @@
+import generated from '../content/testimonials.json';
+
+// Administrado por el CMS. El componente lee estos campos directo (no i18n);
+// se expone la variante ES de cada testimonio.
 export interface Testimonial {
 	quote: string;
 	name: string;
@@ -5,29 +9,16 @@ export interface Testimonial {
 	company?: string;
 }
 
-// ⚠️ PLACEHOLDERS — replace with real LinkedIn recommendations before going live.
-// Tip: keep quotes to 2-3 sentences and concrete (impact, what was shipped).
-const testimonials: Testimonial[] = [
-	{
-		quote:
-			'Replace this with a real recommendation — e.g. how Nahuel led the team, the impact he had, and what he delivered.',
-		name: 'Manager / Tech Lead',
-		role: 'Their role',
-		company: 'Company',
-	},
-	{
-		quote:
-			'A second testimonial goes here. Pull the best lines from your LinkedIn recommendations.',
-		name: 'Colleague',
-		role: 'Their role',
-		company: 'Company',
-	},
-	{
-		quote: 'A client testimonial works great here — focus on outcomes and reliability.',
-		name: 'Client',
-		role: 'Their role',
-		company: 'Company',
-	},
-];
+interface TestimonialData {
+	company?: string | null;
+	translations: { es: { quote: string; name: string; role: string } };
+}
+
+const testimonials: Testimonial[] = (generated as TestimonialData[]).map((t) => ({
+	quote: t.translations.es.quote,
+	name: t.translations.es.name,
+	role: t.translations.es.role,
+	company: t.company ?? undefined,
+}));
 
 export default testimonials;

@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import type { IconType } from 'react-icons';
 import {
 	FiMail,
@@ -128,7 +128,7 @@ function Contact() {
 
 	return (
 		<section id="contact" className="py-20 scroll-mt-20">
-			<motion.div
+			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ amount: 0.2 }}
@@ -142,11 +142,11 @@ function Contact() {
 					{t('contact.title')}
 				</h2>
 				<p className="text-content-muted max-w-xl">{t('contact.subtitle')}</p>
-			</motion.div>
+			</m.div>
 
 			<div className="grid md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] gap-8 md:gap-12">
 				{/* Info panel */}
-				<motion.div
+				<m.div
 					initial={{ opacity: 0, y: 40 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ amount: 0.2 }}
@@ -207,10 +207,10 @@ function Contact() {
 							{t('contact.whatsapp')}
 						</a>
 					)}
-				</motion.div>
+				</m.div>
 
 				{/* Form */}
-				<motion.form
+				<m.form
 					onSubmit={handleSubmit}
 					initial={{ opacity: 0, y: 40 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -346,7 +346,7 @@ function Contact() {
 							</span>
 						)}
 					</div>
-				</motion.form>
+				</m.form>
 			</div>
 		</section>
 	);

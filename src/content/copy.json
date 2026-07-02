@@ -1,0 +1,1802 @@
+[
+  {
+    "key": "about.eyebrow",
+    "namespace": "about",
+    "translations": {
+      "en": "About",
+      "es": "Sobre mí"
+    },
+    "updatedAt": "2026-06-07T22:34:58.053Z"
+  },
+  {
+    "key": "about.p1",
+    "namespace": "about",
+    "translations": {
+      "en": "I'm a backend-leaning full-stack engineer with 5+ years shipping production systems — from ride-hailing platforms serving thousands of users to delivery apps, internal tools and open-source libraries. As Tech Lead at TUTU I led an 8-person team, owning architecture, code quality and delivery.",
+      "es": "Soy un ingeniero full-stack con base en backend, con 5+ años enviando sistemas a producción — desde plataformas de movilidad para miles de usuarios hasta apps de delivery, herramientas internas y librerías open-source. Como Tech Lead en TUTU lideré un equipo de 8 personas, manejando arquitectura, calidad de código y entregas."
+    },
+    "updatedAt": "2026-06-07T22:34:58.053Z"
+  },
+  {
+    "key": "about.p2End",
+    "namespace": "about",
+    "translations": {
+      "en": " — building services that are easy to reason about and scale. I also run ",
+      "es": " — armar servicios fáciles de razonar y escalar. También llevo adelante "
+    },
+    "updatedAt": "2026-06-07T22:34:58.054Z"
+  },
+  {
+    "key": "about.p2EndFinal",
+    "namespace": "about",
+    "translations": {
+      "en": ", my freelance studio, delivering end-to-end products for clients. Based in Posadas, Argentina, working remote-first.",
+      "es": ", mi estudio freelance, entregando productos end-to-end para clientes. Vivo en Posadas, Argentina, 100% remoto."
+    },
+    "updatedAt": "2026-06-07T22:34:58.055Z"
+  },
+  {
+    "key": "about.p2Middle1",
+    "namespace": "about",
+    "translations": {
+      "en": ", ",
+      "es": ", "
+    },
+    "updatedAt": "2026-06-07T22:34:58.054Z"
+  },
+  {
+    "key": "about.p2Middle2",
+    "namespace": "about",
+    "translations": {
+      "en": " and ",
+      "es": " y "
+    },
+    "updatedAt": "2026-06-07T22:34:58.054Z"
+  },
+  {
+    "key": "about.p2Start",
+    "namespace": "about",
+    "translations": {
+      "en": "I care about ",
+      "es": "Me importan "
+    },
+    "updatedAt": "2026-06-07T22:34:58.054Z"
+  },
+  {
+    "key": "about.stats.companies",
+    "namespace": "about",
+    "translations": {
+      "en": "Companies & clients",
+      "es": "Empresas y clientes"
+    },
+    "updatedAt": "2026-06-07T22:34:58.056Z"
+  },
+  {
+    "key": "about.stats.projects",
+    "namespace": "about",
+    "translations": {
+      "en": "Projects shipped",
+      "es": "Proyectos enviados"
+    },
+    "updatedAt": "2026-06-07T22:34:58.055Z"
+  },
+  {
+    "key": "about.stats.remote",
+    "namespace": "about",
+    "translations": {
+      "en": "Remote-first",
+      "es": "Remoto"
+    },
+    "updatedAt": "2026-06-07T22:34:58.056Z"
+  },
+  {
+    "key": "about.stats.years",
+    "namespace": "about",
+    "translations": {
+      "en": "Years building",
+      "es": "Años construyendo"
+    },
+    "updatedAt": "2026-06-07T22:34:58.055Z"
+  },
+  {
+    "key": "about.title",
+    "namespace": "about",
+    "translations": {
+      "en": "A bit about me",
+      "es": "Un poco sobre mí"
+    },
+    "updatedAt": "2026-06-07T22:34:58.053Z"
+  },
+  {
+    "key": "clients.eyebrow",
+    "namespace": "clients",
+    "translations": {
+      "en": "Worked with",
+      "es": "Trabajé con"
+    },
+    "updatedAt": "2026-06-07T22:34:58.052Z"
+  },
+  {
+    "key": "clients.subtitle",
+    "namespace": "clients",
+    "translations": {
+      "en": "{{count}}+ companies & teams I've shipped production code for",
+      "es": "{{count}}+ empresas y equipos para los que envié código a producción"
+    },
+    "updatedAt": "2026-06-07T22:34:58.052Z"
+  },
+  {
+    "key": "commitments.eyebrow",
+    "namespace": "commitments",
+    "translations": {
+      "en": "How I work",
+      "es": "Cómo trabajo"
+    },
+    "updatedAt": "2026-06-07T22:34:58.068Z"
+  },
+  {
+    "key": "commitments.items.availability.summary",
+    "namespace": "commitments",
+    "translations": {
+      "en": "Currently booking for Jul 2026 onwards.",
+      "es": "Tomando proyectos desde Jul 2026 en adelante."
+    },
+    "updatedAt": "2026-06-07T22:34:58.071Z"
+  },
+  {
+    "key": "commitments.items.availability.title",
+    "namespace": "commitments",
+    "translations": {
+      "en": "Next availability",
+      "es": "Próxima disponibilidad"
+    },
+    "updatedAt": "2026-06-07T22:34:58.070Z"
+  },
+  {
+    "key": "commitments.items.bugfix.summary",
+    "namespace": "commitments",
+    "translations": {
+      "en": "Free bugfix window after every project I ship.",
+      "es": "Bugfix gratis después de cada proyecto que envío."
+    },
+    "updatedAt": "2026-06-07T22:34:58.070Z"
+  },
+  {
+    "key": "commitments.items.bugfix.title",
+    "namespace": "commitments",
+    "translations": {
+      "en": "1-week post-launch bugfix",
+      "es": "1 semana de bugfix post-launch"
+    },
+    "updatedAt": "2026-06-07T22:34:58.070Z"
+  },
+  {
+    "key": "commitments.items.nda.summary",
+    "namespace": "commitments",
+    "translations": {
+      "en": "Standard mutual NDA, no problem. Yours or my template.",
+      "es": "NDA mutuo estándar, sin drama. Tuyo o mi template."
+    },
+    "updatedAt": "2026-06-07T22:34:58.069Z"
+  },
+  {
+    "key": "commitments.items.nda.title",
+    "namespace": "commitments",
+    "translations": {
+      "en": "NDA-friendly",
+      "es": "NDA-friendly"
+    },
+    "updatedAt": "2026-06-07T22:34:58.069Z"
+  },
+  {
+    "key": "commitments.items.reply.summary",
+    "namespace": "commitments",
+    "translations": {
+      "en": "I answer every serious enquiry within one business day.",
+      "es": "Toda consulta seria tiene respuesta en un día hábil."
+    },
+    "updatedAt": "2026-06-07T22:34:58.069Z"
+  },
+  {
+    "key": "commitments.items.reply.title",
+    "namespace": "commitments",
+    "translations": {
+      "en": "Reply within 24h",
+      "es": "Respondo en 24h"
+    },
+    "updatedAt": "2026-06-07T22:34:58.069Z"
+  },
+  {
+    "key": "commitments.title",
+    "namespace": "commitments",
+    "translations": {
+      "en": "What you can count on",
+      "es": "Con qué contás de mi parte"
+    },
+    "updatedAt": "2026-06-07T22:34:58.068Z"
+  },
+  {
+    "key": "common.close",
+    "namespace": "common",
+    "translations": {
+      "en": "Close",
+      "es": "Cerrar"
+    },
+    "updatedAt": "2026-06-07T22:34:58.044Z"
+  },
+  {
+    "key": "common.closeMenu",
+    "namespace": "common",
+    "translations": {
+      "en": "Close menu",
+      "es": "Cerrar menú"
+    },
+    "updatedAt": "2026-06-07T22:34:58.045Z"
+  },
+  {
+    "key": "common.current",
+    "namespace": "common",
+    "translations": {
+      "en": "Current",
+      "es": "Actual"
+    },
+    "updatedAt": "2026-06-07T22:34:58.043Z"
+  },
+  {
+    "key": "common.hireMe",
+    "namespace": "common",
+    "translations": {
+      "en": "Hire me",
+      "es": "Contratame"
+    },
+    "updatedAt": "2026-06-07T22:34:58.045Z"
+  },
+  {
+    "key": "common.live",
+    "namespace": "common",
+    "translations": {
+      "en": "Live",
+      "es": "Live"
+    },
+    "updatedAt": "2026-06-07T22:34:58.044Z"
+  },
+  {
+    "key": "common.openMenu",
+    "namespace": "common",
+    "translations": {
+      "en": "Open menu",
+      "es": "Abrir menú"
+    },
+    "updatedAt": "2026-06-07T22:34:58.045Z"
+  },
+  {
+    "key": "common.present",
+    "namespace": "common",
+    "translations": {
+      "en": "Present",
+      "es": "Actual"
+    },
+    "updatedAt": "2026-06-07T22:34:58.043Z"
+  },
+  {
+    "key": "common.scrollToTop",
+    "namespace": "common",
+    "translations": {
+      "en": "Scroll to top",
+      "es": "Subir"
+    },
+    "updatedAt": "2026-06-07T22:34:58.045Z"
+  },
+  {
+    "key": "common.source",
+    "namespace": "common",
+    "translations": {
+      "en": "Source",
+      "es": "Código"
+    },
+    "updatedAt": "2026-06-07T22:34:58.043Z"
+  },
+  {
+    "key": "contact.bookCall",
+    "namespace": "contact",
+    "translations": {
+      "en": "Book a 30-min call",
+      "es": "Reservar call de 30 min"
+    },
+    "updatedAt": "2026-06-07T22:34:58.079Z"
+  },
+  {
+    "key": "contact.eyebrow",
+    "namespace": "contact",
+    "translations": {
+      "en": "Contact",
+      "es": "Contacto"
+    },
+    "updatedAt": "2026-06-07T22:34:58.077Z"
+  },
+  {
+    "key": "contact.form.email",
+    "namespace": "contact",
+    "translations": {
+      "en": "Email",
+      "es": "Email"
+    },
+    "updatedAt": "2026-06-07T22:34:58.080Z"
+  },
+  {
+    "key": "contact.form.emailPlaceholder",
+    "namespace": "contact",
+    "translations": {
+      "en": "you@example.com",
+      "es": "vos@ejemplo.com"
+    },
+    "updatedAt": "2026-06-07T22:34:58.081Z"
+  },
+  {
+    "key": "contact.form.error",
+    "namespace": "contact",
+    "translations": {
+      "en": "Couldn't send — email me at {{email}}.",
+      "es": "No se pudo enviar — escribime a {{email}}."
+    },
+    "updatedAt": "2026-06-07T22:34:58.086Z"
+  },
+  {
+    "key": "contact.form.message",
+    "namespace": "contact",
+    "translations": {
+      "en": "Message",
+      "es": "Mensaje"
+    },
+    "updatedAt": "2026-06-07T22:34:58.085Z"
+  },
+  {
+    "key": "contact.form.messagePlaceholder",
+    "namespace": "contact",
+    "translations": {
+      "en": "What are you working on?",
+      "es": "¿En qué estás trabajando?"
+    },
+    "updatedAt": "2026-06-07T22:34:58.085Z"
+  },
+  {
+    "key": "contact.form.name",
+    "namespace": "contact",
+    "translations": {
+      "en": "Name",
+      "es": "Nombre"
+    },
+    "updatedAt": "2026-06-07T22:34:58.080Z"
+  },
+  {
+    "key": "contact.form.namePlaceholder",
+    "namespace": "contact",
+    "translations": {
+      "en": "Your name",
+      "es": "Tu nombre"
+    },
+    "updatedAt": "2026-06-07T22:34:58.080Z"
+  },
+  {
+    "key": "contact.form.projectType",
+    "namespace": "contact",
+    "translations": {
+      "en": "Project type",
+      "es": "Tipo de proyecto"
+    },
+    "updatedAt": "2026-06-07T22:34:58.083Z"
+  },
+  {
+    "key": "contact.form.projectTypeOptions.architecture",
+    "namespace": "contact",
+    "translations": {
+      "en": "Architecture / consulting",
+      "es": "Arquitectura / consultoría"
+    },
+    "updatedAt": "2026-06-07T22:34:58.084Z"
+  },
+  {
+    "key": "contact.form.projectTypeOptions.backend",
+    "namespace": "contact",
+    "translations": {
+      "en": "Backend",
+      "es": "Backend"
+    },
+    "updatedAt": "2026-06-07T22:34:58.083Z"
+  },
+  {
+    "key": "contact.form.projectTypeOptions.frontend",
+    "namespace": "contact",
+    "translations": {
+      "en": "Frontend",
+      "es": "Frontend"
+    },
+    "updatedAt": "2026-06-07T22:34:58.084Z"
+  },
+  {
+    "key": "contact.form.projectTypeOptions.fullstack",
+    "namespace": "contact",
+    "translations": {
+      "en": "Full-stack",
+      "es": "Full-stack"
+    },
+    "updatedAt": "2026-06-07T22:34:58.083Z"
+  },
+  {
+    "key": "contact.form.projectTypeOptions.mobile",
+    "namespace": "contact",
+    "translations": {
+      "en": "Mobile",
+      "es": "Mobile"
+    },
+    "updatedAt": "2026-06-07T22:34:58.084Z"
+  },
+  {
+    "key": "contact.form.projectTypeOptions.other",
+    "namespace": "contact",
+    "translations": {
+      "en": "Other",
+      "es": "Otro"
+    },
+    "updatedAt": "2026-06-07T22:34:58.084Z"
+  },
+  {
+    "key": "contact.form.reason",
+    "namespace": "contact",
+    "translations": {
+      "en": "Reason",
+      "es": "Motivo"
+    },
+    "updatedAt": "2026-06-07T22:34:58.081Z"
+  },
+  {
+    "key": "contact.form.reasonOptions.collaboration",
+    "namespace": "contact",
+    "translations": {
+      "en": "Collaboration",
+      "es": "Colaboración"
+    },
+    "updatedAt": "2026-06-07T22:34:58.082Z"
+  },
+  {
+    "key": "contact.form.reasonOptions.freelance",
+    "namespace": "contact",
+    "translations": {
+      "en": "Freelance project",
+      "es": "Proyecto freelance"
+    },
+    "updatedAt": "2026-06-07T22:34:58.082Z"
+  },
+  {
+    "key": "contact.form.reasonOptions.job",
+    "namespace": "contact",
+    "translations": {
+      "en": "Job opportunity",
+      "es": "Oportunidad laboral"
+    },
+    "updatedAt": "2026-06-07T22:34:58.082Z"
+  },
+  {
+    "key": "contact.form.reasonOptions.other",
+    "namespace": "contact",
+    "translations": {
+      "en": "Other",
+      "es": "Otro"
+    },
+    "updatedAt": "2026-06-07T22:34:58.083Z"
+  },
+  {
+    "key": "contact.form.reasonOptions.question",
+    "namespace": "contact",
+    "translations": {
+      "en": "Question",
+      "es": "Consulta"
+    },
+    "updatedAt": "2026-06-07T22:34:58.082Z"
+  },
+  {
+    "key": "contact.form.selectPlaceholder",
+    "namespace": "contact",
+    "translations": {
+      "en": "Select…",
+      "es": "Elegí…"
+    },
+    "updatedAt": "2026-06-07T22:34:58.081Z"
+  },
+  {
+    "key": "contact.form.sendCv",
+    "namespace": "contact",
+    "translations": {
+      "en": "Also send me your CV",
+      "es": "También mandame tu CV"
+    },
+    "updatedAt": "2026-06-07T22:34:58.085Z"
+  },
+  {
+    "key": "contact.form.submit",
+    "namespace": "contact",
+    "translations": {
+      "en": "Send message",
+      "es": "Enviar mensaje"
+    },
+    "updatedAt": "2026-06-07T22:34:58.086Z"
+  },
+  {
+    "key": "contact.form.submitting",
+    "namespace": "contact",
+    "translations": {
+      "en": "Sending…",
+      "es": "Enviando…"
+    },
+    "updatedAt": "2026-06-07T22:34:58.086Z"
+  },
+  {
+    "key": "contact.form.success",
+    "namespace": "contact",
+    "translations": {
+      "en": "Thanks! I'll be in touch soon.",
+      "es": "¡Gracias! Te respondo en breve."
+    },
+    "updatedAt": "2026-06-07T22:34:58.086Z"
+  },
+  {
+    "key": "contact.methods.basedIn",
+    "namespace": "contact",
+    "translations": {
+      "en": "Based in",
+      "es": "Vivo en"
+    },
+    "updatedAt": "2026-06-07T22:34:58.078Z"
+  },
+  {
+    "key": "contact.methods.basedValue",
+    "namespace": "contact",
+    "translations": {
+      "en": "Posadas, AR · Remote-first",
+      "es": "Posadas, AR · 100% remoto"
+    },
+    "updatedAt": "2026-06-07T22:34:58.078Z"
+  },
+  {
+    "key": "contact.methods.email",
+    "namespace": "contact",
+    "translations": {
+      "en": "Email",
+      "es": "Email"
+    },
+    "updatedAt": "2026-06-07T22:34:58.078Z"
+  },
+  {
+    "key": "contact.methods.github",
+    "namespace": "contact",
+    "translations": {
+      "en": "GitHub",
+      "es": "GitHub"
+    },
+    "updatedAt": "2026-06-07T22:34:58.078Z"
+  },
+  {
+    "key": "contact.methods.linkedin",
+    "namespace": "contact",
+    "translations": {
+      "en": "LinkedIn",
+      "es": "LinkedIn"
+    },
+    "updatedAt": "2026-06-07T22:34:58.079Z"
+  },
+  {
+    "key": "contact.openBadge",
+    "namespace": "contact",
+    "translations": {
+      "en": "Currently open to new opportunities",
+      "es": "Actualmente abierto a nuevas oportunidades"
+    },
+    "updatedAt": "2026-06-07T22:34:58.079Z"
+  },
+  {
+    "key": "contact.subtitle",
+    "namespace": "contact",
+    "translations": {
+      "en": "Got a product, a role, or a freelance brief? Drop me a line — I usually reply within a day.",
+      "es": "¿Tenés un producto, un rol o un brief freelance? Mandame un mensaje — respondo en el día."
+    },
+    "updatedAt": "2026-06-07T22:34:58.077Z"
+  },
+  {
+    "key": "contact.title",
+    "namespace": "contact",
+    "translations": {
+      "en": "Let's build something",
+      "es": "Armemos algo juntos"
+    },
+    "updatedAt": "2026-06-07T22:34:58.077Z"
+  },
+  {
+    "key": "contact.whatsapp",
+    "namespace": "contact",
+    "translations": {
+      "en": "Chat on WhatsApp",
+      "es": "Hablemos por WhatsApp"
+    },
+    "updatedAt": "2026-06-07T22:34:58.080Z"
+  },
+  {
+    "key": "experience.eyebrow",
+    "namespace": "experience",
+    "translations": {
+      "en": "Experience",
+      "es": "Experiencia"
+    },
+    "updatedAt": "2026-06-07T22:34:58.064Z"
+  },
+  {
+    "key": "experience.subtitle",
+    "namespace": "experience",
+    "translations": {
+      "en": "5+ years across startups, agencies and my own studio. Open any role for the full impact.",
+      "es": "5+ años entre startups, agencias y mi propio estudio. Abrí cualquier rol para ver el impacto."
+    },
+    "updatedAt": "2026-06-07T22:34:58.065Z"
+  },
+  {
+    "key": "experience.title",
+    "namespace": "experience",
+    "translations": {
+      "en": "Work History",
+      "es": "Historial laboral"
+    },
+    "updatedAt": "2026-06-07T22:34:58.065Z"
+  },
+  {
+    "key": "experience.viewAchievements",
+    "namespace": "experience",
+    "translations": {
+      "en": "View achievements",
+      "es": "Ver logros"
+    },
+    "updatedAt": "2026-06-07T22:34:58.065Z"
+  },
+  {
+    "key": "faq.eyebrow",
+    "namespace": "faq",
+    "translations": {
+      "en": "FAQ",
+      "es": "FAQ"
+    },
+    "updatedAt": "2026-06-07T22:34:58.072Z"
+  },
+  {
+    "key": "faq.items.bill.a",
+    "namespace": "faq",
+    "translations": {
+      "en": "Fixed price for well-defined scope, hourly for ongoing or open-ended work. USD via Wise, Payoneer or local bank transfer.",
+      "es": "Precio fijo para scope bien definido, por hora para trabajo en curso. USD por Wise, Payoneer o transferencia local."
+    },
+    "updatedAt": "2026-06-07T22:34:58.074Z"
+  },
+  {
+    "key": "faq.items.bill.q",
+    "namespace": "faq",
+    "translations": {
+      "en": "How do you bill?",
+      "es": "¿Cómo facturás?"
+    },
+    "updatedAt": "2026-06-07T22:34:58.073Z"
+  },
+  {
+    "key": "faq.items.design.a",
+    "namespace": "faq",
+    "translations": {
+      "en": "I work with your designer if you have one. I can ship clean default UIs (like this site) but I won't replace a real product designer for complex products.",
+      "es": "Trabajo con tu diseñador si lo tenés. Puedo armar UIs limpias (como este sitio) pero no reemplazo a un diseñador de producto para cosas complejas."
+    },
+    "updatedAt": "2026-06-07T22:34:58.076Z"
+  },
+  {
+    "key": "faq.items.design.q",
+    "namespace": "faq",
+    "translations": {
+      "en": "Do you do product design?",
+      "es": "¿Hacés diseño de producto?"
+    },
+    "updatedAt": "2026-06-07T22:34:58.075Z"
+  },
+  {
+    "key": "faq.items.equity.a",
+    "namespace": "faq",
+    "translations": {
+      "en": "Usually no — I prefer paid work. Open to discussing for the right founder + project mix.",
+      "es": "Usualmente no — prefiero trabajo pagado. Abierto a charlar para el founder + proyecto correcto."
+    },
+    "updatedAt": "2026-06-07T22:34:58.076Z"
+  },
+  {
+    "key": "faq.items.equity.q",
+    "namespace": "faq",
+    "translations": {
+      "en": "Equity instead of cash?",
+      "es": "¿Equity en vez de plata?"
+    },
+    "updatedAt": "2026-06-07T22:34:58.076Z"
+  },
+  {
+    "key": "faq.items.nda.a",
+    "namespace": "faq",
+    "translations": {
+      "en": "Yes — standard mutual NDA, no problem. Happy to use yours or my template.",
+      "es": "Sí — NDA mutuo estándar, sin drama. Uso el tuyo o mi template."
+    },
+    "updatedAt": "2026-06-07T22:34:58.073Z"
+  },
+  {
+    "key": "faq.items.nda.q",
+    "namespace": "faq",
+    "translations": {
+      "en": "Do you sign NDAs?",
+      "es": "¿Firmás NDAs?"
+    },
+    "updatedAt": "2026-06-07T22:34:58.073Z"
+  },
+  {
+    "key": "faq.items.stack.a",
+    "namespace": "faq",
+    "translations": {
+      "en": "NestJS + React / Next.js + PostgreSQL + Docker on AWS or DigitalOcean. Flexible if your project warrants something else — I have shipped Laravel, Vue, Strapi and Flutter in production.",
+      "es": "NestJS + React / Next.js + PostgreSQL + Docker en AWS o DigitalOcean. Flexible si tu proyecto necesita otra cosa — envié a producción Laravel, Vue, Strapi y Flutter."
+    },
+    "updatedAt": "2026-06-07T22:34:58.075Z"
+  },
+  {
+    "key": "faq.items.stack.q",
+    "namespace": "faq",
+    "translations": {
+      "en": "What stack do you prefer?",
+      "es": "¿Qué stack preferís?"
+    },
+    "updatedAt": "2026-06-07T22:34:58.075Z"
+  },
+  {
+    "key": "faq.items.tz.a",
+    "namespace": "faq",
+    "translations": {
+      "en": "GMT−3 (Argentina). I overlap easily with EU and Americas teams; async-friendly otherwise. Reply within 24h on business days.",
+      "es": "GMT−3 (Argentina). Solapo bien con equipos de Europa y América; trabajo async sin problema. Respondo en menos de 24h hábiles."
+    },
+    "updatedAt": "2026-06-07T22:34:58.074Z"
+  },
+  {
+    "key": "faq.items.tz.q",
+    "namespace": "faq",
+    "translations": {
+      "en": "What time zone do you work in?",
+      "es": "¿Qué zona horaria tenés?"
+    },
+    "updatedAt": "2026-06-07T22:34:58.074Z"
+  },
+  {
+    "key": "faq.subtitle",
+    "namespace": "faq",
+    "translations": {
+      "en": "Quick answers before we hop on a call.",
+      "es": "Respuestas rápidas antes de tener una llamada."
+    },
+    "updatedAt": "2026-06-07T22:34:58.073Z"
+  },
+  {
+    "key": "faq.title",
+    "namespace": "faq",
+    "translations": {
+      "en": "Common questions",
+      "es": "Preguntas comunes"
+    },
+    "updatedAt": "2026-06-07T22:34:58.072Z"
+  },
+  {
+    "key": "footer.backToTop",
+    "namespace": "footer",
+    "translations": {
+      "en": "Back to top",
+      "es": "Volver arriba"
+    },
+    "updatedAt": "2026-06-07T22:34:58.088Z"
+  },
+  {
+    "key": "footer.copyright",
+    "namespace": "footer",
+    "translations": {
+      "en": "© {{year}} Nahuel Wagner. All rights reserved.",
+      "es": "© {{year}} Nahuel Wagner. Todos los derechos reservados."
+    },
+    "updatedAt": "2026-06-07T22:34:58.088Z"
+  },
+  {
+    "key": "footer.cta.bookCall",
+    "namespace": "footer",
+    "translations": {
+      "en": "Book a call",
+      "es": "Reservar call"
+    },
+    "updatedAt": "2026-06-07T22:34:58.089Z"
+  },
+  {
+    "key": "footer.cta.emailMe",
+    "namespace": "footer",
+    "translations": {
+      "en": "Email me",
+      "es": "Escribime"
+    },
+    "updatedAt": "2026-06-07T22:34:58.089Z"
+  },
+  {
+    "key": "footer.cta.eyebrow",
+    "namespace": "footer",
+    "translations": {
+      "en": "Open to new projects",
+      "es": "Abierto a nuevos proyectos"
+    },
+    "updatedAt": "2026-06-07T22:34:58.088Z"
+  },
+  {
+    "key": "footer.cta.subtitle",
+    "namespace": "footer",
+    "translations": {
+      "en": "Reply within 24h · GMT-3 · Remote-first",
+      "es": "Respondo en 24h · GMT-3 · 100% remoto"
+    },
+    "updatedAt": "2026-06-07T22:34:58.089Z"
+  },
+  {
+    "key": "footer.cta.title",
+    "namespace": "footer",
+    "translations": {
+      "en": "Got something to build?",
+      "es": "¿Tenés algo para construir?"
+    },
+    "updatedAt": "2026-06-07T22:34:58.089Z"
+  },
+  {
+    "key": "footer.findMe",
+    "namespace": "footer",
+    "translations": {
+      "en": "Find me",
+      "es": "Encontrame"
+    },
+    "updatedAt": "2026-06-07T22:34:58.087Z"
+  },
+  {
+    "key": "footer.quickLinks",
+    "namespace": "footer",
+    "translations": {
+      "en": "Quick links",
+      "es": "Links rápidos"
+    },
+    "updatedAt": "2026-06-07T22:34:58.087Z"
+  },
+  {
+    "key": "footer.tagline",
+    "namespace": "footer",
+    "translations": {
+      "en": "Backend / Full Stack Engineer · Tech Lead. Posadas, Argentina · Remote-first.",
+      "es": "Backend / Full Stack Engineer · Tech Lead. Posadas, Argentina · 100% remoto."
+    },
+    "updatedAt": "2026-06-07T22:34:58.087Z"
+  },
+  {
+    "key": "footer.updated",
+    "namespace": "footer",
+    "translations": {
+      "en": "Updated {{date}}",
+      "es": "Actualizado {{date}}"
+    },
+    "updatedAt": "2026-06-07T22:34:58.088Z"
+  },
+  {
+    "key": "freeAudit.bullets",
+    "namespace": "freeAudit",
+    "translations": {
+      "en": [
+        "Backend / NestJS code review · perf flags · scaling concerns",
+        "Honest opinion on stack, structure and next steps",
+        "You leave with a Loom recording you can share with your team"
+      ],
+      "es": [
+        "Code review backend / NestJS · flags de performance · escalabilidad",
+        "Opinión honesta sobre el stack, la estructura y los próximos pasos",
+        "Te quedás con la grabación que podés compartir con tu equipo"
+      ]
+    },
+    "updatedAt": "2026-06-07T22:34:58.067Z"
+  },
+  {
+    "key": "freeAudit.cta",
+    "namespace": "freeAudit",
+    "translations": {
+      "en": "Book a free 30-min audit",
+      "es": "Reservá tu audit gratis de 30 min"
+    },
+    "updatedAt": "2026-06-07T22:34:58.067Z"
+  },
+  {
+    "key": "freeAudit.eyebrow",
+    "namespace": "freeAudit",
+    "translations": {
+      "en": "Free audit",
+      "es": "Audit gratis"
+    },
+    "updatedAt": "2026-06-07T22:34:58.066Z"
+  },
+  {
+    "key": "freeAudit.footnote",
+    "namespace": "freeAudit",
+    "translations": {
+      "en": "If we click, we talk about the project. If not, you keep the recording.",
+      "es": "Si conectamos, hablamos del proyecto. Si no, te queda la grabación igual."
+    },
+    "updatedAt": "2026-06-07T22:34:58.068Z"
+  },
+  {
+    "key": "freeAudit.subtitle",
+    "namespace": "freeAudit",
+    "translations": {
+      "en": "Bring your repo, architecture sketch or a thorny problem. I'll send back a short Loom with concrete recommendations — no commitment.",
+      "es": "Traé tu repo, un esquema de arquitectura o un problema que te traba. Te mando un Loom corto con recomendaciones concretas — sin compromiso."
+    },
+    "updatedAt": "2026-06-07T22:34:58.067Z"
+  },
+  {
+    "key": "freeAudit.title",
+    "namespace": "freeAudit",
+    "translations": {
+      "en": "Free 30-min architecture audit",
+      "es": "Audit de arquitectura gratis · 30 min"
+    },
+    "updatedAt": "2026-06-07T22:34:58.066Z"
+  },
+  {
+    "key": "hero.bioStart",
+    "namespace": "hero",
+    "translations": {
+      "en": "5+ years building scalable APIs, distributed systems, and full-stack products. Strong focus on ",
+      "es": "5+ años construyendo APIs escalables, sistemas distribuidos y productos full-stack. Foco fuerte en "
+    },
+    "updatedAt": "2026-06-07T22:34:58.048Z"
+  },
+  {
+    "key": "hero.buildWords",
+    "namespace": "hero",
+    "translations": {
+      "en": [
+        "scalable APIs",
+        "real-time systems",
+        "delivery platforms",
+        "open-source libraries"
+      ],
+      "es": [
+        "APIs escalables",
+        "sistemas en tiempo real",
+        "plataformas de delivery",
+        "librerías open-source"
+      ]
+    },
+    "updatedAt": "2026-06-07T22:34:58.047Z"
+  },
+  {
+    "key": "hero.cleanArch",
+    "namespace": "hero",
+    "translations": {
+      "en": "Clean Architecture",
+      "es": "Clean Architecture"
+    },
+    "updatedAt": "2026-06-07T22:34:58.048Z"
+  },
+  {
+    "key": "hero.ddd",
+    "namespace": "hero",
+    "translations": {
+      "en": "DDD",
+      "es": "DDD"
+    },
+    "updatedAt": "2026-06-07T22:34:58.049Z"
+  },
+  {
+    "key": "hero.downloadCv",
+    "namespace": "hero",
+    "translations": {
+      "en": "Download CV",
+      "es": "Descargar CV"
+    },
+    "updatedAt": "2026-06-07T22:34:58.051Z"
+  },
+  {
+    "key": "hero.founderSuffix",
+    "namespace": "hero",
+    "translations": {
+      "en": " Founder",
+      "es": ""
+    },
+    "updatedAt": "2026-06-07T22:34:58.048Z"
+  },
+  {
+    "key": "hero.getInTouch",
+    "namespace": "hero",
+    "translations": {
+      "en": "Get In Touch",
+      "es": "Contactame"
+    },
+    "updatedAt": "2026-06-07T22:34:58.050Z"
+  },
+  {
+    "key": "hero.hi",
+    "namespace": "hero",
+    "translations": {
+      "en": "Hi, I'm",
+      "es": "Hola, soy"
+    },
+    "updatedAt": "2026-06-07T22:34:58.046Z"
+  },
+  {
+    "key": "hero.iBuild",
+    "namespace": "hero",
+    "translations": {
+      "en": "i build",
+      "es": "construyo"
+    },
+    "updatedAt": "2026-06-07T22:34:58.047Z"
+  },
+  {
+    "key": "hero.location",
+    "namespace": "hero",
+    "translations": {
+      "en": "Posadas, Misiones, Argentina  ·  Remote-first",
+      "es": "Posadas, Misiones, Argentina  ·  100% remoto"
+    },
+    "updatedAt": "2026-06-07T22:34:58.050Z"
+  },
+  {
+    "key": "hero.openBadge",
+    "namespace": "hero",
+    "translations": {
+      "en": "Open to new opportunities",
+      "es": "Abierto a nuevas oportunidades"
+    },
+    "updatedAt": "2026-06-07T22:34:58.046Z"
+  },
+  {
+    "key": "hero.principles",
+    "namespace": "hero",
+    "translations": {
+      "en": "principles.",
+      "es": "como principios."
+    },
+    "updatedAt": "2026-06-07T22:34:58.049Z"
+  },
+  {
+    "key": "hero.rolePrefix",
+    "namespace": "hero",
+    "translations": {
+      "en": "Backend / Full Stack Engineer  ·  Tech Lead  ·  ",
+      "es": "Backend / Full Stack Engineer  ·  Tech Lead  ·  Founder de "
+    },
+    "updatedAt": "2026-06-07T22:34:58.047Z"
+  },
+  {
+    "key": "hero.solid",
+    "namespace": "hero",
+    "translations": {
+      "en": "SOLID",
+      "es": "SOLID"
+    },
+    "updatedAt": "2026-06-07T22:34:58.049Z"
+  },
+  {
+    "key": "hero.trust.available",
+    "namespace": "hero",
+    "translations": {
+      "en": "Available now",
+      "es": "Disponible ahora"
+    },
+    "updatedAt": "2026-06-07T22:34:58.052Z"
+  },
+  {
+    "key": "hero.trust.reply",
+    "namespace": "hero",
+    "translations": {
+      "en": "Reply within 24h",
+      "es": "Respondo en menos de 24h"
+    },
+    "updatedAt": "2026-06-07T22:34:58.051Z"
+  },
+  {
+    "key": "hero.trust.tz",
+    "namespace": "hero",
+    "translations": {
+      "en": "GMT-3 · Remote",
+      "es": "GMT-3 · Remoto"
+    },
+    "updatedAt": "2026-06-07T22:34:58.051Z"
+  },
+  {
+    "key": "hero.viewWork",
+    "namespace": "hero",
+    "translations": {
+      "en": "View My Work",
+      "es": "Ver mis proyectos"
+    },
+    "updatedAt": "2026-06-07T22:34:58.050Z"
+  },
+  {
+    "key": "langName",
+    "namespace": "langName",
+    "translations": {
+      "en": "English",
+      "es": "Español"
+    },
+    "updatedAt": "2026-06-07T22:34:58.039Z"
+  },
+  {
+    "key": "langToggleLabel",
+    "namespace": "langToggleLabel",
+    "translations": {
+      "en": "Switch language",
+      "es": "Cambiar idioma"
+    },
+    "updatedAt": "2026-06-07T22:34:58.040Z"
+  },
+  {
+    "key": "mobileNav.about",
+    "namespace": "mobileNav",
+    "translations": {
+      "en": "About",
+      "es": "Sobre mí"
+    },
+    "updatedAt": "2026-06-07T22:34:58.096Z"
+  },
+  {
+    "key": "mobileNav.ariaLabel",
+    "namespace": "mobileNav",
+    "translations": {
+      "en": "Section navigation",
+      "es": "Navegación de secciones"
+    },
+    "updatedAt": "2026-06-07T22:34:58.096Z"
+  },
+  {
+    "key": "mobileNav.contact",
+    "namespace": "mobileNav",
+    "translations": {
+      "en": "Hi",
+      "es": "Hola"
+    },
+    "updatedAt": "2026-06-07T22:34:58.097Z"
+  },
+  {
+    "key": "mobileNav.experience",
+    "namespace": "mobileNav",
+    "translations": {
+      "en": "Roles",
+      "es": "Roles"
+    },
+    "updatedAt": "2026-06-07T22:34:58.097Z"
+  },
+  {
+    "key": "mobileNav.skills",
+    "namespace": "mobileNav",
+    "translations": {
+      "en": "Stack",
+      "es": "Stack"
+    },
+    "updatedAt": "2026-06-07T22:34:58.097Z"
+  },
+  {
+    "key": "mobileNav.work",
+    "namespace": "mobileNav",
+    "translations": {
+      "en": "Work",
+      "es": "Proyectos"
+    },
+    "updatedAt": "2026-06-07T22:34:58.097Z"
+  },
+  {
+    "key": "modal.achievements",
+    "namespace": "modal",
+    "translations": {
+      "en": "Key achievements",
+      "es": "Logros clave"
+    },
+    "updatedAt": "2026-06-07T22:34:58.092Z"
+  },
+  {
+    "key": "modal.close",
+    "namespace": "modal",
+    "translations": {
+      "en": "Close",
+      "es": "Cerrar"
+    },
+    "updatedAt": "2026-06-07T22:34:58.090Z"
+  },
+  {
+    "key": "modal.highlights",
+    "namespace": "modal",
+    "translations": {
+      "en": "Highlights",
+      "es": "Highlights"
+    },
+    "updatedAt": "2026-06-07T22:34:58.091Z"
+  },
+  {
+    "key": "modal.myRole",
+    "namespace": "modal",
+    "translations": {
+      "en": "My role",
+      "es": "Mi rol"
+    },
+    "updatedAt": "2026-06-07T22:34:58.091Z"
+  },
+  {
+    "key": "modal.outcomes",
+    "namespace": "modal",
+    "translations": {
+      "en": "Outcomes",
+      "es": "Resultados"
+    },
+    "updatedAt": "2026-06-07T22:34:58.090Z"
+  },
+  {
+    "key": "modal.problem",
+    "namespace": "modal",
+    "translations": {
+      "en": "Problem",
+      "es": "Problema"
+    },
+    "updatedAt": "2026-06-07T22:34:58.090Z"
+  },
+  {
+    "key": "modal.solution",
+    "namespace": "modal",
+    "translations": {
+      "en": "Solution",
+      "es": "Solución"
+    },
+    "updatedAt": "2026-06-07T22:34:58.090Z"
+  },
+  {
+    "key": "modal.stack",
+    "namespace": "modal",
+    "translations": {
+      "en": "Stack",
+      "es": "Stack"
+    },
+    "updatedAt": "2026-06-07T22:34:58.091Z"
+  },
+  {
+    "key": "modal.team",
+    "namespace": "modal",
+    "translations": {
+      "en": "Team",
+      "es": "Equipo"
+    },
+    "updatedAt": "2026-06-07T22:34:58.092Z"
+  },
+  {
+    "key": "nav.about",
+    "namespace": "nav",
+    "translations": {
+      "en": "About",
+      "es": "Sobre mí"
+    },
+    "updatedAt": "2026-06-07T22:34:58.041Z"
+  },
+  {
+    "key": "nav.contact",
+    "namespace": "nav",
+    "translations": {
+      "en": "Contact",
+      "es": "Contacto"
+    },
+    "updatedAt": "2026-06-07T22:34:58.042Z"
+  },
+  {
+    "key": "nav.experience",
+    "namespace": "nav",
+    "translations": {
+      "en": "Experience",
+      "es": "Experiencia"
+    },
+    "updatedAt": "2026-06-07T22:34:58.042Z"
+  },
+  {
+    "key": "nav.projects",
+    "namespace": "nav",
+    "translations": {
+      "en": "Projects",
+      "es": "Proyectos"
+    },
+    "updatedAt": "2026-06-07T22:34:58.041Z"
+  },
+  {
+    "key": "nav.services",
+    "namespace": "nav",
+    "translations": {
+      "en": "Services",
+      "es": "Servicios"
+    },
+    "updatedAt": "2026-06-07T22:34:58.041Z"
+  },
+  {
+    "key": "nav.skills",
+    "namespace": "nav",
+    "translations": {
+      "en": "Skills",
+      "es": "Stack"
+    },
+    "updatedAt": "2026-06-07T22:34:58.042Z"
+  },
+  {
+    "key": "palette.esc",
+    "namespace": "palette",
+    "translations": {
+      "en": "ESC",
+      "es": "ESC"
+    },
+    "updatedAt": "2026-06-07T22:34:58.093Z"
+  },
+  {
+    "key": "palette.items.about",
+    "namespace": "palette",
+    "translations": {
+      "en": "Go to About",
+      "es": "Ir a Sobre mí"
+    },
+    "updatedAt": "2026-06-07T22:34:58.093Z"
+  },
+  {
+    "key": "palette.items.contact",
+    "namespace": "palette",
+    "translations": {
+      "en": "Go to Contact",
+      "es": "Ir a Contacto"
+    },
+    "updatedAt": "2026-06-07T22:34:58.095Z"
+  },
+  {
+    "key": "palette.items.cv",
+    "namespace": "palette",
+    "translations": {
+      "en": "Download CV",
+      "es": "Descargar CV"
+    },
+    "updatedAt": "2026-06-07T22:34:58.095Z"
+  },
+  {
+    "key": "palette.items.email",
+    "namespace": "palette",
+    "translations": {
+      "en": "Email me",
+      "es": "Escribime un mail"
+    },
+    "updatedAt": "2026-06-07T22:34:58.095Z"
+  },
+  {
+    "key": "palette.items.experience",
+    "namespace": "palette",
+    "translations": {
+      "en": "Go to Experience",
+      "es": "Ir a Experiencia"
+    },
+    "updatedAt": "2026-06-07T22:34:58.094Z"
+  },
+  {
+    "key": "palette.items.github",
+    "namespace": "palette",
+    "translations": {
+      "en": "GitHub",
+      "es": "GitHub"
+    },
+    "updatedAt": "2026-06-07T22:34:58.095Z"
+  },
+  {
+    "key": "palette.items.linkedin",
+    "namespace": "palette",
+    "translations": {
+      "en": "LinkedIn",
+      "es": "LinkedIn"
+    },
+    "updatedAt": "2026-06-07T22:34:58.096Z"
+  },
+  {
+    "key": "palette.items.services",
+    "namespace": "palette",
+    "translations": {
+      "en": "Go to Services",
+      "es": "Ir a Servicios"
+    },
+    "updatedAt": "2026-06-07T22:34:58.093Z"
+  },
+  {
+    "key": "palette.items.skills",
+    "namespace": "palette",
+    "translations": {
+      "en": "Go to Skills",
+      "es": "Ir a Stack"
+    },
+    "updatedAt": "2026-06-07T22:34:58.094Z"
+  },
+  {
+    "key": "palette.items.testimonials",
+    "namespace": "palette",
+    "translations": {
+      "en": "Go to Testimonials",
+      "es": "Ir a Testimonios"
+    },
+    "updatedAt": "2026-06-07T22:34:58.094Z"
+  },
+  {
+    "key": "palette.items.work",
+    "namespace": "palette",
+    "translations": {
+      "en": "Go to Projects",
+      "es": "Ir a Proyectos"
+    },
+    "updatedAt": "2026-06-07T22:34:58.094Z"
+  },
+  {
+    "key": "palette.noResults",
+    "namespace": "palette",
+    "translations": {
+      "en": "No results.",
+      "es": "Sin resultados."
+    },
+    "updatedAt": "2026-06-07T22:34:58.092Z"
+  },
+  {
+    "key": "palette.openLabel",
+    "namespace": "palette",
+    "translations": {
+      "en": "Open command palette",
+      "es": "Abrir command palette"
+    },
+    "updatedAt": "2026-06-07T22:34:58.093Z"
+  },
+  {
+    "key": "palette.placeholder",
+    "namespace": "palette",
+    "translations": {
+      "en": "Jump to a section, or run an action…",
+      "es": "Saltar a una sección o ejecutar una acción…"
+    },
+    "updatedAt": "2026-06-07T22:34:58.092Z"
+  },
+  {
+    "key": "portfolio.caseStudy",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "Case study",
+      "es": "Ver caso"
+    },
+    "updatedAt": "2026-06-07T22:34:58.062Z"
+  },
+  {
+    "key": "portfolio.categories.backend",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "Backend",
+      "es": "Backend"
+    },
+    "updatedAt": "2026-06-07T22:34:58.063Z"
+  },
+  {
+    "key": "portfolio.categories.fullstack",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "Full-stack",
+      "es": "Full-stack"
+    },
+    "updatedAt": "2026-06-07T22:34:58.062Z"
+  },
+  {
+    "key": "portfolio.categories.oss",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "Open Source",
+      "es": "Open Source"
+    },
+    "updatedAt": "2026-06-07T22:34:58.063Z"
+  },
+  {
+    "key": "portfolio.eyebrow",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "Portfolio",
+      "es": "Portfolio"
+    },
+    "updatedAt": "2026-06-07T22:34:58.061Z"
+  },
+  {
+    "key": "portfolio.filterAll",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "All",
+      "es": "Todos"
+    },
+    "updatedAt": "2026-06-07T22:34:58.062Z"
+  },
+  {
+    "key": "portfolio.openLabel",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "Open {{title}} case study",
+      "es": "Abrir caso de {{title}}"
+    },
+    "updatedAt": "2026-06-07T22:34:58.062Z"
+  },
+  {
+    "key": "portfolio.subtitle",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "A selection of production systems, client work and open source I've built. Open a case study for the full story.",
+      "es": "Una selección de sistemas en producción, trabajo con clientes y open source. Abrí cualquiera para ver el caso completo."
+    },
+    "updatedAt": "2026-06-07T22:34:58.061Z"
+  },
+  {
+    "key": "portfolio.tags.flagship",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "Flagship",
+      "es": "Destacado"
+    },
+    "updatedAt": "2026-06-07T22:34:58.063Z"
+  },
+  {
+    "key": "portfolio.tags.openSource",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "Open source",
+      "es": "Open source"
+    },
+    "updatedAt": "2026-06-07T22:34:58.064Z"
+  },
+  {
+    "key": "portfolio.tags.production",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "Production",
+      "es": "Producción"
+    },
+    "updatedAt": "2026-06-07T22:34:58.064Z"
+  },
+  {
+    "key": "portfolio.tags.sideProject",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "Side project",
+      "es": "Side project"
+    },
+    "updatedAt": "2026-06-07T22:34:58.064Z"
+  },
+  {
+    "key": "portfolio.title",
+    "namespace": "portfolio",
+    "translations": {
+      "en": "Selected Projects",
+      "es": "Proyectos destacados"
+    },
+    "updatedAt": "2026-06-07T22:34:58.061Z"
+  },
+  {
+    "key": "process.eyebrow",
+    "namespace": "process",
+    "translations": {
+      "en": "Process",
+      "es": "Proceso"
+    },
+    "updatedAt": "2026-06-07T22:34:58.057Z"
+  },
+  {
+    "key": "process.steps.architecture.summary",
+    "namespace": "process",
+    "translations": {
+      "en": "Stack, data model, integrations, environments and CI/CD pipeline.",
+      "es": "Stack, modelo de datos, integraciones, ambientes y pipeline de CI/CD."
+    },
+    "updatedAt": "2026-06-07T22:34:58.059Z"
+  },
+  {
+    "key": "process.steps.architecture.title",
+    "namespace": "process",
+    "translations": {
+      "en": "Architecture",
+      "es": "Arquitectura"
+    },
+    "updatedAt": "2026-06-07T22:34:58.059Z"
+  },
+  {
+    "key": "process.steps.build.summary",
+    "namespace": "process",
+    "translations": {
+      "en": "Weekly demos, async updates, staging deploys and reviewable PRs.",
+      "es": "Demos semanales, updates async, deploys a staging y PRs reviewable."
+    },
+    "updatedAt": "2026-06-07T22:34:58.060Z"
+  },
+  {
+    "key": "process.steps.build.title",
+    "namespace": "process",
+    "translations": {
+      "en": "Build & ship",
+      "es": "Build & ship"
+    },
+    "updatedAt": "2026-06-07T22:34:58.059Z"
+  },
+  {
+    "key": "process.steps.discovery.summary",
+    "namespace": "process",
+    "translations": {
+      "en": "Workshops, requirements and a clear roadmap with timeline & budget.",
+      "es": "Workshops, requerimientos y un roadmap claro con timeline y presupuesto."
+    },
+    "updatedAt": "2026-06-07T22:34:58.059Z"
+  },
+  {
+    "key": "process.steps.discovery.title",
+    "namespace": "process",
+    "translations": {
+      "en": "Discovery",
+      "es": "Discovery"
+    },
+    "updatedAt": "2026-06-07T22:34:58.058Z"
+  },
+  {
+    "key": "process.steps.handover.summary",
+    "namespace": "process",
+    "translations": {
+      "en": "Docs, training, production deploy and a 30-day support window.",
+      "es": "Docs, training, deploy a producción y 30 días de soporte."
+    },
+    "updatedAt": "2026-06-07T22:34:58.060Z"
+  },
+  {
+    "key": "process.steps.handover.title",
+    "namespace": "process",
+    "translations": {
+      "en": "Handover",
+      "es": "Handover"
+    },
+    "updatedAt": "2026-06-07T22:34:58.060Z"
+  },
+  {
+    "key": "process.subtitle",
+    "namespace": "process",
+    "translations": {
+      "en": "From first call to production — the same simple rhythm across every project.",
+      "es": "Del primer call a producción — el mismo ritmo simple en cada proyecto."
+    },
+    "updatedAt": "2026-06-07T22:34:58.058Z"
+  },
+  {
+    "key": "process.title",
+    "namespace": "process",
+    "translations": {
+      "en": "How I work",
+      "es": "Cómo trabajo"
+    },
+    "updatedAt": "2026-06-07T22:34:58.058Z"
+  },
+  {
+    "key": "seo.description",
+    "namespace": "seo",
+    "translations": {
+      "en": "Backend / Full Stack Engineer with 5+ years building scalable APIs, distributed systems and full-stack products. Tech Lead · Founder of WagnerLabs.",
+      "es": "Ingeniero Backend / Full Stack con 5+ años construyendo APIs escalables, sistemas distribuidos y productos full-stack. Tech Lead · Fundador de WagnerLabs."
+    },
+    "updatedAt": "2026-06-07T22:34:58.098Z"
+  },
+  {
+    "key": "seo.ogDescription",
+    "namespace": "seo",
+    "translations": {
+      "en": "5+ years building scalable APIs, distributed systems and full-stack products. Tech Lead · Founder of WagnerLabs.",
+      "es": "5+ años construyendo APIs escalables, sistemas distribuidos y productos full-stack. Tech Lead · Fundador de WagnerLabs."
+    },
+    "updatedAt": "2026-06-07T22:34:58.098Z"
+  },
+  {
+    "key": "seo.ogImage",
+    "namespace": "seo",
+    "translations": {
+      "en": "https://wagnerlabs.dev/og-image.jpg",
+      "es": "https://wagnerlabs.dev/og-image.jpg"
+    },
+    "updatedAt": "2026-06-07T22:34:58.099Z"
+  },
+  {
+    "key": "seo.title",
+    "namespace": "seo",
+    "translations": {
+      "en": "Nahuel Wagner | Backend / Full Stack Engineer",
+      "es": "Nahuel Wagner | Ingeniero Backend / Full Stack"
+    },
+    "updatedAt": "2026-06-07T22:34:58.098Z"
+  },
+  {
+    "key": "services.eyebrow",
+    "namespace": "services",
+    "translations": {
+      "en": "Services",
+      "es": "Servicios"
+    },
+    "updatedAt": "2026-06-07T22:34:58.056Z"
+  },
+  {
+    "key": "services.subtitle",
+    "namespace": "services",
+    "translations": {
+      "en": "Three ways I work with founders, agencies and product teams. All remote, all senior.",
+      "es": "Tres formas de trabajar con founders, agencias y equipos de producto. Todo remoto, todo senior."
+    },
+    "updatedAt": "2026-06-07T22:34:58.057Z"
+  },
+  {
+    "key": "services.title",
+    "namespace": "services",
+    "translations": {
+      "en": "How I can help",
+      "es": "Cómo te puedo ayudar"
+    },
+    "updatedAt": "2026-06-07T22:34:58.057Z"
+  },
+  {
+    "key": "skills.eyebrow",
+    "namespace": "skills",
+    "translations": {
+      "en": "Skills",
+      "es": "Stack"
+    },
+    "updatedAt": "2026-06-07T22:34:58.071Z"
+  },
+  {
+    "key": "skills.subtitle",
+    "namespace": "skills",
+    "translations": {
+      "en": "Tools and technologies I reach for, grouped by where they live in the stack. Highlighted chips are the day-to-day core.",
+      "es": "Herramientas y tech que uso, agrupadas por dónde viven en el stack. Las resaltadas son las del día a día."
+    },
+    "updatedAt": "2026-06-07T22:34:58.072Z"
+  },
+  {
+    "key": "skills.title",
+    "namespace": "skills",
+    "translations": {
+      "en": "Tech Stack",
+      "es": "Tecnologías"
+    },
+    "updatedAt": "2026-06-07T22:34:58.071Z"
+  },
+  {
+    "key": "skipToContent",
+    "namespace": "skipToContent",
+    "translations": {
+      "en": "Skip to content",
+      "es": "Saltar al contenido"
+    },
+    "updatedAt": "2026-06-07T22:34:58.040Z"
+  },
+  {
+    "key": "testimonials.eyebrow",
+    "namespace": "testimonials",
+    "translations": {
+      "en": "Testimonials",
+      "es": "Testimonios"
+    },
+    "updatedAt": "2026-06-07T22:34:58.066Z"
+  },
+  {
+    "key": "testimonials.title",
+    "namespace": "testimonials",
+    "translations": {
+      "en": "What people say",
+      "es": "Qué dicen sobre mí"
+    },
+    "updatedAt": "2026-06-07T22:34:58.066Z"
+  }
+]

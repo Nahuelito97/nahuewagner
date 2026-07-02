@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { motion, useReducedMotion, type MotionProps } from 'framer-motion';
+import { m, useReducedMotion, type MotionProps } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FiClock, FiGlobe, FiZap } from 'react-icons/fi';
 import SocialLinks from './components/SocialLinks';
@@ -69,7 +69,7 @@ const codeLines: { text: string; cls?: string }[][] = [
 
 function TerminalCard() {
 	return (
-		<motion.div
+		<m.div
 			initial={{ opacity: 0, y: 24 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.6, delay: 0.5, ease: 'easeOut' }}
@@ -99,7 +99,7 @@ function TerminalCard() {
 					</code>
 				</pre>
 			</div>
-		</motion.div>
+		</m.div>
 	);
 }
 
@@ -118,15 +118,15 @@ function Hero() {
 			<div className="w-full grid lg:grid-cols-2 gap-12 items-center">
 				<div>
 					{/* Available badge */}
-					<motion.div {...fadeUp(0.1)} className="mb-6">
+					<m.div {...fadeUp(0.1)} className="mb-6">
 						<span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium font-space bg-success/10 border border-success/20 text-success">
 							<span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse-slow" />
 							{t('hero.openBadge')}
 						</span>
-					</motion.div>
+					</m.div>
 
 					{/* Name */}
-					<motion.div {...fadeUp(0.2)}>
+					<m.div {...fadeUp(0.2)}>
 						<p className="text-base md:text-lg font-space text-content-muted mb-2">
 							{t('hero.hi')}
 						</p>
@@ -142,10 +142,10 @@ function Hero() {
 								</span>
 							</h1>
 						</div>
-					</motion.div>
+					</m.div>
 
 					{/* Typewriter */}
-					<motion.p
+					<m.p
 						{...fadeUp(0.28)}
 						className="mb-6 font-mono text-sm md:text-base text-content-muted"
 					>
@@ -155,20 +155,20 @@ function Hero() {
 							aria-hidden
 							className="inline-block w-[0.55em] h-[1em] align-[-0.15em] bg-primary animate-pulse ml-0.5"
 						/>
-					</motion.p>
+					</m.p>
 
 					{/* Role */}
-					<motion.p
+					<m.p
 						{...fadeUp(0.3)}
 						className="text-lg md:text-xl font-space text-content-muted mb-6"
 					>
 						{t('hero.rolePrefix')}
 						<span className="text-primary">WagnerLabs</span>
 						{t('hero.founderSuffix')}
-					</motion.p>
+					</m.p>
 
 					{/* Bio */}
-					<motion.p
+					<m.p
 						{...fadeUp(0.4)}
 						className="text-base md:text-lg text-content-muted max-w-2xl mb-3 leading-relaxed"
 					>
@@ -178,8 +178,8 @@ function Hero() {
 						<span className="text-content font-medium">{t('hero.ddd')}</span>
 						{t('about.p2Middle2')}
 						<span className="text-content font-medium">{t('hero.solid')}</span> {t('hero.principles')}
-					</motion.p>
-					<motion.p
+					</m.p>
+					<m.p
 						{...fadeUp(0.45)}
 						className="text-sm text-content-muted mb-8 flex items-center gap-1.5"
 					>
@@ -198,10 +198,10 @@ function Hero() {
 							/>
 						</svg>
 						{t('hero.location')}
-					</motion.p>
+					</m.p>
 
 					{/* CTAs */}
-					<motion.div {...fadeUp(0.5)} className="flex flex-wrap gap-3 mb-10">
+					<m.div {...fadeUp(0.5)} className="flex flex-wrap gap-3 mb-10">
 						<MagneticButton>
 							<a
 								href="#work"
@@ -238,15 +238,15 @@ function Hero() {
 								</span>
 							</a>
 						</MagneticButton>
-					</motion.div>
+					</m.div>
 
 					{/* Social links */}
-					<motion.div {...fadeUp(0.6)} className="flex justify-start">
+					<m.div {...fadeUp(0.6)} className="flex justify-start">
 						<SocialLinks />
-					</motion.div>
+					</m.div>
 
 					{/* Trust strip */}
-					<motion.div
+					<m.div
 						{...fadeUp(0.7)}
 						className="mt-6 pt-6 border-t border-outline/40 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-content-muted"
 					>
@@ -268,7 +268,7 @@ function Hero() {
 							<FiZap className="w-3.5 h-3.5 text-success" />
 							{t('hero.trust.available')}
 						</span>
-					</motion.div>
+					</m.div>
 				</div>
 
 				{/* Terminal card */}

@@ -1,19 +1,9 @@
-export type TimelineId =
-	| 'correoArgentino'
-	| 'eimo'
-	| 'tutuLead'
-	| 'tutuFullStack'
-	| 'gearthLogic'
-	| 'adsmovil'
-	| 'wagnerLabs';
+import generated from '../content/timeline.json';
 
-/**
- * All translatable text lives in the locale bundles under
- * `experience.entries.<id>.*` (role, company, duration, type, details,
- * headline, achievements). Set `current: true` on roles still in progress
- * (i18n strings just say "Present" / "Actual" — the UI uses this flag
- * for the pulsing badge instead of substring-matching the duration).
- */
+// Administrado por el CMS. Texto (role/company/duration/type/details/headline/
+// achievements) vía i18n experience.entries.<id>.*.
+export type TimelineId = string;
+
 export interface TimelineEntry {
 	id: TimelineId;
 	current?: boolean;
@@ -21,44 +11,18 @@ export interface TimelineEntry {
 	logo?: string;
 }
 
-// Ordered newest start-date first.
-const timeline: TimelineEntry[] = [
-	{
-		id: 'correoArgentino',
-		current: true,
-		tech: ['NestJS', 'React', 'TypeScript', 'PostgreSQL', 'Docker'],
-	},
-	{
-		id: 'eimo',
-		current: true,
-		tech: ['React', 'TypeScript', 'Strapi', 'PostgreSQL', 'Stripe'],
-		logo: '/assets/projects/eimo-logo.png',
-	},
-	{
-		id: 'tutuLead',
-		tech: ['NestJS', 'React', 'Firebase', 'AWS'],
-		logo: '/assets/projects/tutu-logo.webp',
-	},
-	{
-		id: 'tutuFullStack',
-		tech: ['NestJS', 'React', 'Firebase', 'MercadoPago', 'AWS SES'],
-		logo: '/assets/projects/tutu-logo.webp',
-	},
-	{
-		id: 'gearthLogic',
-		current: true,
-		tech: ['NestJS', 'React', 'Strapi', 'Laravel', 'PostgreSQL', 'TailwindCSS'],
-		logo: '/assets/projects/gearth.webp',
-	},
-	{
-		id: 'adsmovil',
-		tech: ['Laravel', 'MySQL', 'PHP'],
-	},
-	{
-		id: 'wagnerLabs',
-		current: true,
-		tech: ['NestJS', 'React', 'Laravel', 'PostgreSQL', 'Docker'],
-	},
-];
+interface TimelineData {
+	id: string;
+	current?: boolean;
+	tech: string[];
+	logo?: string | null;
+}
+
+const timeline: TimelineEntry[] = (generated as TimelineData[]).map((t) => ({
+	id: t.id,
+	current: t.current,
+	tech: t.tech,
+	logo: t.logo ?? undefined,
+}));
 
 export default timeline;

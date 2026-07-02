@@ -1,5 +1,58 @@
-import { defineConfig, loadEnv } from 'vite';
+import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { defineConfig, loadEnv, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
+
+// Inyecta el SEO administrado desde el CMS (entradas seo.* de src/content/copy.json,
+// generadas por scripts/fetch-content.mjs) en el <head> del index.html.
+function injectSeo(): Plugin {
+	const esc = (s: string) =>
+		s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+	return {
+		name: 'inject-seo',
+		transformIndexHtml(html) {
+			const file = join(process.cwd(), 'src', 'content', 'copy.json');
+			if (!existsSync(file)) return html;
+			const copy = JSON.parse(readFileSync(file, 'utf8')) as {
+				key: string;
+				translations: { en?: string };
+			}[];
+			const get = (key: string) => copy.find((c) => c.key === key)?.translations?.en;
+			const title = get('seo.title');
+			const description = get('seo.description');
+			const ogDescription = get('seo.ogDescription') ?? description;
+			const ogImage = get('seo.ogImage');
+
+			let out = html;
+			if (title) {
+				const t = esc(title);
+				out = out
+					.replace(/<title>[\s\S]*?<\/title>/, `<title>${t}</title>`)
+					.replace(/(<meta\s+property="og:title"\s+content=")[^"]*(")/, `$1${t}$2`)
+					.replace(/(<meta\s+name="twitter:title"\s+content=")[^"]*(")/, `$1${t}$2`);
+			}
+			if (description) {
+				out = out.replace(
+					/(<meta\s+name="description"\s+content=")[^"]*(")/,
+					`$1${esc(description)}$2`,
+				);
+			}
+			if (ogDescription) {
+				const d = esc(ogDescription);
+				out = out
+					.replace(/(<meta\s+property="og:description"\s+content=")[^"]*(")/, `$1${d}$2`)
+					.replace(/(<meta\s+name="twitter:description"\s+content=")[^"]*(")/, `$1${d}$2`);
+			}
+			if (ogImage) {
+				const i = esc(ogImage);
+				out = out
+					.replace(/(<meta\s+property="og:image"\s+content=")[^"]*(")/, `$1${i}$2`)
+					.replace(/(<meta\s+name="twitter:image"\s+content=")[^"]*(")/, `$1${i}$2`);
+			}
+			return out;
+		},
+	};
+}
 
 export default defineConfig(({ mode }) => {
 	// Expose non-VITE_ env vars (Resend creds, etc.) to the dev middleware below.
@@ -17,6 +70,7 @@ export default defineConfig(({ mode }) => {
 		},
 		plugins: [
 			react(),
+			injectSeo(),
 			{
 				// Mirrors the Netlify edge function (netlify/edge-functions/contact.ts)
 				// during `npm run dev` so the contact form works end-to-end locally
@@ -116,8 +170,9 @@ export default defineConfig(({ mode }) => {
 							id.includes('node_modules/i18next')
 						)
 							return 'i18n';
-						if (id.includes('node_modules/@headlessui')) return 'headlessui';
-						if (id.includes('node_modules/framer-motion')) return 'motion';
+						// @headlessui y framer-motion NO se fuerzan a un chunk propio: un manualChunk
+						// los fusionaría con sus partes cargadas async (palette, motion features)
+						// y volverían al path eager.
 						if (
 							id.includes('node_modules/react-dom') ||
 							id.includes('node_modules/scheduler') ||

@@ -3,6 +3,36 @@
 @tailwind utilities;
 
 @layer base {
+	/* Paleta Orix — canales RGB. Dark por defecto. */
+	:root {
+		--c-bg: 49 44 81;
+		--c-surface: 72 66 109;
+		--c-surface-variant: 86 80 129;
+		--c-outline: 87 79 134;
+		--c-content: 245 243 251;
+		--c-content-muted: 185 179 214;
+		--c-primary: 240 195 142;
+		--c-primary-pressed: 227 168 110;
+		--c-secondary: 241 170 155;
+		--c-on-accent: 42 37 71;
+		--c-success: 52 211 153;
+		--c-danger: 248 113 113;
+		--c-warn: 251 191 36;
+		--c-syncing: 86 198 245;
+		--c-inactive: 157 151 192;
+	}
+
+	/* Modo claro — opt-in con la clase .light en <html>. */
+	html.light {
+		--c-bg: 243 239 233;
+		--c-surface: 255 255 255;
+		--c-surface-variant: 237 231 242;
+		--c-outline: 221 214 232;
+		--c-content: 42 37 71;
+		--c-content-muted: 107 101 119;
+		color-scheme: light;
+	}
+
 	html {
 		scroll-behavior: smooth;
 		color-scheme: dark;
@@ -10,6 +40,9 @@
 
 	body {
 		@apply bg-bg text-content font-inter antialiased;
+		transition:
+			background-color 0.3s ease,
+			color 0.3s ease;
 	}
 
 	::selection {

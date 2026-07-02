@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "content:fetch": "node scripts/fetch-content.mjs",
+    "prebuild": "node scripts/fetch-content.mjs && node scripts/stamp-sitemap.mjs",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint .",

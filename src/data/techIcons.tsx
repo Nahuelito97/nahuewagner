@@ -1,50 +1,20 @@
-import type { ReactNode } from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPhp, FaDocker, FaAws } from 'react-icons/fa';
-import {
-	SiTailwindcss,
-	SiVite,
-	SiNestjs,
-	SiTypescript,
-	SiNextdotjs,
-	SiLaravel,
-	SiPostgresql,
-	SiRedis,
-	SiFirebase,
-	SiFlutter,
-	SiMongodb,
-	SiGraphql,
-	SiVuedotjs,
-	SiStrapi,
-	SiStripe,
-	SiTwilio,
-	SiMysql,
-} from 'react-icons/si';
+import { createElement, type ReactNode } from 'react';
+import generated from '../content/techIcons.json';
+import { icon } from '../lib/icon';
 
-export const techIcons: Record<string, { icon: ReactNode; color: string }> = {
-	nestjs: { icon: <SiNestjs />, color: '#e0234e' },
-	typescript: { icon: <SiTypescript />, color: '#007acc' },
-	javascript: { icon: <FaJs />, color: '#f7df1e' },
-	react: { icon: <FaReact />, color: '#61dafb' },
-	nextjs: { icon: <SiNextdotjs />, color: '#f5f3fb' },
-	nodejs: { icon: <FaNodeJs />, color: '#339933' },
-	postgresql: { icon: <SiPostgresql />, color: '#4169e1' },
-	redis: { icon: <SiRedis />, color: '#ff4438' },
-	firebase: { icon: <SiFirebase />, color: '#ffca28' },
-	flutter: { icon: <SiFlutter />, color: '#02569b' },
-	mongodb: { icon: <SiMongodb />, color: '#47a248' },
-	graphql: { icon: <SiGraphql />, color: '#e10098' },
-	docker: { icon: <FaDocker />, color: '#2496ed' },
-	aws: { icon: <FaAws />, color: '#ff9900' },
-	laravel: { icon: <SiLaravel />, color: '#ff2d20' },
-	php: { icon: <FaPhp />, color: '#777bb4' },
-	vue: { icon: <SiVuedotjs />, color: '#42b883' },
-	tailwind: { icon: <SiTailwindcss />, color: '#38b2ac' },
-	tailwindcss: { icon: <SiTailwindcss />, color: '#38b2ac' },
-	mysql: { icon: <SiMysql />, color: '#4479a1' },
-	vite: { icon: <SiVite />, color: '#a855f7' },
-	html: { icon: <FaHtml5 />, color: '#e34f26' },
-	css: { icon: <FaCss3Alt />, color: '#1572b6' },
-	strapi: { icon: <SiStrapi />, color: '#4945ff' },
-	stripe: { icon: <SiStripe />, color: '#635bff' },
-	twilio: { icon: <SiTwilio />, color: '#f22f46' },
-};
+// Administrado por el CMS. Mantiene la misma forma { icon, color } que usan
+// los componentes; el ícono se resuelve desde react-icons vía {lib, name}.
+interface TechIconData {
+	key: string;
+	iconLib: string;
+	iconName: string;
+	color: string;
+}
+
+export const techIcons: Record<string, { icon: ReactNode; color: string }> =
+	Object.fromEntries(
+		(generated as TechIconData[]).map((t) => [
+			t.key,
+			{ icon: createElement(icon(t.iconLib, t.iconName)), color: t.color },
+		]),
+	);

@@ -1,0 +1,298 @@
+[
+  {
+    "key": "backend",
+    "order": 0,
+    "translations": {
+      "en": {
+        "description": "APIs, services and integrations"
+      },
+      "es": {
+        "description": "APIs, servicios e integraciones"
+      }
+    },
+    "skills": [
+      {
+        "id": "backend-nestjs",
+        "categoryKey": "backend",
+        "name": "NestJS",
+        "iconLib": "si",
+        "iconName": "SiNestjs",
+        "color": "#e0234e",
+        "primary": true,
+        "order": 0
+      },
+      {
+        "id": "backend-node-js",
+        "categoryKey": "backend",
+        "name": "Node.js",
+        "iconLib": "fa",
+        "iconName": "FaNodeJs",
+        "color": "#339933",
+        "primary": true,
+        "order": 1
+      },
+      {
+        "id": "backend-laravel",
+        "categoryKey": "backend",
+        "name": "Laravel",
+        "iconLib": "si",
+        "iconName": "SiLaravel",
+        "color": "#ff2d20",
+        "primary": true,
+        "order": 2
+      },
+      {
+        "id": "backend-php",
+        "categoryKey": "backend",
+        "name": "PHP",
+        "iconLib": "fa",
+        "iconName": "FaPhp",
+        "color": "#777bb4",
+        "primary": true,
+        "order": 3
+      },
+      {
+        "id": "backend-express",
+        "categoryKey": "backend",
+        "name": "Express",
+        "iconLib": "si",
+        "iconName": "SiExpress",
+        "color": "#f5f3fb",
+        "primary": true,
+        "order": 4
+      },
+      {
+        "id": "backend-graphql",
+        "categoryKey": "backend",
+        "name": "GraphQL",
+        "iconLib": "si",
+        "iconName": "SiGraphql",
+        "color": "#e10098",
+        "primary": true,
+        "order": 5
+      }
+    ]
+  },
+  {
+    "key": "frontend",
+    "order": 1,
+    "translations": {
+      "en": {
+        "description": "Web UIs and dashboards"
+      },
+      "es": {
+        "description": "UIs web y dashboards"
+      }
+    },
+    "skills": [
+      {
+        "id": "frontend-react",
+        "categoryKey": "frontend",
+        "name": "React",
+        "iconLib": "fa",
+        "iconName": "FaReact",
+        "color": "#61dafb",
+        "primary": true,
+        "order": 0
+      },
+      {
+        "id": "frontend-typescript",
+        "categoryKey": "frontend",
+        "name": "TypeScript",
+        "iconLib": "si",
+        "iconName": "SiTypescript",
+        "color": "#007acc",
+        "primary": true,
+        "order": 1
+      },
+      {
+        "id": "frontend-tailwindcss",
+        "categoryKey": "frontend",
+        "name": "TailwindCSS",
+        "iconLib": "si",
+        "iconName": "SiTailwindcss",
+        "color": "#38b2ac",
+        "primary": true,
+        "order": 2
+      },
+      {
+        "id": "frontend-javascript",
+        "categoryKey": "frontend",
+        "name": "JavaScript",
+        "iconLib": "fa",
+        "iconName": "FaJs",
+        "color": "#f7df1e",
+        "primary": true,
+        "order": 3
+      },
+      {
+        "id": "frontend-vue-js",
+        "categoryKey": "frontend",
+        "name": "Vue.js",
+        "iconLib": "si",
+        "iconName": "SiVuedotjs",
+        "color": "#42b883",
+        "primary": true,
+        "order": 4
+      },
+      {
+        "id": "frontend-material-ui",
+        "categoryKey": "frontend",
+        "name": "Material UI",
+        "iconLib": "si",
+        "iconName": "SiMui",
+        "color": "#0081cb",
+        "primary": true,
+        "order": 5
+      },
+      {
+        "id": "frontend-html5",
+        "categoryKey": "frontend",
+        "name": "HTML5",
+        "iconLib": "fa",
+        "iconName": "FaHtml5",
+        "color": "#e34f26",
+        "primary": true,
+        "order": 6
+      },
+      {
+        "id": "frontend-css3",
+        "categoryKey": "frontend",
+        "name": "CSS3",
+        "iconLib": "fa",
+        "iconName": "FaCss3Alt",
+        "color": "#1572b6",
+        "primary": true,
+        "order": 7
+      }
+    ]
+  },
+  {
+    "key": "database",
+    "order": 2,
+    "translations": {
+      "en": {
+        "description": "Data modeling and persistence"
+      },
+      "es": {
+        "description": "Modelado y persistencia"
+      }
+    },
+    "skills": [
+      {
+        "id": "database-postgresql",
+        "categoryKey": "database",
+        "name": "PostgreSQL",
+        "iconLib": "si",
+        "iconName": "SiPostgresql",
+        "color": "#4169e1",
+        "primary": true,
+        "order": 0
+      },
+      {
+        "id": "database-firebase",
+        "categoryKey": "database",
+        "name": "Firebase",
+        "iconLib": "si",
+        "iconName": "SiFirebase",
+        "color": "#ffca28",
+        "primary": true,
+        "order": 1
+      },
+      {
+        "id": "database-mongodb",
+        "categoryKey": "database",
+        "name": "MongoDB",
+        "iconLib": "si",
+        "iconName": "SiMongodb",
+        "color": "#47a248",
+        "primary": true,
+        "order": 2
+      },
+      {
+        "id": "database-mysql",
+        "categoryKey": "database",
+        "name": "MySQL",
+        "iconLib": "si",
+        "iconName": "SiMysql",
+        "color": "#4479a1",
+        "primary": true,
+        "order": 3
+      }
+    ]
+  },
+  {
+    "key": "devops",
+    "order": 3,
+    "translations": {
+      "en": {
+        "description": "Build, ship and deploy"
+      },
+      "es": {
+        "description": "Build, ship y deploy"
+      }
+    },
+    "skills": [
+      {
+        "id": "devops-docker",
+        "categoryKey": "devops",
+        "name": "Docker",
+        "iconLib": "fa",
+        "iconName": "FaDocker",
+        "color": "#2496ed",
+        "primary": true,
+        "order": 0
+      },
+      {
+        "id": "devops-aws",
+        "categoryKey": "devops",
+        "name": "AWS",
+        "iconLib": "fa",
+        "iconName": "FaAws",
+        "color": "#ff9900",
+        "primary": true,
+        "order": 1
+      },
+      {
+        "id": "devops-git",
+        "categoryKey": "devops",
+        "name": "Git",
+        "iconLib": "fa",
+        "iconName": "FaGitAlt",
+        "color": "#f05032",
+        "primary": true,
+        "order": 2
+      },
+      {
+        "id": "devops-digital-ocean",
+        "categoryKey": "devops",
+        "name": "Digital Ocean",
+        "iconLib": "si",
+        "iconName": "SiDigitalocean",
+        "color": "#0080ff",
+        "primary": true,
+        "order": 3
+      },
+      {
+        "id": "devops-postman",
+        "categoryKey": "devops",
+        "name": "Postman",
+        "iconLib": "si",
+        "iconName": "SiPostman",
+        "color": "#ff6c37",
+        "primary": true,
+        "order": 4
+      },
+      {
+        "id": "devops-swagger",
+        "categoryKey": "devops",
+        "name": "Swagger",
+        "iconLib": "si",
+        "iconName": "SiSwagger",
+        "color": "#85ea2d",
+        "primary": true,
+        "order": 5
+      }
+    ]
+  }
+]

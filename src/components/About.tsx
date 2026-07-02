@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { motion, useInView, useReducedMotion } from 'framer-motion';
+import { m, useInView, useReducedMotion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 interface StatItem {
@@ -51,7 +51,7 @@ function About() {
 	const { t } = useTranslation();
 	return (
 		<section id="about" className="py-20 scroll-mt-20">
-			<motion.div
+			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ amount: 0.2 }}
@@ -64,11 +64,11 @@ function About() {
 				<h2 className="text-3xl md:text-4xl font-space font-bold text-content mb-3">
 					{t('about.title')}
 				</h2>
-			</motion.div>
+			</m.div>
 
 			<div className="grid md:grid-cols-[240px_1fr] gap-8 md:gap-12 items-start">
 				{/* Photo */}
-				<motion.div
+				<m.div
 					initial={{ opacity: 0, scale: 0.95 }}
 					whileInView={{ opacity: 1, scale: 1 }}
 					viewport={{ amount: 0.2 }}
@@ -83,10 +83,10 @@ function About() {
 							NW
 						</span>
 					</div>
-				</motion.div>
+				</m.div>
 
 				{/* Text + stats */}
-				<motion.div
+				<m.div
 					initial={{ opacity: 0, y: 40 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ amount: 0.2 }}
@@ -121,7 +121,7 @@ function About() {
 							</div>
 						))}
 					</div>
-				</motion.div>
+				</m.div>
 			</div>
 		</section>
 	);

@@ -4,7 +4,7 @@ const Logo = () => (
 			NW
 		</div>
 		<span className="font-space font-semibold text-content text-base">
-			nahue<span className="text-primary">.dev</span>
+			wagnerlabs<span className="text-primary">.dev</span>
 		</span>
 	</a>
 );
