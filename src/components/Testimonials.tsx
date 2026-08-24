@@ -10,7 +10,7 @@ function Testimonials() {
 			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ amount: 0.2 }}
+				viewport={{ amount: 0.2, once: true }}
 				transition={{ duration: 0.6 }}
 				className="mb-12"
 			>
@@ -28,7 +28,7 @@ function Testimonials() {
 						key={t.name}
 						initial={{ opacity: 0, y: 40 }}
 						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ amount: 0.2 }}
+						viewport={{ amount: 0.2, once: true }}
 						transition={{ duration: 0.6, delay: i * 0.15 }}
 						className="flex flex-col h-full rounded-xl bg-surface border border-outline p-5"
 					>

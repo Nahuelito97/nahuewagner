@@ -54,7 +54,7 @@ function About() {
 			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ amount: 0.2 }}
+				viewport={{ amount: 0.2, once: true }}
 				transition={{ duration: 0.6 }}
 				className="mb-12"
 			>
@@ -71,7 +71,7 @@ function About() {
 				<m.div
 					initial={{ opacity: 0, scale: 0.95 }}
 					whileInView={{ opacity: 1, scale: 1 }}
-					viewport={{ amount: 0.2 }}
+					viewport={{ amount: 0.2, once: true }}
 					transition={{ duration: 0.6 }}
 					className="relative mx-auto md:mx-0 w-52 md:w-full"
 				>
@@ -89,7 +89,7 @@ function About() {
 				<m.div
 					initial={{ opacity: 0, y: 40 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ amount: 0.2 }}
+					viewport={{ amount: 0.2, once: true }}
 					transition={{ duration: 0.6, delay: 0.15 }}
 					className="space-y-4"
 				>

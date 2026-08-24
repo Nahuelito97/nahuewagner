@@ -25,7 +25,7 @@ function Footer() {
 				<m.div
 					initial={{ opacity: 0, y: 40 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ amount: 0.2 }}
+					viewport={{ amount: 0.2, once: true }}
 					transition={{ duration: 0.6 }}
 					className="mb-12 rounded-2xl border border-primary/25 bg-linear-to-br from-primary/10 via-surface to-surface px-6 py-6 sm:px-8 sm:py-7"
 				>

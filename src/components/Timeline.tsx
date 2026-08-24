@@ -15,7 +15,7 @@ function Timeline() {
 			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ amount: 0.2 }}
+				viewport={{ amount: 0.2, once: true }}
 				transition={{ duration: 0.6 }}
 				className="mb-12"
 			>
@@ -31,7 +31,7 @@ function Timeline() {
 			<m.div
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				viewport={{ amount: 0.2 }}
+				viewport={{ amount: 0.2, once: true }}
 				transition={{ duration: 0.6, delay: 0.1 }}
 				className="max-w-3xl mx-auto"
 			>

@@ -10,7 +10,7 @@ function Services() {
 			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ amount: 0.2 }}
+				viewport={{ amount: 0.2, once: true }}
 				transition={{ duration: 0.6 }}
 				className="mb-12"
 			>
@@ -31,7 +31,7 @@ function Services() {
 							key={s.id}
 							initial={{ opacity: 0, y: 32 }}
 							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ amount: 0.2 }}
+							viewport={{ amount: 0.2, once: true }}
 							transition={{ duration: 0.6, delay: i * 0.12 }}
 							className="group flex flex-col rounded-xl bg-surface/70 backdrop-blur-sm border border-outline p-6 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5"
 						>
