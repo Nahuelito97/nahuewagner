@@ -43,3 +43,6 @@ docs/*.docx
 
 # Local Netlify folder
 .netlify
+
+# Capturas del arnes visual (scripts/visual)
+.visual/

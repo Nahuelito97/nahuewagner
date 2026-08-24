@@ -19,6 +19,7 @@ import type { Config } from '@netlify/functions';
 import { Resend } from 'resend';
 import { LIMITS, isBot, validateContact } from '../../src/lib/contactValidation';
 import { checkRateLimit, clientIpFromHeaders } from '../../src/lib/rateLimit';
+import { autoReplyEnabled } from '../../src/lib/autoReply';
 import { renderAutoReplyEmail, renderContactEmail } from '../../src/emails/render';
 import { AUTO_REPLY_TO } from '../../src/emails/autoReplyCopy';
 
@@ -124,6 +125,12 @@ export default async (req: Request): Promise<Response> => {
 	//    request: el mensaje ya llegó a destino. Si esto reventara y devolviera
 	//    error, la persona vería "no se pudo enviar" y volvería a escribir un
 	//    mensaje que en realidad ya recibiste.
+	if (!autoReplyEnabled(process.env.CONTACT_AUTO_REPLY)) {
+		// Apagado por defecto: manda a una direccion que elige el visitante y el
+		// rate limit no es efectivo en serverless. Ver src/lib/autoReply.ts.
+		return json({ ok: true });
+	}
+
 	try {
 		const auto = await renderAutoReplyEmail(result.data);
 		const { error } = await resend.emails.send({

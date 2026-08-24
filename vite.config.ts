@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 import { LIMITS, isBot, validateContact } from './src/lib/contactValidation';
 import { checkRateLimit, clientIpFromHeaders } from './src/lib/rateLimit';
 import { renderAutoReplyEmail, renderContactEmail } from './src/emails/render';
+import { autoReplyEnabled } from './src/lib/autoReply';
 import { AUTO_REPLY_TO } from './src/emails/autoReplyCopy';
 
 // Inyecta el SEO administrado desde el CMS (entradas seo.* de src/content/copy.json,
@@ -179,21 +180,27 @@ export default defineConfig(({ mode }) => {
 
 							// 2) El acuse al visitante es secundario: su fallo NO tumba
 							//    el request, porque el mensaje ya llegó a destino.
-							try {
-								const auto = await renderAutoReplyEmail(result.data);
-								const { error: autoError } = await resend.emails.send({
-									from,
-									to: email,
-									subject: auto.subject,
-									html: auto.html,
-									text: auto.text,
-									replyTo: envVar('RESEND_TO', AUTO_REPLY_TO),
-								});
-								if (autoError) {
-									console.error('[dev-api-contact] auto-reply error', autoError);
+							//    Va detrás del mismo interruptor que en producción, para
+							//    que dev y prod no se desincronicen (src/lib/autoReply.ts).
+							if (!autoReplyEnabled(process.env.CONTACT_AUTO_REPLY)) {
+								console.info('[dev-api-contact] auto-reply apagado (CONTACT_AUTO_REPLY)');
+							} else {
+								try {
+									const auto = await renderAutoReplyEmail(result.data);
+									const { error: autoError } = await resend.emails.send({
+										from,
+										to: email,
+										subject: auto.subject,
+										html: auto.html,
+										text: auto.text,
+										replyTo: envVar('RESEND_TO', AUTO_REPLY_TO),
+									});
+									if (autoError) {
+										console.error('[dev-api-contact] auto-reply error', autoError);
+									}
+								} catch (autoErr) {
+									console.error('[dev-api-contact] auto-reply crash', autoErr);
 								}
-							} catch (autoErr) {
-								console.error('[dev-api-contact] auto-reply crash', autoErr);
 							}
 
 							res.statusCode = 200;
