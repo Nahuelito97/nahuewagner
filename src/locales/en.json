@@ -392,6 +392,8 @@
     "title": "Work History",
     "subtitle": "5+ years across startups, agencies and my own studio. Open any role for the full impact.",
     "viewAchievements": "View achievements",
+    "showMore": "Show {{n}} more roles",
+    "showLess": "Show fewer",
     "entries": {
       "correoArgentino": {
         "role": "Full Stack Developer",

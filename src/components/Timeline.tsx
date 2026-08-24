@@ -6,9 +6,16 @@ import TimelineItem from './components/TimelineItem';
 
 const ExperienceModal = lazy(() => import('./components/ExperienceModal'));
 
+/** Roles visibles antes de pedir "ver más". */
+const PREVIEW = 3;
+
 function Timeline() {
 	const { t } = useTranslation();
 	const [selected, setSelected] = useState<TimelineEntry | null>(null);
+	const [expanded, setExpanded] = useState(false);
+
+	const shown = expanded ? timeline : timeline.slice(0, PREVIEW);
+	const hidden = timeline.length - shown.length;
 
 	return (
 		<section id="experience" className="py-20 scroll-mt-20">
@@ -35,14 +42,29 @@ function Timeline() {
 				transition={{ duration: 0.6, delay: 0.1 }}
 				className="max-w-3xl mx-auto"
 			>
-				{timeline.map((item, index) => (
+				{shown.map((item, index) => (
 					<TimelineItem
 						key={item.id}
 						entry={item}
-						isLast={index === timeline.length - 1}
+						// El riel se corta en la última VISIBLE, no en la última del
+						// listado completo: si no, colgaría en el aire bajo el botón.
+						isLast={index === shown.length - 1}
 						onOpen={() => setSelected(item)}
 					/>
 				))}
+
+				{(hidden > 0 || expanded) && (
+					<div className="flex justify-center">
+						<button
+							type="button"
+							onClick={() => setExpanded((v) => !v)}
+							aria-expanded={expanded}
+							className="px-5 py-2.5 rounded-full text-sm font-space font-medium border border-outline text-content-muted transition-colors hover:text-primary hover:border-primary/50"
+						>
+							{expanded ? t('experience.showLess') : t('experience.showMore', { n: hidden })}
+						</button>
+					</div>
+				)}
 			</m.div>
 
 			{selected && (

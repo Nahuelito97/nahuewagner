@@ -392,6 +392,8 @@
     "title": "Historial laboral",
     "subtitle": "5+ años entre startups, agencias y mi propio estudio. Abrí cualquier rol para ver el impacto.",
     "viewAchievements": "Ver logros",
+    "showMore": "Ver {{n}} roles más",
+    "showLess": "Ver menos",
     "entries": {
       "correoArgentino": {
         "role": "Full Stack Developer",
