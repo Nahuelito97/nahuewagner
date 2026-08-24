@@ -17,7 +17,7 @@
         "type": "Full-time · Remote",
         "company": "Correo Argentino",
         "details": "Joined the digital engineering team at Correo Argentino to build internal tools for logistics, tracking and operations across the national postal network.",
-        "duration": "May 2026 – Present",
+        "duration": "May 2026",
         "headline": "Internal tools for national logistics · NestJS + React",
         "achievements": [
           "Contribute to internal dashboards and tracking tools used daily by operations.",
@@ -30,7 +30,7 @@
         "type": "Full-time · Remoto",
         "company": "Correo Argentino",
         "details": "Me sumé al equipo de ingeniería digital del Correo Argentino para construir herramientas internas de logística, tracking y operaciones a lo largo de la red postal nacional.",
-        "duration": "May 2026 – Actual",
+        "duration": "May 2026",
         "headline": "Tooling interno para logística nacional · NestJS + React",
         "achievements": [
           "Aporto a dashboards internos y herramientas de tracking usadas a diario por operaciones.",
@@ -60,7 +60,7 @@
         "type": "Full-time · Remote",
         "company": "EIMO",
         "details": "In-house on the EIMO digital team, owning and extending the EIMO Campus platform (LMS, e-commerce, clinical \"ateneos\") and the satellite landings & webinars.",
-        "duration": "Mar 2026 – Present",
+        "duration": "Mar 2026",
         "headline": "LMS features end-to-end · Strapi v5 + React 18",
         "achievements": [
           "Continued ownership of Vimeo player, ateneos clínicos and concurrencias.",
@@ -74,7 +74,7 @@
         "type": "Full-time · Remoto",
         "company": "EIMO",
         "details": "In-house en el equipo digital de EIMO, a cargo y extendiendo la plataforma EIMO Campus (LMS, e-commerce, ateneos clínicos) y los landings y webinars satélite.",
-        "duration": "Mar 2026 – Actual",
+        "duration": "Mar 2026",
         "headline": "Features de LMS end-to-end · Strapi v5 + React 18",
         "achievements": [
           "Continúo a cargo del player de Vimeo, ateneos clínicos y concurrencias.",
@@ -199,7 +199,7 @@
         "type": "Full-time · Remote",
         "company": "GearthLogic",
         "details": "Delivering end-to-end features across multiple client projects (EIMO Campus, Tribu Saludable, JennyGas, Power Staffing) using NestJS, React, Strapi, Laravel and Vue.",
-        "duration": "Sep 2023 – Present",
+        "duration": "Sep 2023",
         "headline": "Multi-stack delivery · +15% faster cycles",
         "achievements": [
           "Delivered end-to-end features across NestJS, React, Strapi, Laravel and Vue stacks, contributing to a ~15% faster delivery cycle.",
@@ -213,7 +213,7 @@
         "type": "Full-time · Remoto",
         "company": "GearthLogic",
         "details": "Entregando features end-to-end en múltiples proyectos de clientes (EIMO Campus, Tribu Saludable, JennyGas, Power Staffing) usando NestJS, React, Strapi, Laravel y Vue.",
-        "duration": "Sep 2023 – Actual",
+        "duration": "Sep 2023",
         "headline": "Entrega multi-stack · ciclos +15% más rápidos",
         "achievements": [
           "Entregué features end-to-end en stacks de NestJS, React, Strapi, Laravel y Vue, aportando a un ciclo de entrega ~15% más rápido.",
