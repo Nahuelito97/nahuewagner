@@ -40,7 +40,7 @@ function Commitments() {
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ amount: 0.2 }}
 							transition={{ duration: 0.55, delay: i * 0.12 }}
-							className="flex items-start gap-3 rounded-xl border border-outline bg-surface/60 backdrop-blur p-4 hover:border-primary/40 transition-colors"
+							className="flex items-start gap-3 rounded-xl border border-outline bg-surface/60 backdrop-blur-sm p-4 hover:border-primary/40 transition-colors"
 						>
 							<span className="grid place-items-center w-9 h-9 rounded-lg bg-primary/10 text-primary shrink-0">
 								<Icon className="w-4 h-4" />

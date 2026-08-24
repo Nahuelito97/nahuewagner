@@ -41,11 +41,11 @@ function ExperienceModalContent({
 
 	return (
 		<>
-			<div className="sticky top-0 z-20 flex items-start justify-between gap-4 px-6 py-4 border-b border-outline bg-surface/95 backdrop-blur">
+			<div className="sticky top-0 z-20 flex items-start justify-between gap-4 px-6 py-4 border-b border-outline bg-surface/95 backdrop-blur-sm">
 				<div className="flex items-start gap-3 min-w-0">
 					<span
 						aria-hidden
-						className="grid place-items-center w-11 h-11 rounded-lg bg-gradient-to-br from-primary to-secondary text-on-accent font-space font-bold text-base shrink-0 shadow shadow-primary/20"
+						className="grid place-items-center w-11 h-11 rounded-lg bg-linear-to-br from-primary to-secondary text-on-accent font-space font-bold text-base shrink-0 shadow-sm shadow-primary/20"
 					>
 						{company.charAt(0)}
 					</span>

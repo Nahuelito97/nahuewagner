@@ -31,7 +31,7 @@ function Cover({ project, onClick }: { project: Project; onClick: () => void }) 
 					className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
 				/>
 			) : (
-				<div className="w-full h-full min-h-44 bg-gradient-to-br from-surface-variant via-surface to-bg flex items-center justify-center p-6">
+				<div className="w-full h-full min-h-44 bg-linear-to-br from-surface-variant via-surface to-bg flex items-center justify-center p-6">
 					{project.logo ? (
 						<img
 							src={project.logo}
@@ -61,7 +61,7 @@ function Cover({ project, onClick }: { project: Project; onClick: () => void }) 
 			{project.tag && (
 				<span
 					aria-hidden="true"
-					className="absolute top-3 right-3 px-2 py-0.5 rounded-full text-[10px] font-space font-medium bg-bg/70 backdrop-blur border border-outline text-primary"
+					className="absolute top-3 right-3 px-2 py-0.5 rounded-full text-[10px] font-space font-medium bg-bg/70 backdrop-blur-sm border border-outline text-primary"
 				>
 					{t(`portfolio.tags.${project.tag}`)}
 				</span>
