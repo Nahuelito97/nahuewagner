@@ -20,3 +20,11 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run build
+
+      # Audit runs LAST on purpose. An advisory published overnight is not a
+      # reason to hide a real regression: the code checks above must report
+      # first. --audit-level=high keeps it a signal rather than background
+      # noise, since unfixable low/moderate findings would train us to ignore
+      # a permanently red job.
+      - name: Security audit (high and critical only)
+        run: npm audit --audit-level=high
