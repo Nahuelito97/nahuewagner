@@ -2,6 +2,10 @@ import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { defineConfig, loadEnv, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
+import { LIMITS, isBot, validateContact } from './src/lib/contactValidation';
+import { checkRateLimit, clientIpFromHeaders } from './src/lib/rateLimit';
+import { renderAutoReplyEmail, renderContactEmail } from './src/emails/render';
+import { AUTO_REPLY_TO } from './src/emails/autoReplyCopy';
 
 // Inyecta el SEO administrado desde el CMS (entradas seo.* de src/content/copy.json,
 // generadas por scripts/fetch-content.mjs) en el <head> del index.html.
@@ -72,7 +76,7 @@ export default defineConfig(({ mode }) => {
 			react(),
 			injectSeo(),
 			{
-				// Mirrors the Netlify edge function (netlify/edge-functions/contact.ts)
+				// Espeja el Netlify Function (netlify/functions/contact.mts)
 				// during `npm run dev` so the contact form works end-to-end locally
 				// without needing the `netlify dev` CLI.
 				name: 'dev-api-contact',
@@ -82,30 +86,57 @@ export default defineConfig(({ mode }) => {
 						if (req.method !== 'POST') return next();
 						res.setHeader('Content-Type', 'application/json');
 
+						// Rate limit ANTES de leer el body: rechazar temprano es
+						// rechazar barato, y evita gastar memoria en un request
+						// que igual se va a descartar.
+						const ip = clientIpFromHeaders(
+							(name) => {
+								const v = req.headers[name];
+								return Array.isArray(v) ? v[0] : v;
+							},
+							req.socket.remoteAddress ?? 'unknown',
+						);
+						const limit = checkRateLimit(ip);
+						if (!limit.allowed) {
+							res.statusCode = 429;
+							res.setHeader('Retry-After', String(limit.retryAfterSeconds));
+							return res.end(
+								JSON.stringify({
+									error: 'Too many messages. Please try again later.',
+									retryAfter: limit.retryAfterSeconds,
+								}),
+							);
+						}
+
 						try {
+							// Se corta la lectura apenas se pasa el límite: el body nunca
+							// se acumula entero en memoria, así un POST gigante no llega
+							// ni a parsearse.
 							const chunks: Buffer[] = [];
-							for await (const chunk of req) chunks.push(chunk as Buffer);
+							let bytes = 0;
+							for await (const chunk of req) {
+								bytes += (chunk as Buffer).length;
+								if (bytes > LIMITS.bodyBytes) {
+									res.statusCode = 413;
+									return res.end(JSON.stringify({ error: 'Payload too large' }));
+								}
+								chunks.push(chunk as Buffer);
+							}
 							const raw = Buffer.concat(chunks).toString('utf8');
 							const parsed = raw ? JSON.parse(raw) : {};
 
 							// Honeypot: silently drop bot submissions (200 so they don't retry).
-							if (String(parsed.company ?? '').trim()) {
+							if (isBot(parsed)) {
 								res.statusCode = 200;
 								return res.end(JSON.stringify({ ok: true }));
 							}
 
-							const name = String(parsed.name ?? '').trim();
-							const email = String(parsed.email ?? '').trim();
-							const message = String(parsed.message ?? '').trim();
-
-							if (!name || !email || !message) {
+							const result = validateContact(parsed);
+							if (!result.ok) {
 								res.statusCode = 400;
-								return res.end(JSON.stringify({ error: 'Missing required fields' }));
+								return res.end(JSON.stringify({ error: result.error }));
 							}
-							if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-								res.statusCode = 400;
-								return res.end(JSON.stringify({ error: 'Invalid email' }));
-							}
+							const { email } = result.data;
 
 							const apiKey = process.env.RESEND_API_KEY;
 							if (!apiKey) {
@@ -117,35 +148,52 @@ export default defineConfig(({ mode }) => {
 
 							const { Resend } = await import('resend');
 							const resend = new Resend(apiKey);
-							const from = process.env.RESEND_FROM ?? 'Portfolio <onboarding@resend.dev>';
-							const to = process.env.RESEND_TO ?? 'nahuel.wagner97@gmail.com';
+							// `??` no alcanza: un `.env` con `RESEND_TO=` inyecta un
+							// string VACÍO, que no es nullish y llega vacío a Resend.
+							const envVar = (name: string, fallback: string) => {
+								const v = process.env[name]?.trim();
+								return v ? v : fallback;
+							};
+							const from = envVar('RESEND_FROM', 'Portfolio <onboarding@resend.dev>');
+							const to = envVar('RESEND_TO', 'nahuel.wagner97@gmail.com');
 
-							const reason = String(parsed.reason ?? '').trim();
-							const projectType = String(parsed.projectType ?? '').trim();
-							const subject = reason
-								? `Portfolio contact — ${reason} — ${name}`
-								: `Portfolio contact — ${name}`;
-							const text = [
-								`From: ${name} <${email}>`,
-								reason ? `Reason: ${reason}` : null,
-								projectType ? `Project type: ${projectType}` : null,
-								'',
-								message,
-							]
-								.filter((line) => line !== null)
-								.join('\n');
-
+							// 1) La notificación interna define el resultado del request:
+							//    si falla, el contacto se perdió y hay que avisar.
+							const { subject, html, text } = await renderContactEmail(result.data);
 							const { error } = await resend.emails.send({
 								from,
 								to,
 								subject,
+								html,
 								text,
+								// Sin esto, "Responder" contesta al remitente de Resend
+								// en vez de a la persona que escribió.
+								replyTo: email,
 							});
 
 							if (error) {
 								console.error('[dev-api-contact] resend error', error);
 								res.statusCode = 502;
 								return res.end(JSON.stringify({ error: 'Send failed' }));
+							}
+
+							// 2) El acuse al visitante es secundario: su fallo NO tumba
+							//    el request, porque el mensaje ya llegó a destino.
+							try {
+								const auto = await renderAutoReplyEmail(result.data);
+								const { error: autoError } = await resend.emails.send({
+									from,
+									to: email,
+									subject: auto.subject,
+									html: auto.html,
+									text: auto.text,
+									replyTo: envVar('RESEND_TO', AUTO_REPLY_TO),
+								});
+								if (autoError) {
+									console.error('[dev-api-contact] auto-reply error', autoError);
+								}
+							} catch (autoErr) {
+								console.error('[dev-api-contact] auto-reply crash', autoErr);
 							}
 
 							res.statusCode = 200;

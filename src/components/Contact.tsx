@@ -84,7 +84,7 @@ function Method({
 }
 
 function Contact() {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 	const [status, setStatus] = useState<Status>('idle');
 
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -99,6 +99,9 @@ function Contact() {
 			projectType: String(data.get('projectType') ?? '').trim(),
 			message: String(data.get('message') ?? '').trim(),
 			company: String(data.get('company') ?? '').trim(), // honeypot
+			// Idioma en que se está navegando: define en qué idioma le llega el
+			// acuse automático a quien escribe.
+			locale: i18n.language,
 		};
 
 		setStatus('sending');
