@@ -1,7 +1,7 @@
 [
   {
     "id": "correoArgentino",
-    "current": true,
+    "current": false,
     "tech": [
       "NestJS",
       "React",
@@ -44,7 +44,7 @@
   },
   {
     "id": "eimo",
-    "current": true,
+    "current": false,
     "tech": [
       "React",
       "TypeScript",

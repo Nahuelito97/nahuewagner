@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons';
 import { useTranslation } from 'react-i18next';
 import {
 	About,
-	Clients,
+	// Clients,
 	Commitments,
 	Contact,
 	FAQ,
@@ -68,7 +68,7 @@ function App() {
 
 			<main id="main" className="max-w-5xl w-11/12 mx-auto">
 				<Intro />
-				<Clients />
+				{/* <Clients /> */}
 				<About />
 				<Services />
 				<Process />
