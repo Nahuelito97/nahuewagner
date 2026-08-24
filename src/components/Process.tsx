@@ -36,7 +36,7 @@ function Process() {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ amount: 0.2 }}
 						transition={{ duration: 0.6, delay: i * 0.12 }}
-						className="relative rounded-xl bg-surface/60 backdrop-blur border border-outline p-6 hover:border-primary/40 transition-colors"
+						className="relative rounded-xl bg-surface/60 backdrop-blur-sm border border-outline p-6 hover:border-primary/40 transition-colors"
 					>
 						<span className="font-mono text-xs text-primary tracking-widest">{s.num}</span>
 						<h3 className="text-base font-space font-semibold text-content mt-3 mb-2">

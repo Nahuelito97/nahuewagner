@@ -28,7 +28,7 @@ const Navbar = () => {
 		<header
 			className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
 				scrolled
-					? 'bg-bg/80 backdrop-blur-md border-b border-outline/50 shadow-sm shadow-black/20'
+					? 'bg-bg/80 backdrop-blur-md border-b border-outline/50 shadow-xs shadow-black/20'
 					: 'bg-transparent'
 			}`}
 		>
@@ -77,7 +77,7 @@ const Navbar = () => {
 
 			{/* Mobile menu */}
 			<Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-				<div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm" />
+				<div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs" />
 				<DialogPanel className="fixed inset-y-0 right-0 z-50 w-72 bg-surface border-l border-outline shadow-xl px-6 py-6 flex flex-col">
 					<div className="flex items-center justify-between mb-8">
 						<Logo />

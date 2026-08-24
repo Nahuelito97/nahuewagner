@@ -32,7 +32,7 @@ function TechStack() {
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ amount: 0.2 }}
 							transition={{ duration: 0.6, delay: i * 0.12 }}
-							className="rounded-xl bg-surface/60 backdrop-blur border border-outline p-5 hover:border-primary/40 transition-colors"
+							className="rounded-xl bg-surface/60 backdrop-blur-sm border border-outline p-5 hover:border-primary/40 transition-colors"
 						>
 							<div className="flex items-baseline justify-between mb-1">
 								<h3 className="text-sm font-space font-semibold text-content-muted uppercase tracking-widest">

@@ -18,11 +18,16 @@ interface TimelineData {
 	logo?: string | null;
 }
 
-const timeline: TimelineEntry[] = (generated as TimelineData[]).map((t) => ({
-	id: t.id,
-	current: t.current,
-	tech: t.tech,
-	logo: t.logo ?? undefined,
-}));
+// Los roles en curso (current) van primero. Dentro de cada grupo se respeta el
+// orden del CMS: Array.prototype.sort es estable, así que el snapshot generado
+// define la secuencia pero no la prioridad.
+const timeline: TimelineEntry[] = (generated as TimelineData[])
+	.map((t) => ({
+		id: t.id,
+		current: t.current,
+		tech: t.tech,
+		logo: t.logo ?? undefined,
+	}))
+	.sort((a, b) => Number(b.current ?? false) - Number(a.current ?? false));
 
 export default timeline;

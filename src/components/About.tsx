@@ -22,11 +22,9 @@ function CountUp({ to, suffix = '', duration = 1.2 }: { to: number; suffix?: str
 	const [value, setValue] = useState(0);
 
 	useEffect(() => {
-		if (!inView) return;
-		if (reduce) {
-			setValue(to);
-			return;
-		}
+		// Con prefers-reduced-motion no se anima nada, así que no hace falta
+		// escribir estado: el valor final se deriva en el render (ver abajo).
+		if (!inView || reduce) return;
 		let raf = 0;
 		const start = performance.now();
 		const tick = (now: number) => {
@@ -39,9 +37,11 @@ function CountUp({ to, suffix = '', duration = 1.2 }: { to: number; suffix?: str
 		return () => cancelAnimationFrame(raf);
 	}, [inView, reduce, to, duration]);
 
+	const display = reduce ? to : value;
+
 	return (
 		<span ref={ref}>
-			{value}
+			{display}
 			{suffix}
 		</span>
 	);
@@ -75,11 +75,11 @@ function About() {
 					transition={{ duration: 0.6 }}
 					className="relative mx-auto md:mx-0 w-52 md:w-full"
 				>
-					<div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary to-secondary opacity-60 blur-sm" />
+					<div className="absolute -inset-1 rounded-2xl bg-linear-to-br from-primary to-secondary opacity-60 blur-xs" />
 					{/* TODO: drop a real headshot at public/assets/portrait.jpg and swap this
 					    placeholder for: <img src="/assets/portrait.jpg" alt="Nahuel Wagner" ... /> */}
-					<div className="relative w-full aspect-square rounded-2xl border border-outline bg-gradient-to-br from-surface-variant via-surface to-bg flex items-center justify-center overflow-hidden">
-						<span className="font-space font-bold text-7xl bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">
+					<div className="relative w-full aspect-square rounded-2xl border border-outline bg-linear-to-br from-surface-variant via-surface to-bg flex items-center justify-center overflow-hidden">
+						<span className="font-space font-bold text-7xl bg-linear-to-br from-primary to-secondary bg-clip-text text-transparent">
 							NW
 						</span>
 					</div>

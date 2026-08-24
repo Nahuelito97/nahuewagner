@@ -27,7 +27,7 @@ function Footer() {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ amount: 0.2 }}
 					transition={{ duration: 0.6 }}
-					className="mb-12 rounded-2xl border border-primary/25 bg-gradient-to-br from-primary/10 via-surface to-surface px-6 py-6 sm:px-8 sm:py-7"
+					className="mb-12 rounded-2xl border border-primary/25 bg-linear-to-br from-primary/10 via-surface to-surface px-6 py-6 sm:px-8 sm:py-7"
 				>
 					<div className="grid gap-5 md:grid-cols-[1fr_auto] md:items-center">
 						<div>
@@ -71,7 +71,7 @@ function Footer() {
 					{/* Brand */}
 					<div>
 						<a href="#" className="inline-flex items-center gap-2.5 group">
-							<div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-on-accent font-bold text-sm font-space shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-shadow">
+							<div className="w-9 h-9 rounded-lg bg-linear-to-br from-primary to-secondary flex items-center justify-center text-on-accent font-bold text-sm font-space shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-shadow">
 								NW
 							</div>
 							<span className="font-space font-semibold text-content text-base">

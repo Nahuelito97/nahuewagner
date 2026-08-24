@@ -39,3 +39,7 @@ docs/*.docx
 *.njsproj
 *.sln
 *.sw?
+.engram/
+
+# Local Netlify folder
+.netlify

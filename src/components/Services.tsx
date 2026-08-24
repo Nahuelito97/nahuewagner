@@ -33,7 +33,7 @@ function Services() {
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ amount: 0.2 }}
 							transition={{ duration: 0.6, delay: i * 0.12 }}
-							className="group flex flex-col rounded-xl bg-surface/70 backdrop-blur border border-outline p-6 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5"
+							className="group flex flex-col rounded-xl bg-surface/70 backdrop-blur-sm border border-outline p-6 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5"
 						>
 							<span className="grid place-items-center w-11 h-11 rounded-lg bg-primary/10 border border-primary/20 text-primary mb-4">
 								<s.icon className="w-5 h-5" />

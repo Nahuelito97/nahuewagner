@@ -2,7 +2,7 @@
 import type { IconType } from 'react-icons';
 import { FaAws, FaCss3Alt, FaDocker, FaGitAlt, FaHtml5, FaJs, FaNodeJs, FaPhp, FaReact } from 'react-icons/fa';
 import { FiSearch, FiUsers, FiZap } from 'react-icons/fi';
-import { SiDigitalocean, SiExpress, SiFirebase, SiFlutter, SiGraphql, SiLaravel, SiMongodb, SiMui, SiMysql, SiNestjs, SiNextdotjs, SiPostgresql, SiPostman, SiRedis, SiStrapi, SiStripe, SiSwagger, SiTailwindcss, SiTwilio, SiTypescript, SiVite, SiVuedotjs } from 'react-icons/si';
+import { SiDigitalocean, SiExpress, SiFirebase, SiFlutter, SiGraphql, SiLaravel, SiMongodb, SiMui, SiMysql, SiNestjs, SiNextdotjs, SiPostgresql, SiPostman, SiRedis, SiStrapi, SiStripe, SiSwagger, SiTailwindcss, SiTypescript, SiVite, SiVuedotjs } from 'react-icons/si';
 
 export const ICONS: Record<string, IconType> = {
   'fa:FaAws': FaAws,
@@ -35,7 +35,6 @@ export const ICONS: Record<string, IconType> = {
   'si:SiStripe': SiStripe,
   'si:SiSwagger': SiSwagger,
   'si:SiTailwindcss': SiTailwindcss,
-  'si:SiTwilio': SiTwilio,
   'si:SiTypescript': SiTypescript,
   'si:SiVite': SiVite,
   'si:SiVuedotjs': SiVuedotjs,
