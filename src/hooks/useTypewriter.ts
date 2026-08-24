@@ -37,9 +37,14 @@ export function useTypewriter(words: string[], opts: TypewriterOpts = {}): strin
 			return () => clearTimeout(t);
 		}
 		if (deleting && text === '') {
-			setDeleting(false);
-			setIdx((i) => (i + 1) % words.length);
-			return;
+			// Igual que el resto del hook, la transición a la próxima palabra pasa
+			// por el timer y no por un setState sincrónico: así no dispara un
+			// render en cascada y además queda una pausa natural entre palabras.
+			const t = setTimeout(() => {
+				setDeleting(false);
+				setIdx((i) => (i + 1) % words.length);
+			}, deleteSpeed);
+			return () => clearTimeout(t);
 		}
 		const next = deleting
 			? current.slice(0, text.length - 1)

@@ -22,11 +22,9 @@ function CountUp({ to, suffix = '', duration = 1.2 }: { to: number; suffix?: str
 	const [value, setValue] = useState(0);
 
 	useEffect(() => {
-		if (!inView) return;
-		if (reduce) {
-			setValue(to);
-			return;
-		}
+		// Con prefers-reduced-motion no se anima nada, así que no hace falta
+		// escribir estado: el valor final se deriva en el render (ver abajo).
+		if (!inView || reduce) return;
 		let raf = 0;
 		const start = performance.now();
 		const tick = (now: number) => {
@@ -39,9 +37,11 @@ function CountUp({ to, suffix = '', duration = 1.2 }: { to: number; suffix?: str
 		return () => cancelAnimationFrame(raf);
 	}, [inView, reduce, to, duration]);
 
+	const display = reduce ? to : value;
+
 	return (
 		<span ref={ref}>
-			{value}
+			{display}
 			{suffix}
 		</span>
 	);
