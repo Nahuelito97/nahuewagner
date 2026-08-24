@@ -4,6 +4,11 @@
   command = "npm run build"
   publish = "dist"
 
+# Netlify usa esta variable para elegir el runtime de build. Tiene que coincidir
+# con .nvmrc y con "engines" en package.json: @netlify/functions v6 exige >=22.12.
+[build.environment]
+  NODE_VERSION = "22"
+
 # El formulario de contacto lo atiende netlify/functions/contact.mts (runtime Node,
 # no Edge: la plantilla usa React Email y necesita react-dom/server).
 #
