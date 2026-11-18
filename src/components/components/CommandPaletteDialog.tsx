@@ -14,7 +14,6 @@ import {
 	FiFolder,
 	FiBriefcase,
 	FiCpu,
-	FiMessageSquare,
 	FiMail,
 	FiDownload,
 	FiGithub,
@@ -50,7 +49,7 @@ function CommandPaletteDialog({ onClose }: Props) {
 			{ id: 'work', label: t('palette.items.work'), icon: FiFolder, action: scrollTo('work') },
 			{ id: 'experience', label: t('palette.items.experience'), icon: FiBriefcase, action: scrollTo('experience') },
 			{ id: 'skills', label: t('palette.items.skills'), icon: FiCpu, action: scrollTo('skills') },
-			{ id: 'testimonials', label: t('palette.items.testimonials'), icon: FiMessageSquare, action: scrollTo('testimonials') },
+			// Testimonios: oculta hasta tener recomendaciones reales (ver App.tsx)
 			{ id: 'contact', label: t('palette.items.contact'), icon: FiMail, action: scrollTo('contact') },
 			{ id: 'cv', label: t('palette.items.cv'), hint: 'PDF', icon: FiDownload, action: openUrl('/docs/Nahuel-Wagner-CV.pdf') },
 			{

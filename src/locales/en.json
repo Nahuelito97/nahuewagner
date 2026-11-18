@@ -2,7 +2,6 @@
 	"langName": "English",
 	"langToggleLabel": "Switch language",
 	"skipToContent": "Skip to content",
-
 	"nav": {
 		"about": "About",
 		"services": "Services",
@@ -11,7 +10,6 @@
 		"skills": "Skills",
 		"contact": "Contact"
 	},
-
 	"common": {
 		"current": "Current",
 		"present": "Present",
@@ -23,7 +21,6 @@
 		"closeMenu": "Close menu",
 		"scrollToTop": "Scroll to top"
 	},
-
 	"hero": {
 		"openBadge": "Open to new opportunities",
 		"hi": "Hi, I'm",
@@ -51,12 +48,10 @@
 			"available": "Available now"
 		}
 	},
-
 	"clients": {
 		"eyebrow": "Worked with",
 		"subtitle": "{{count}}+ companies & teams I've shipped production code for"
 	},
-
 	"about": {
 		"eyebrow": "About",
 		"title": "A bit about me",
@@ -73,7 +68,6 @@
 			"remote": "Remote-first"
 		}
 	},
-
 	"services": {
 		"eyebrow": "Services",
 		"title": "How I can help",
@@ -111,7 +105,6 @@
 			}
 		}
 	},
-
 	"process": {
 		"eyebrow": "Process",
 		"title": "How I work",
@@ -135,7 +128,6 @@
 			}
 		}
 	},
-
 	"portfolio": {
 		"eyebrow": "Portfolio",
 		"title": "Selected Projects",
@@ -266,19 +258,19 @@
 				],
 				"team": "Tech Lead of an 8-person engineering team"
 			},
-			"jennyGas": {
-				"title": "JennyGas",
-				"tagline": "End-to-end gas delivery: mobile apps, admin & backend",
-				"description": "Full delivery platform — Flutter customer & driver apps, a React admin panel, and a NestJS backend with real-time tracking and online payments. Deployed on DigitalOcean.",
+			"splg": {
+				"title": "SPLG",
+				"tagline": "Orders & logistics for bottled-gas distributors",
+				"description": "Ordering and logistics system for bottled-gas distributors: Flutter customer and driver apps, a React web panel, and a NestJS + PostGIS + Redis + Socket.IO backend. Smart modules: automatic dispatch, route sheet, anticipated reorder, an AI document reader and an assistant.",
 				"year": "2025 – 2026",
-				"role": "Full Stack @ GearthLogic",
+				"role": "Full Stack Developer · Final degree project",
 				"highlights": [
-					"Two Flutter apps (customer + driver) sharing a Dart library",
-					"MercadoPago payments; Redis-backed Socket.IO across 3 clients",
-					"Map-based ordering, GPS dispatch, claims & reports"
+					"Flutter customer and driver apps + React web panel (splg-gas.web.app)",
+					"NestJS + PostGIS + Redis + Socket.IO real-time backend",
+					"Automatic dispatch, route sheet, anticipated reorder, AI document reader and assistant"
 				],
-				"problem": "A gas distributor needed end-to-end ordering, dispatch and live delivery tracking across three very different users: customers, drivers and operators.",
-				"solution": "A full platform: two Flutter apps (customer + driver) sharing a Dart library, a React admin panel, and a NestJS backend with Redis-backed real-time updates, MercadoPago payments and GPS dispatch — deployed on DigitalOcean.",
+				"problem": "A bottled-gas distributor needed end-to-end ordering, dispatch and live delivery tracking across three very different users: customers, drivers and operators.",
+				"solution": "Flutter customer and driver apps, a React web panel and a NestJS backend (PostGIS, Redis, Socket.IO) for real-time updates, plus smart modules: automatic dispatch, route sheet, anticipated reorder, an AI document reader and an assistant.",
 				"outcomes": [
 					"Three clients (customer, driver, admin) on one real-time backend",
 					"Online payments + map-based ordering and dispatch",
@@ -288,10 +280,10 @@
 					"Built the NestJS backend (orders, dispatch, payments, real-time)",
 					"Shipped MercadoPago integration and Redis-backed Socket.IO",
 					"Contributed to both Flutter apps via the shared Dart library",
-					"Deployed and operated the platform on DigitalOcean"
+					"Deployed it myself: API on a self-hosted Linux server, web panel on Firebase Hosting, landing on Netlify, with CI/CD on GitHub Actions"
 				],
-				"team": "Full Stack collaborator on the GearthLogic team",
-				"linkLabel": "Live admin"
+				"team": "Solo project: design, backend, web panel and mobile apps",
+				"linkLabel": "Live site"
 			},
 			"gearthCrm": {
 				"title": "GearthLogic CRM",
@@ -374,26 +366,25 @@
 			"personal": {
 				"title": "Personal Portfolio",
 				"tagline": "This very site — Orix dark theme, React + Vite, Resend contact",
-				"description": "Hand-built portfolio on the Orix dark palette — animated typewriter hero, ⌘K command palette, case-study modals, real-time scrollspy nav and a Resend-powered contact form on a Vercel serverless function.",
+				"description": "Hand-built portfolio on the Orix dark palette — animated typewriter hero, ⌘K command palette, case-study modals, real-time scrollspy nav and a Resend-powered contact form on a Netlify Edge Function.",
 				"year": "2026",
 				"role": "Personal",
 				"highlights": [
 					"Strict TypeScript + Vite 6 + React 19 + Tailwind v3 (Geist + Geist Mono)",
 					"Custom Orix theme via Tailwind config (semantic naming)",
 					"⌘K palette, scrollspy, animated counters, terminal-typed hero",
-					"Contact form via Resend + Vercel serverless function"
+					"Contact form via Resend + Netlify Edge Function"
 				],
 				"myRole": [
 					"Designed the Orix dark theme and Tailwind config (semantic naming)",
 					"Built the ⌘K command palette, scrollspy nav, animated counters and typewriter hero",
-					"Wired the Resend + Vercel serverless contact form (+ Vite dev plugin)",
+					"Wired the Resend + Netlify Edge Function contact form (+ Vite dev plugin)",
 					"Set up CI on GitHub Actions (lint, typecheck, test, build)"
 				],
 				"team": "Solo — designed and built end-to-end"
 			}
 		}
 	},
-
 	"experience": {
 		"eyebrow": "Experience",
 		"title": "Work History",
@@ -462,7 +453,7 @@
 				"company": "GearthLogic",
 				"duration": "Sep 2023 – Apr 2026",
 				"type": "Full-time · Remote",
-				"details": "Delivering end-to-end features across multiple client projects (EIMO Campus, Tribu Saludable, JennyGas, Power Staffing) using NestJS, React, Strapi, Laravel and Vue.",
+				"details": "Delivering end-to-end features across multiple client projects (EIMO Campus, Tribu Saludable, SPLG, Power Staffing) using NestJS, React, Strapi, Laravel and Vue.",
 				"headline": "Multi-stack delivery · +15% faster cycles",
 				"achievements": [
 					"Delivered end-to-end features across NestJS, React, Strapi, Laravel and Vue stacks, contributing to a ~15% faster delivery cycle.",
@@ -501,12 +492,10 @@
 			}
 		}
 	},
-
 	"testimonials": {
 		"eyebrow": "Testimonials",
 		"title": "What people say"
 	},
-
 	"freeAudit": {
 		"eyebrow": "Free audit",
 		"title": "Free 30-min architecture audit",
@@ -519,7 +508,6 @@
 		"cta": "Book a free 30-min audit",
 		"footnote": "If we click, we talk about the project. If not, you keep the recording."
 	},
-
 	"commitments": {
 		"eyebrow": "How I work",
 		"title": "What you can count on",
@@ -542,7 +530,6 @@
 			}
 		}
 	},
-
 	"skills": {
 		"eyebrow": "Skills",
 		"title": "Tech Stack",
@@ -554,7 +541,6 @@
 			"devops": "Build, ship and deploy"
 		}
 	},
-
 	"faq": {
 		"eyebrow": "FAQ",
 		"title": "Common questions",
@@ -586,7 +572,6 @@
 			}
 		}
 	},
-
 	"contact": {
 		"eyebrow": "Contact",
 		"title": "Let's build something",
@@ -633,7 +618,6 @@
 			"error": "Couldn't send — email me at {{email}}."
 		}
 	},
-
 	"footer": {
 		"tagline": "Backend / Full Stack Engineer · Tech Lead. Posadas, Argentina · Remote-first.",
 		"quickLinks": "Quick links",
@@ -649,7 +633,6 @@
 			"bookCall": "Book a call"
 		}
 	},
-
 	"modal": {
 		"close": "Close",
 		"problem": "Problem",
@@ -661,7 +644,6 @@
 		"team": "Team",
 		"achievements": "Key achievements"
 	},
-
 	"palette": {
 		"placeholder": "Jump to a section, or run an action…",
 		"noResults": "No results.",
@@ -681,7 +663,6 @@
 			"linkedin": "LinkedIn"
 		}
 	},
-
 	"mobileNav": {
 		"ariaLabel": "Section navigation",
 		"about": "About",

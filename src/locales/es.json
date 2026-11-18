@@ -2,7 +2,6 @@
 	"langName": "Español",
 	"langToggleLabel": "Cambiar idioma",
 	"skipToContent": "Saltar al contenido",
-
 	"nav": {
 		"about": "Sobre mí",
 		"services": "Servicios",
@@ -11,7 +10,6 @@
 		"skills": "Stack",
 		"contact": "Contacto"
 	},
-
 	"common": {
 		"current": "Actual",
 		"present": "Actual",
@@ -23,7 +21,6 @@
 		"closeMenu": "Cerrar menú",
 		"scrollToTop": "Subir"
 	},
-
 	"hero": {
 		"openBadge": "Abierto a nuevas oportunidades",
 		"hi": "Hola, soy",
@@ -51,12 +48,10 @@
 			"available": "Disponible ahora"
 		}
 	},
-
 	"clients": {
 		"eyebrow": "Trabajé con",
 		"subtitle": "{{count}}+ empresas y equipos para los que envié código a producción"
 	},
-
 	"about": {
 		"eyebrow": "Sobre mí",
 		"title": "Un poco sobre mí",
@@ -73,7 +68,6 @@
 			"remote": "Remoto"
 		}
 	},
-
 	"services": {
 		"eyebrow": "Servicios",
 		"title": "Cómo te puedo ayudar",
@@ -111,7 +105,6 @@
 			}
 		}
 	},
-
 	"process": {
 		"eyebrow": "Proceso",
 		"title": "Cómo trabajo",
@@ -135,7 +128,6 @@
 			}
 		}
 	},
-
 	"portfolio": {
 		"eyebrow": "Portfolio",
 		"title": "Proyectos destacados",
@@ -266,19 +258,19 @@
 				],
 				"team": "Tech Lead de un equipo de ingeniería de 8 personas"
 			},
-			"jennyGas": {
-				"title": "JennyGas",
-				"tagline": "Delivery de gas end-to-end: apps móviles, admin y backend",
-				"description": "Plataforma completa de delivery — apps Flutter para cliente y conductor, panel admin en React, y backend NestJS con tracking en tiempo real y pagos online. Desplegado en DigitalOcean.",
+			"splg": {
+				"title": "SPLG",
+				"tagline": "Pedidos y logística para distribuidoras de gas envasado",
+				"description": "Sistema de pedidos y logística para distribuidoras de gas envasado: apps de cliente y chofer en Flutter, panel web en React y backend NestJS + PostGIS + Redis + Socket.IO. Módulos inteligentes: despacho automático, hoja de ruta, recompra anticipada, lector de documentos con IA y asistente.",
 				"year": "2025 – 2026",
-				"role": "Full Stack @ GearthLogic",
+				"role": "Full Stack Developer · Trabajo Final de grado",
 				"highlights": [
-					"Dos apps Flutter (cliente + conductor) compartiendo una librería Dart",
-					"Pagos MercadoPago; Socket.IO con Redis entre 3 clientes",
-					"Pedidos sobre mapa, despacho GPS, reclamos y reportes"
+					"Apps Flutter de cliente y chofer + panel web React (splg-gas.web.app)",
+					"Backend NestJS + PostGIS + Redis + Socket.IO en tiempo real",
+					"Despacho automático, hoja de ruta, recompra anticipada, lector de documentos con IA y asistente"
 				],
-				"problem": "Un distribuidor de gas necesitaba pedidos, despacho y tracking de entrega en vivo end-to-end para tres usuarios muy distintos: clientes, conductores y operadores.",
-				"solution": "Plataforma completa: dos apps Flutter (cliente + conductor) compartiendo una librería Dart, un panel admin en React, y un backend NestJS con updates en tiempo real apoyados en Redis, pagos MercadoPago y despacho GPS — desplegado en DigitalOcean.",
+				"problem": "Una distribuidora de gas envasado necesitaba pedidos, despacho y seguimiento de entrega en vivo de punta a punta para tres usuarios muy distintos: clientes, choferes y operadores.",
+				"solution": "Apps Flutter de cliente y chofer, un panel web en React y un backend NestJS (PostGIS, Redis, Socket.IO) con actualizaciones en tiempo real, más módulos inteligentes: despacho automático, hoja de ruta, recompra anticipada, lector de documentos con IA y asistente.",
 				"outcomes": [
 					"Tres clientes (cliente, conductor, admin) sobre un único backend en tiempo real",
 					"Pagos online + pedidos y despacho sobre mapa",
@@ -288,10 +280,10 @@
 					"Construí el backend NestJS (pedidos, despacho, pagos, tiempo real)",
 					"Envié la integración con MercadoPago y Socket.IO con Redis",
 					"Contribuí a ambas apps Flutter a través de la librería Dart compartida",
-					"Desplegué y operé la plataforma en DigitalOcean"
+					"Lo desplegué yo: la API en un servidor Linux propio, el panel en Firebase Hosting y la landing en Netlify, con CI/CD en GitHub Actions"
 				],
-				"team": "Colaborador Full Stack en el equipo de GearthLogic",
-				"linkLabel": "Admin en vivo"
+				"team": "Proyecto individual: diseño, back, panel web y apps",
+				"linkLabel": "Sitio en vivo"
 			},
 			"gearthCrm": {
 				"title": "GearthLogic CRM",
@@ -374,26 +366,25 @@
 			"personal": {
 				"title": "Portfolio personal",
 				"tagline": "Este mismo sitio — tema Orix dark, React + Vite, contacto con Resend",
-				"description": "Portfolio hecho a mano sobre la paleta Orix dark — hero animado con typewriter, command palette ⌘K, modales de case study, navegación con scrollspy en tiempo real y form de contacto con Resend en una función serverless de Vercel.",
+				"description": "Portfolio hecho a mano sobre la paleta Orix dark — hero animado con typewriter, command palette ⌘K, modales de case study, navegación con scrollspy en tiempo real y form de contacto con Resend en una Netlify Edge Function.",
 				"year": "2026",
 				"role": "Personal",
 				"highlights": [
 					"TypeScript estricto + Vite 6 + React 19 + Tailwind v3 (Geist + Geist Mono)",
 					"Tema Orix custom vía Tailwind config (naming semántico)",
 					"Palette ⌘K, scrollspy, contadores animados, hero tipo terminal",
-					"Form de contacto con Resend + función serverless de Vercel"
+					"Form de contacto con Resend + Netlify Edge Function"
 				],
 				"myRole": [
 					"Diseñé el tema Orix dark y la config de Tailwind (naming semántico)",
 					"Construí la palette ⌘K, la nav con scrollspy, los contadores animados y el hero typewriter",
-					"Cableé el form de contacto con Resend + serverless de Vercel (+ plugin Vite para dev)",
+					"Cableé el form de contacto con Resend + Netlify Edge Function (+ plugin Vite para dev)",
 					"Armé el CI en GitHub Actions (lint, typecheck, test, build)"
 				],
 				"team": "Solo — diseñado y construido end-to-end"
 			}
 		}
 	},
-
 	"experience": {
 		"eyebrow": "Experiencia",
 		"title": "Historial laboral",
@@ -462,7 +453,7 @@
 				"company": "GearthLogic",
 				"duration": "Sep 2023 – Abr 2026",
 				"type": "Full-time · Remoto",
-				"details": "Entregando features end-to-end en múltiples proyectos de clientes (EIMO Campus, Tribu Saludable, JennyGas, Power Staffing) usando NestJS, React, Strapi, Laravel y Vue.",
+				"details": "Entregando features end-to-end en múltiples proyectos de clientes (EIMO Campus, Tribu Saludable, SPLG, Power Staffing) usando NestJS, React, Strapi, Laravel y Vue.",
 				"headline": "Entrega multi-stack · ciclos +15% más rápidos",
 				"achievements": [
 					"Entregué features end-to-end en stacks de NestJS, React, Strapi, Laravel y Vue, aportando a un ciclo de entrega ~15% más rápido.",
@@ -501,12 +492,10 @@
 			}
 		}
 	},
-
 	"testimonials": {
 		"eyebrow": "Testimonios",
 		"title": "Qué dicen sobre mí"
 	},
-
 	"freeAudit": {
 		"eyebrow": "Audit gratis",
 		"title": "Audit de arquitectura gratis · 30 min",
@@ -519,7 +508,6 @@
 		"cta": "Reservá tu audit gratis de 30 min",
 		"footnote": "Si conectamos, hablamos del proyecto. Si no, te queda la grabación igual."
 	},
-
 	"commitments": {
 		"eyebrow": "Cómo trabajo",
 		"title": "Con qué contás de mi parte",
@@ -542,7 +530,6 @@
 			}
 		}
 	},
-
 	"skills": {
 		"eyebrow": "Stack",
 		"title": "Tecnologías",
@@ -554,7 +541,6 @@
 			"devops": "Build, ship y deploy"
 		}
 	},
-
 	"faq": {
 		"eyebrow": "FAQ",
 		"title": "Preguntas comunes",
@@ -586,7 +572,6 @@
 			}
 		}
 	},
-
 	"contact": {
 		"eyebrow": "Contacto",
 		"title": "Armemos algo juntos",
@@ -633,7 +618,6 @@
 			"error": "No se pudo enviar — escribime a {{email}}."
 		}
 	},
-
 	"footer": {
 		"tagline": "Backend / Full Stack Engineer · Tech Lead. Posadas, Argentina · 100% remoto.",
 		"quickLinks": "Links rápidos",
@@ -649,7 +633,6 @@
 			"bookCall": "Reservar call"
 		}
 	},
-
 	"modal": {
 		"close": "Cerrar",
 		"problem": "Problema",
@@ -661,7 +644,6 @@
 		"team": "Equipo",
 		"achievements": "Logros clave"
 	},
-
 	"palette": {
 		"placeholder": "Saltar a una sección o ejecutar una acción…",
 		"noResults": "Sin resultados.",
@@ -681,7 +663,6 @@
 			"linkedin": "LinkedIn"
 		}
 	},
-
 	"mobileNav": {
 		"ariaLabel": "Navegación de secciones",
 		"about": "Sobre mí",

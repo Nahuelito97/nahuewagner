@@ -316,7 +316,7 @@
     "updatedAt": "2026-06-07T22:34:57.992Z"
   },
   {
-    "id": "jennyGas",
+    "id": "splg",
     "category": "fullstack",
     "tag": "production",
     "stack": [
@@ -326,67 +326,67 @@
       "postgresql",
       "firebase"
     ],
-    "link": "https://gearth-admin.web.app",
+    "link": "https://splg-gas.netlify.app",
     "sourceCodeLink": null,
     "featured": false,
     "order": 4,
     "imgUrl": null,
-    "modalImage": "/assets/projects/jennygas-app.webp",
-    "logo": "/assets/projects/jennygas-logo.webp",
+    "modalImage": "/assets/projects/splg-app.webp",
+    "logo": "/assets/projects/splg-logo.svg",
     "translations": {
       "en": {
-        "role": "Full Stack @ GearthLogic",
-        "team": "Full Stack collaborator on the GearthLogic team",
+        "role": "Full Stack Developer · Final degree project",
+        "team": "Solo project: design, backend, web panel and mobile apps",
         "year": "2025 – 2026",
-        "title": "JennyGas",
+        "title": "SPLG",
         "myRole": [
           "Built the NestJS backend (orders, dispatch, payments, real-time)",
           "Shipped MercadoPago integration and Redis-backed Socket.IO",
           "Contributed to both Flutter apps via the shared Dart library",
-          "Deployed and operated the platform on DigitalOcean"
+          "Deployed it myself: API on a self-hosted Linux server, web panel on Firebase Hosting, landing on Netlify, with CI/CD on GitHub Actions"
         ],
-        "problem": "A gas distributor needed end-to-end ordering, dispatch and live delivery tracking across three very different users: customers, drivers and operators.",
-        "tagline": "End-to-end gas delivery: mobile apps, admin & backend",
+        "problem": "A bottled-gas distributor needed end-to-end ordering, dispatch and live delivery tracking across three very different users: customers, drivers and operators.",
+        "tagline": "Orders & logistics for bottled-gas distributors",
         "outcomes": [
           "Three clients (customer, driver, admin) on one real-time backend",
           "Online payments + map-based ordering and dispatch",
           "Shipped to production for a real distributor"
         ],
-        "solution": "A full platform: two Flutter apps (customer + driver) sharing a Dart library, a React admin panel, and a NestJS backend with Redis-backed real-time updates, MercadoPago payments and GPS dispatch — deployed on DigitalOcean.",
-        "linkLabel": "Live admin",
+        "solution": "Flutter customer and driver apps, a React web panel and a NestJS backend (PostGIS, Redis, Socket.IO) for real-time updates, plus smart modules: automatic dispatch, route sheet, anticipated reorder, an AI document reader and an assistant.",
+        "linkLabel": "Live site",
         "highlights": [
-          "Two Flutter apps (customer + driver) sharing a Dart library",
-          "MercadoPago payments; Redis-backed Socket.IO across 3 clients",
-          "Map-based ordering, GPS dispatch, claims & reports"
+          "Flutter customer and driver apps + React web panel (splg-gas.web.app)",
+          "NestJS + PostGIS + Redis + Socket.IO real-time backend",
+          "Automatic dispatch, route sheet, anticipated reorder, AI document reader and assistant"
         ],
-        "description": "Full delivery platform — Flutter customer & driver apps, a React admin panel, and a NestJS backend with real-time tracking and online payments. Deployed on DigitalOcean."
+        "description": "Ordering and logistics system for bottled-gas distributors: Flutter customer and driver apps, a React web panel, and a NestJS + PostGIS + Redis + Socket.IO backend. Smart modules: automatic dispatch, route sheet, anticipated reorder, an AI document reader and an assistant."
       },
       "es": {
-        "role": "Full Stack @ GearthLogic",
-        "team": "Colaborador Full Stack en el equipo de GearthLogic",
+        "role": "Full Stack Developer · Trabajo Final de grado",
+        "team": "Proyecto individual: diseño, back, panel web y apps",
         "year": "2025 – 2026",
-        "title": "JennyGas",
+        "title": "SPLG",
         "myRole": [
           "Construí el backend NestJS (pedidos, despacho, pagos, tiempo real)",
           "Envié la integración con MercadoPago y Socket.IO con Redis",
           "Contribuí a ambas apps Flutter a través de la librería Dart compartida",
-          "Desplegué y operé la plataforma en DigitalOcean"
+          "Lo desplegué yo: la API en un servidor Linux propio, el panel en Firebase Hosting y la landing en Netlify, con CI/CD en GitHub Actions"
         ],
-        "problem": "Un distribuidor de gas necesitaba pedidos, despacho y tracking de entrega en vivo end-to-end para tres usuarios muy distintos: clientes, conductores y operadores.",
-        "tagline": "Delivery de gas end-to-end: apps móviles, admin y backend",
+        "problem": "Una distribuidora de gas envasado necesitaba pedidos, despacho y seguimiento de entrega en vivo de punta a punta para tres usuarios muy distintos: clientes, choferes y operadores.",
+        "tagline": "Pedidos y logística para distribuidoras de gas envasado",
         "outcomes": [
           "Tres clientes (cliente, conductor, admin) sobre un único backend en tiempo real",
           "Pagos online + pedidos y despacho sobre mapa",
           "En producción para un distribuidor real"
         ],
-        "solution": "Plataforma completa: dos apps Flutter (cliente + conductor) compartiendo una librería Dart, un panel admin en React, y un backend NestJS con updates en tiempo real apoyados en Redis, pagos MercadoPago y despacho GPS — desplegado en DigitalOcean.",
-        "linkLabel": "Admin en vivo",
+        "solution": "Apps Flutter de cliente y chofer, un panel web en React y un backend NestJS (PostGIS, Redis, Socket.IO) con actualizaciones en tiempo real, más módulos inteligentes: despacho automático, hoja de ruta, recompra anticipada, lector de documentos con IA y asistente.",
+        "linkLabel": "Sitio en vivo",
         "highlights": [
-          "Dos apps Flutter (cliente + conductor) compartiendo una librería Dart",
-          "Pagos MercadoPago; Socket.IO con Redis entre 3 clientes",
-          "Pedidos sobre mapa, despacho GPS, reclamos y reportes"
+          "Apps Flutter de cliente y chofer + panel web React (splg-gas.web.app)",
+          "Backend NestJS + PostGIS + Redis + Socket.IO en tiempo real",
+          "Despacho automático, hoja de ruta, recompra anticipada, lector de documentos con IA y asistente"
         ],
-        "description": "Plataforma completa de delivery — apps Flutter para cliente y conductor, panel admin en React, y backend NestJS con tracking en tiempo real y pagos online. Desplegado en DigitalOcean."
+        "description": "Sistema de pedidos y logística para distribuidoras de gas envasado: apps de cliente y chofer en Flutter, panel web en React y backend NestJS + PostGIS + Redis + Socket.IO. Módulos inteligentes: despacho automático, hoja de ruta, recompra anticipada, lector de documentos con IA y asistente."
       }
     },
     "createdAt": "2026-06-07T20:01:14.590Z",
@@ -640,7 +640,7 @@
         "myRole": [
           "Designed the Orix dark theme and Tailwind config (semantic naming)",
           "Built the ⌘K command palette, scrollspy nav, animated counters and typewriter hero",
-          "Wired the Resend + Vercel serverless contact form (+ Vite dev plugin)",
+          "Wired the Resend + Netlify Edge Function contact form (+ Vite dev plugin)",
           "Set up CI on GitHub Actions (lint, typecheck, test, build)"
         ],
         "tagline": "This very site — Orix dark theme, React + Vite, Resend contact",
@@ -648,9 +648,9 @@
           "Strict TypeScript + Vite 6 + React 19 + Tailwind v3 (Geist + Geist Mono)",
           "Custom Orix theme via Tailwind config (semantic naming)",
           "⌘K palette, scrollspy, animated counters, terminal-typed hero",
-          "Contact form via Resend + Vercel serverless function"
+          "Contact form via Resend + Netlify Edge Function"
         ],
-        "description": "Hand-built portfolio on the Orix dark palette — animated typewriter hero, ⌘K command palette, case-study modals, real-time scrollspy nav and a Resend-powered contact form on a Vercel serverless function."
+        "description": "Hand-built portfolio on the Orix dark palette — animated typewriter hero, ⌘K command palette, case-study modals, real-time scrollspy nav and a Resend-powered contact form on a Netlify Edge Function."
       },
       "es": {
         "role": "Personal",
@@ -660,7 +660,7 @@
         "myRole": [
           "Diseñé el tema Orix dark y la config de Tailwind (naming semántico)",
           "Construí la palette ⌘K, la nav con scrollspy, los contadores animados y el hero typewriter",
-          "Cableé el form de contacto con Resend + serverless de Vercel (+ plugin Vite para dev)",
+          "Cableé el form de contacto con Resend + Netlify Edge Function (+ plugin Vite para dev)",
           "Armé el CI en GitHub Actions (lint, typecheck, test, build)"
         ],
         "tagline": "Este mismo sitio — tema Orix dark, React + Vite, contacto con Resend",
@@ -668,9 +668,9 @@
           "TypeScript estricto + Vite 6 + React 19 + Tailwind v3 (Geist + Geist Mono)",
           "Tema Orix custom vía Tailwind config (naming semántico)",
           "Palette ⌘K, scrollspy, contadores animados, hero tipo terminal",
-          "Form de contacto con Resend + función serverless de Vercel"
+          "Form de contacto con Resend + Netlify Edge Function"
         ],
-        "description": "Portfolio hecho a mano sobre la paleta Orix dark — hero animado con typewriter, command palette ⌘K, modales de case study, navegación con scrollspy en tiempo real y form de contacto con Resend en una función serverless de Vercel."
+        "description": "Portfolio hecho a mano sobre la paleta Orix dark — hero animado con typewriter, command palette ⌘K, modales de case study, navegación con scrollspy en tiempo real y form de contacto con Resend en una Netlify Edge Function."
       }
     },
     "createdAt": "2026-06-07T20:01:14.597Z",

@@ -22,7 +22,6 @@ import ScrollButton from './components/ScrollButton';
 import CommandPalette from './components/CommandPalette';
 import MobileNav from './components/MobileNav';
 import HireFloat from './components/HireFloat';
-import AdminAccess from './components/AdminAccess';
 
 // El runtime de animación se carga async para sacarlo del bundle inicial.
 const loadMotionFeatures = () => import('./lib/motionFeatures').then((mod) => mod.default);
@@ -75,6 +74,7 @@ function App() {
 				<Portfolio />
 				<Timeline />
 				<TechStack />
+				{/* <Testimonials /> — oculta hasta tener recomendaciones reales */}
 				<FAQ />
 				<FreeAudit />
 				<Commitments />
@@ -86,7 +86,6 @@ function App() {
 			<CommandPalette />
 			<MobileNav />
 			<HireFloat />
-			<AdminAccess />
 		</div>
 		</IconContext.Provider>
 		</LazyMotion>
