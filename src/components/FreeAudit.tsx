@@ -19,7 +19,7 @@ function FreeAudit() {
 			<m.div
 				initial={{ opacity: 0, y: 48 }}
 				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ amount: 0.2 }}
+				viewport={{ amount: 0.2, once: true }}
 				transition={{ duration: 0.7 }}
 				className="relative overflow-hidden rounded-2xl border border-primary/30 bg-linear-to-br from-primary/15 via-surface to-surface p-7 md:p-10"
 			>
