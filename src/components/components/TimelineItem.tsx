@@ -28,7 +28,7 @@ function CompanyMark({ entry, company }: { entry: TimelineEntry; company: string
 	return (
 		<span
 			aria-hidden
-			className="grid place-items-center w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary text-on-accent font-space font-bold text-base shrink-0 shadow shadow-primary/20"
+			className="grid place-items-center w-10 h-10 rounded-lg bg-linear-to-br from-primary to-secondary text-on-accent font-space font-bold text-base shrink-0 shadow-sm shadow-primary/20"
 		>
 			{company.charAt(0)}
 		</span>
@@ -64,7 +64,7 @@ function TimelineItem({ entry, isLast, onOpen }: TimelineItemProps) {
 
 			{/* Card */}
 			<div className="pb-10 flex-1 min-w-0">
-				<div className="rounded-xl bg-surface/70 backdrop-blur border border-outline p-4 sm:p-5 hover:border-primary/40 transition-colors">
+				<div className="rounded-xl bg-surface/70 backdrop-blur-sm border border-outline p-4 sm:p-5 hover:border-primary/40 transition-colors">
 					{/* Header: company logo/monogram + role/company/meta + Current badge */}
 					<div className="flex items-start gap-3 mb-3">
 						<CompanyMark entry={entry} company={company} />

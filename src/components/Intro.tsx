@@ -75,7 +75,7 @@ function TerminalCard() {
 			transition={{ duration: 0.6, delay: 0.5, ease: 'easeOut' }}
 			className="hidden lg:block"
 		>
-			<div className="rounded-xl border border-outline bg-surface/60 backdrop-blur shadow-2xl shadow-black/30 overflow-hidden">
+			<div className="rounded-xl border border-outline bg-surface/60 backdrop-blur-sm shadow-2xl shadow-black/30 overflow-hidden">
 				<div className="flex items-center gap-2 px-4 py-3 border-b border-outline bg-bg/40">
 					<span className="w-3 h-3 rounded-full bg-danger/80" />
 					<span className="w-3 h-3 rounded-full bg-warn/80" />
@@ -133,11 +133,11 @@ function Hero() {
 						<div className="relative">
 							<div
 								aria-hidden
-								className="absolute -inset-x-6 -inset-y-2 bg-gradient-to-r from-primary/30 via-secondary/20 to-transparent blur-3xl rounded-full opacity-70 animate-pulse-slow"
+								className="absolute -inset-x-6 -inset-y-2 bg-linear-to-r from-primary/30 via-secondary/20 to-transparent blur-3xl rounded-full opacity-70 animate-pulse-slow"
 							/>
-							<h1 className="relative text-5xl md:text-7xl font-space font-bold mb-4 leading-tight">
+							<h1 className="relative text-5xl md:text-7xl font-space font-bold mb-4 leading-tight md:leading-none">
 								<span className="text-content">Nahuel </span>
-								<span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+								<span className="bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
 									Wagner
 								</span>
 							</h1>

@@ -10,7 +10,7 @@ function FAQItem({ id }: { id: (typeof FAQ_IDS)[number] }) {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<div className="rounded-xl bg-surface/60 backdrop-blur border border-outline overflow-hidden hover:border-primary/30 transition-colors">
+		<div className="rounded-xl bg-surface/60 backdrop-blur-sm border border-outline overflow-hidden hover:border-primary/30 transition-colors">
 			<button
 				type="button"
 				onClick={() => setOpen((o) => !o)}

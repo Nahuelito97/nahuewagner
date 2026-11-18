@@ -9,7 +9,7 @@ const clients: Client[] = [
 	{ name: 'EIMO', src: '/assets/projects/eimo-logo.png' },
 	{ name: 'TUTU', src: '/assets/projects/tutu-logo.webp' },
 	{ name: 'GearthLogic', src: '/assets/projects/gearth.webp' },
-	{ name: 'JennyGas', src: '/assets/projects/jennygas-logo.webp' },
+	{ name: 'SPLG', src: '/assets/projects/splg-logo.svg' },
 	{ name: 'Tribu Saludable', src: '/assets/projects/tribu-logo.webp' },
 	{ name: 'Power Staffing', src: '/assets/projects/powerstaffing-logo.svg' },
 	{ name: 'Correo Argentino' },

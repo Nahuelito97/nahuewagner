@@ -35,7 +35,7 @@ function Testimonials() {
 						<FaQuoteLeft className="text-primary/60 w-6 h-6 mb-3" />
 						<p className="text-sm text-content-muted leading-relaxed mb-4">{t.quote}</p>
 						<div className="flex items-center gap-3 mt-auto">
-							<div className="w-9 h-9 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-on-accent font-space font-bold text-sm shrink-0">
+							<div className="w-9 h-9 rounded-full bg-linear-to-br from-primary to-secondary flex items-center justify-center text-on-accent font-space font-bold text-sm shrink-0">
 								{t.name.charAt(0)}
 							</div>
 							<div className="min-w-0">

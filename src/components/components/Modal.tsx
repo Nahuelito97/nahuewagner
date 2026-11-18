@@ -17,12 +17,12 @@ interface ModalProps {
 /** Reusable modal shell: backdrop + animated, scrollable panel with the page's grid backdrop. */
 function Modal({ open, onClose, children, size = 'md' }: ModalProps) {
 	return (
-		<Dialog open={open} onClose={onClose} className="relative z-[70]">
-			<div className="fixed inset-0 bg-black/60 backdrop-blur-sm" aria-hidden="true" />
+		<Dialog open={open} onClose={onClose} className="relative z-70">
+			<div className="fixed inset-0 bg-black/60 backdrop-blur-xs" aria-hidden="true" />
 			<div className="fixed inset-0 flex items-center justify-center p-4">
 				<DialogPanel
 					transition
-					className={`relative w-full ${SIZES[size]} max-h-[90vh] overflow-y-auto rounded-2xl border border-outline bg-surface shadow-2xl shadow-black/50 transition duration-200 ease-out data-[closed]:opacity-0 data-[closed]:scale-95`}
+					className={`relative w-full ${SIZES[size]} max-h-[90vh] overflow-y-auto rounded-2xl border border-outline bg-surface shadow-2xl shadow-black/50 transition duration-200 ease-out data-closed:opacity-0 data-closed:scale-95`}
 				>
 					{/* Decorative grid + glow inside the panel, matching the page layout */}
 					<div

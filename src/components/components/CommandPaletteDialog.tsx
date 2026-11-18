@@ -14,7 +14,6 @@ import {
 	FiFolder,
 	FiBriefcase,
 	FiCpu,
-	FiMessageSquare,
 	FiMail,
 	FiDownload,
 	FiGithub,
@@ -50,7 +49,7 @@ function CommandPaletteDialog({ onClose }: Props) {
 			{ id: 'work', label: t('palette.items.work'), icon: FiFolder, action: scrollTo('work') },
 			{ id: 'experience', label: t('palette.items.experience'), icon: FiBriefcase, action: scrollTo('experience') },
 			{ id: 'skills', label: t('palette.items.skills'), icon: FiCpu, action: scrollTo('skills') },
-			{ id: 'testimonials', label: t('palette.items.testimonials'), icon: FiMessageSquare, action: scrollTo('testimonials') },
+			// Testimonios: oculta hasta tener recomendaciones reales (ver App.tsx)
 			{ id: 'contact', label: t('palette.items.contact'), icon: FiMail, action: scrollTo('contact') },
 			{ id: 'cv', label: t('palette.items.cv'), hint: 'PDF', icon: FiDownload, action: openUrl('/docs/Nahuel-Wagner-CV.pdf') },
 			{
@@ -84,8 +83,8 @@ function CommandPaletteDialog({ onClose }: Props) {
 		: commands;
 
 	return (
-		<Dialog open onClose={onClose} className="relative z-[70]">
-			<div className="fixed inset-0 bg-black/50 backdrop-blur-sm" aria-hidden="true" />
+		<Dialog open onClose={onClose} className="relative z-70">
+			<div className="fixed inset-0 bg-black/50 backdrop-blur-xs" aria-hidden="true" />
 			<div className="fixed inset-0 flex items-start justify-center p-4 pt-[15vh]">
 				<DialogPanel className="w-full max-w-lg rounded-xl border border-outline bg-surface shadow-2xl shadow-black/40 overflow-hidden">
 					<Combobox<Command | null> value={null} onChange={run}>
@@ -95,9 +94,9 @@ function CommandPaletteDialog({ onClose }: Props) {
 								autoFocus
 								onChange={(e) => setQuery(e.target.value)}
 								placeholder={t('palette.placeholder')}
-								className="w-full bg-transparent py-3.5 text-content placeholder-content-muted/70 focus:outline-none"
+								className="w-full bg-transparent py-3.5 text-content placeholder-content-muted/70 focus:outline-hidden"
 							/>
-							<kbd className="text-[10px] font-mono text-content-muted border border-outline rounded px-1.5 py-0.5 shrink-0">
+							<kbd className="text-[10px] font-mono text-content-muted border border-outline rounded-sm px-1.5 py-0.5 shrink-0">
 								{t('palette.esc')}
 							</kbd>
 						</div>
@@ -111,12 +110,12 @@ function CommandPaletteDialog({ onClose }: Props) {
 									<ComboboxOption
 										key={cmd.id}
 										value={cmd}
-										className="group flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer text-content-muted data-[focus]:bg-primary/10 data-[focus]:text-primary"
+										className="group flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer text-content-muted data-focus:bg-primary/10 data-focus:text-primary"
 									>
 										<cmd.icon className="w-4 h-4 shrink-0" />
 										<span className="text-sm">{cmd.label}</span>
 										{cmd.hint && (
-											<span className="ml-auto text-xs text-content-muted group-data-[focus]:text-primary/70">
+											<span className="ml-auto text-xs text-content-muted group-data-focus:text-primary/70">
 												{cmd.hint}
 											</span>
 										)}

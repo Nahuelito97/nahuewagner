@@ -1,0 +1,63 @@
+version: 2
+
+updates:
+  # npm ---------------------------------------------------------------------
+  # Los updates van AGRUPADOS a propósito. Sin agrupar, Dependabot abre un PR
+  # por dependencia y el ruido hace que se ignoren todos — que es exactamente
+  # como se llega a acumular 8 majors y 8 advisories de golpe.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '09:00'
+      timezone: America/Argentina/Buenos_Aires
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: chore
+      prefix-development: chore
+      include: scope
+    groups:
+      # Parches y minors de producción: un solo PR, casi siempre mergeable
+      # directo si el CI pasa.
+      prod-minor:
+        applies-to: version-updates
+        dependency-type: production
+        update-types:
+          - minor
+          - patch
+      # Todo el tooling de desarrollo junto: eslint, vitest, tipos, prettier.
+      dev-tooling:
+        applies-to: version-updates
+        dependency-type: development
+        update-types:
+          - minor
+          - patch
+      # Los parches de seguridad se agrupan aparte para que se vean y se
+      # mergeen primero, sin quedar mezclados con bumps de rutina.
+      security:
+        applies-to: security-updates
+        patterns:
+          - '*'
+    ignore:
+      # TypeScript 7 queda pineado hasta que typescript-eslint lo soporte:
+      # con TS 7.0.2 el lint muere con "typescript-eslint does not support
+      # TS 7.0" y npm ci falla con ERESOLVE. Sacar este ignore cuando
+      # typescript-eslint anuncie compatibilidad.
+      - dependency-name: typescript
+        update-types:
+          - version-update:semver-major
+
+  # GitHub Actions ----------------------------------------------------------
+  # Las actions también envejecen: actions/checkout y setup-node sacan majors
+  # y quedarse atrás es deuda silenciosa.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: ci
+    groups:
+      actions:
+        patterns:
+          - '*'

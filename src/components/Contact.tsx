@@ -84,7 +84,7 @@ function Method({
 }
 
 function Contact() {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 	const [status, setStatus] = useState<Status>('idle');
 
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -99,6 +99,9 @@ function Contact() {
 			projectType: String(data.get('projectType') ?? '').trim(),
 			message: String(data.get('message') ?? '').trim(),
 			company: String(data.get('company') ?? '').trim(), // honeypot
+			// Idioma en que se está navegando: define en qué idioma le llega el
+			// acuse automático a quien escribe.
+			locale: i18n.language,
 		};
 
 		setStatus('sending');
@@ -123,7 +126,7 @@ function Contact() {
 	};
 
 	const inputClass =
-		'w-full px-4 py-3 rounded-lg bg-bg/50 border border-outline text-content placeholder-content-muted/60 focus:outline-none focus:border-primary focus:bg-bg/70 transition-colors';
+		'w-full px-4 py-3 rounded-lg bg-bg/50 border border-outline text-content placeholder-content-muted/60 focus:outline-hidden focus:border-primary focus:bg-bg/70 transition-colors';
 	const labelClass = 'block text-xs font-space font-medium text-content-muted mb-1.5';
 
 	return (
@@ -266,7 +269,7 @@ function Contact() {
 								id="contact-reason"
 								name="reason"
 								defaultValue=""
-								className={`${inputClass} appearance-none pr-9 bg-no-repeat bg-[length:14px_14px] bg-[position:right_12px_center]`}
+								className={`${inputClass} appearance-none pr-9 bg-no-repeat bg-size-[14px_14px] bg-position-[right_12px_center]`}
 								style={{
 									backgroundImage:
 										"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23b9b3d6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E\")",
@@ -288,7 +291,7 @@ function Contact() {
 								id="contact-projectType"
 								name="projectType"
 								defaultValue=""
-								className={`${inputClass} appearance-none pr-9 bg-no-repeat bg-[length:14px_14px] bg-[position:right_12px_center]`}
+								className={`${inputClass} appearance-none pr-9 bg-no-repeat bg-size-[14px_14px] bg-position-[right_12px_center]`}
 								style={{
 									backgroundImage:
 										"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23b9b3d6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E\")",
@@ -320,7 +323,7 @@ function Contact() {
 						<input
 							type="checkbox"
 							name="sendCV"
-							className="w-4 h-4 rounded border border-outline bg-bg/50 accent-primary focus:ring-2 focus:ring-primary/30 cursor-pointer"
+							className="w-4 h-4 rounded-sm border border-outline bg-bg/50 accent-primary focus:ring-2 focus:ring-primary/30 cursor-pointer"
 						/>
 						{t('contact.form.sendCv')} <span className="opacity-60 font-mono text-xs">(PDF)</span>
 					</label>

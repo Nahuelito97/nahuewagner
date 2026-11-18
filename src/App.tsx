@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons';
 import { useTranslation } from 'react-i18next';
 import {
 	About,
-	Clients,
+	// Clients,
 	Commitments,
 	Contact,
 	FAQ,
@@ -22,7 +22,6 @@ import ScrollButton from './components/ScrollButton';
 import CommandPalette from './components/CommandPalette';
 import MobileNav from './components/MobileNav';
 import HireFloat from './components/HireFloat';
-import AdminAccess from './components/AdminAccess';
 
 // El runtime de animación se carga async para sacarlo del bundle inicial.
 const loadMotionFeatures = () => import('./lib/motionFeatures').then((mod) => mod.default);
@@ -59,7 +58,7 @@ function App() {
 
 			<a
 				href="#main"
-				className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-primary focus:text-on-accent focus:font-space"
+				className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-60 focus:px-4 focus:py-2 focus:rounded-lg focus:bg-primary focus:text-on-accent focus:font-space"
 			>
 				{t('skipToContent')}
 			</a>
@@ -68,13 +67,14 @@ function App() {
 
 			<main id="main" className="max-w-5xl w-11/12 mx-auto">
 				<Intro />
-				<Clients />
+				{/* <Clients /> */}
 				<About />
 				<Services />
 				<Process />
 				<Portfolio />
 				<Timeline />
 				<TechStack />
+				{/* <Testimonials /> — oculta hasta tener recomendaciones reales */}
 				<FAQ />
 				<FreeAudit />
 				<Commitments />
@@ -86,7 +86,6 @@ function App() {
 			<CommandPalette />
 			<MobileNav />
 			<HireFloat />
-			<AdminAccess />
 		</div>
 		</IconContext.Provider>
 		</LazyMotion>

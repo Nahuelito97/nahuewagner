@@ -47,7 +47,20 @@ async function writeIconModule(refs) {
   const imports = [];
   const entries = [];
   for (const lib of ['fa', 'fi', 'si']) {
-    const names = [...byLib[lib]].sort();
+    // El CMS puede nombrar un ícono que la versión instalada de react-icons ya
+    // no exporta (SiTwilio, por caso, desapareció en un salto de MINOR: 5.6 -> 5.7).
+    // Emitir ese import a ciegas es un error de compilación que voltea el build,
+    // así que se valida contra lo que el paquete realmente exporta y se descarta
+    // lo que falte. En runtime, icon() ya devuelve su Fallback para esas claves.
+    const available = await import(LIB_PATHS[lib]);
+    const all = [...byLib[lib]].sort();
+    const names = all.filter((n) => n in available);
+    const missing = all.filter((n) => !(n in available));
+    if (missing.length) {
+      console.warn(
+        `[fetch-content] ⚠ react-icons/${lib} no exporta: ${missing.join(', ')}. Se omiten.`
+      );
+    }
     if (!names.length) continue;
     imports.push(`import { ${names.join(', ')} } from '${LIB_PATHS[lib]}';`);
     for (const n of names) entries.push(`  '${lib}:${n}': ${n},`);

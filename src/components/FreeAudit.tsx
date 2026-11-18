@@ -21,7 +21,7 @@ function FreeAudit() {
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ amount: 0.2 }}
 				transition={{ duration: 0.7 }}
-				className="relative overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/15 via-surface to-surface p-7 md:p-10"
+				className="relative overflow-hidden rounded-2xl border border-primary/30 bg-linear-to-br from-primary/15 via-surface to-surface p-7 md:p-10"
 			>
 				<div
 					aria-hidden="true"

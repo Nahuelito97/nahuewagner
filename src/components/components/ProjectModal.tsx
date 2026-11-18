@@ -21,7 +21,7 @@ function Hero({ project, title }: { project: Project; title: string }) {
 					height={224}
 					className="w-full h-full object-cover"
 				/>
-				<div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
+				<div className="absolute inset-0 bg-linear-to-t from-surface via-surface/30 to-transparent" />
 			</div>
 		);
 	}
@@ -29,7 +29,7 @@ function Hero({ project, title }: { project: Project; title: string }) {
 	if (project.modalImage) {
 		return (
 			<div className="relative h-72 overflow-hidden bg-bg">
-				<div className="absolute inset-0 bg-gradient-to-br from-surface-variant/40 via-bg to-bg" />
+				<div className="absolute inset-0 bg-linear-to-br from-surface-variant/40 via-bg to-bg" />
 				<div className="relative h-full flex items-center justify-center">
 					<img
 						src={project.modalImage}
@@ -46,7 +46,7 @@ function Hero({ project, title }: { project: Project; title: string }) {
 	}
 
 	return (
-		<div className="relative h-44 bg-gradient-to-br from-surface-variant via-surface to-bg flex items-center justify-center p-6">
+		<div className="relative h-44 bg-linear-to-br from-surface-variant via-surface to-bg flex items-center justify-center p-6">
 			{project.logo ? (
 				<img
 					src={project.logo}
@@ -100,7 +100,7 @@ function ProjectModalContent({ project, onClose }: { project: Project; onClose: 
 
 	return (
 		<>
-			<div className="sticky top-0 z-20 flex items-start justify-between gap-4 px-6 py-4 border-b border-outline bg-surface/95 backdrop-blur">
+			<div className="sticky top-0 z-20 flex items-start justify-between gap-4 px-6 py-4 border-b border-outline bg-surface/95 backdrop-blur-sm">
 				<div className="flex items-start gap-3 min-w-0">
 					{project.logo && (
 						<div className="grid place-items-center w-11 h-11 rounded-lg bg-bg/60 border border-outline shrink-0 p-1.5">
