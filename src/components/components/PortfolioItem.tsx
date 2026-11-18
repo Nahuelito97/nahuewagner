@@ -6,9 +6,25 @@ import { techIcons } from '../../data/techIcons';
 interface PortfolioItemProps {
 	project: Project;
 	onOpenDetails: () => void;
+	/**
+	 * Render en modo héroe: imagen al costado, descripción larga y highlights.
+	 *
+	 * Lo decide el LAYOUT, no el CMS. `project.featured` marca candidatos, pero
+	 * el tratamiento de héroe sólo funciona si hay UNO: esta variante ocupa el
+	 * ancho completo y dentro de una celda angosta de la grilla se rompe.
+	 */
+	hero?: boolean;
 }
 
-function Cover({ project, onClick }: { project: Project; onClick: () => void }) {
+function Cover({
+	project,
+	onClick,
+	hero,
+}: {
+	project: Project;
+	onClick: () => void;
+	hero: boolean;
+}) {
 	const { t } = useTranslation();
 	const main = techIcons[(project.stack[0] ?? '').toLowerCase()];
 	const title = t(`portfolio.projects.${project.id}.title`);
@@ -18,7 +34,7 @@ function Cover({ project, onClick }: { project: Project; onClick: () => void }) 
 			type="button"
 			onClick={onClick}
 			aria-label={t('portfolio.openLabel', { title })}
-			className={`relative block w-full overflow-hidden min-h-44 ${project.featured ? 'md:h-full' : 'h-40'}`}
+			className={`relative block w-full overflow-hidden min-h-44 ${hero ? 'md:h-full' : 'h-40'}`}
 		>
 			{project.imgUrl ? (
 				<img
@@ -70,9 +86,10 @@ function Cover({ project, onClick }: { project: Project; onClick: () => void }) 
 	);
 }
 
-function PortfolioItem({ project, onOpenDetails }: PortfolioItemProps) {
+function PortfolioItem({ project, onOpenDetails, hero = false }: PortfolioItemProps) {
 	const { t } = useTranslation();
-	const { id, stack, featured } = project;
+	const { id, stack } = project;
+	const featured = hero;
 	const title = t(`portfolio.projects.${id}.title`);
 	const tagline = t(`portfolio.projects.${id}.tagline`);
 	const description = t(`portfolio.projects.${id}.description`);
@@ -88,7 +105,7 @@ function PortfolioItem({ project, onOpenDetails }: PortfolioItemProps) {
 			}`}
 		>
 			<div className={featured ? 'md:w-2/5 md:shrink-0' : ''}>
-				<Cover project={project} onClick={onOpenDetails} />
+				<Cover project={project} onClick={onOpenDetails} hero={hero} />
 			</div>
 
 			<div className="flex flex-col flex-1 p-5 gap-3">

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { FiCalendar, FiArrowRight, FiZap } from 'react-icons/fi';
+import { FiArrowRight, FiZap } from 'react-icons/fi';
 import type { TimelineEntry } from '../../data/timeline';
 import { techIcons } from '../../data/techIcons';
 
@@ -41,12 +41,28 @@ function TimelineItem({ entry, isLast, onOpen }: TimelineItemProps) {
 	const company = t(`experience.entries.${entry.id}.company`);
 	const duration = t(`experience.entries.${entry.id}.duration`);
 	const type = t(`experience.entries.${entry.id}.type`);
-	const details = t(`experience.entries.${entry.id}.details`);
 	const headline = t(`experience.entries.${entry.id}.headline`, { defaultValue: '' });
 	const isCurrent = !!entry.current;
 
+	// El mes corto sale de la duración ya traducida ("May 2026 – Actual" → "May"),
+	// así el sello de fecha acompaña el idioma del sitio.
+	const shortMonth = duration.trim().split(/\s+/)[0] ?? '';
+
 	return (
-		<div className="relative flex gap-4 sm:gap-6">
+		<div className="relative flex gap-3 sm:gap-4">
+			{/* Sello de fecha. Esta columna estaba vacía: el riel arrancaba a un
+			    cuarto del ancho y a su izquierda no había nada. */}
+			<div className="w-12 sm:w-14 shrink-0 pt-[30px] sm:pt-[34px] text-right">
+				{entry.startYear > 0 && (
+					<span className="block font-space font-bold text-sm text-content leading-none">
+						{entry.startYear}
+					</span>
+				)}
+				<span className="block font-mono text-[11px] text-content-muted mt-1 leading-none">
+					{shortMonth}
+				</span>
+			</div>
+
 			{/* Line + dot — aligned vertically with the monogram center */}
 			<div className="flex flex-col items-center pt-[30px] sm:pt-[34px]">
 				<span className="relative inline-flex">
@@ -64,9 +80,21 @@ function TimelineItem({ entry, isLast, onOpen }: TimelineItemProps) {
 
 			{/* Card */}
 			<div className="pb-10 flex-1 min-w-0">
-				<div className="rounded-xl bg-surface/70 backdrop-blur-sm border border-outline p-4 sm:p-5 hover:border-primary/40 transition-colors">
+				{/* La tarjeta entera abre el caso. Antes sólo lo hacía el link chico
+				    del pie: un objetivo diminuto en mobile, y con teclado obligaba a
+				    tabular hasta el final de cada tarjeta para llegar. */}
+				<button
+					type="button"
+					onClick={onOpen}
+					aria-label={`${role} @ ${company} — ${t('experience.viewAchievements')}`}
+					className={`group w-full text-left rounded-xl bg-surface/70 backdrop-blur-sm border p-4 sm:p-5 transition-colors focus-visible:outline-none ${
+						isCurrent
+							? 'border-success/40 hover:border-success/70 focus-visible:border-success'
+							: 'border-outline hover:border-primary/40 focus-visible:border-primary/60'
+					}`}
+				>
 					{/* Header: company logo/monogram + role/company/meta + Current badge */}
-					<div className="flex items-start gap-3 mb-3">
+					<div className="flex items-start gap-3">
 						<CompanyMark entry={entry} company={company} />
 						<div className="flex-1 min-w-0">
 							<div className="flex flex-wrap items-start justify-between gap-2">
@@ -82,17 +110,16 @@ function TimelineItem({ entry, isLast, onOpen }: TimelineItemProps) {
 								)}
 							</div>
 							<div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-content-muted mt-1">
-								<span className="flex items-center gap-1">
-									<FiCalendar className="w-3 h-3" />
-									{duration}
-								</span>
+								<span>{duration}</span>
 								<span className="hidden sm:inline">·</span>
 								<span>{type}</span>
 							</div>
 						</div>
 					</div>
 
-					<p className="text-sm text-content-muted leading-relaxed">{details}</p>
+					{/* El párrafo largo (`details`) vive sólo en el modal. Tenerlo también
+					    acá duplicaba el trabajo del modal y estiraba esta sección hasta
+					    el 25% de la página entera. */}
 
 					{/* Headline metric */}
 					{headline && (
@@ -103,7 +130,7 @@ function TimelineItem({ entry, isLast, onOpen }: TimelineItemProps) {
 					)}
 
 					{/* Tech chips with brand-colored icons */}
-					<div className="flex flex-wrap gap-1.5 mt-3">
+					<div className="flex flex-wrap items-center gap-1.5 mt-3">
 						{entry.tech.map((techName) => {
 							const tech = techIcons[techName.toLowerCase()];
 							return (
@@ -120,16 +147,12 @@ function TimelineItem({ entry, isLast, onOpen }: TimelineItemProps) {
 								</span>
 							);
 						})}
+						<span className="inline-flex items-center gap-1.5 ml-auto shrink-0 text-xs font-space font-medium text-primary">
+							{t('experience.viewAchievements')}
+							<FiArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+						</span>
 					</div>
-
-					<button
-						type="button"
-						onClick={onOpen}
-						className="mt-4 inline-flex items-center gap-1.5 text-xs font-space font-medium text-primary hover:gap-2.5 transition-all"
-					>
-						{t('experience.viewAchievements')} <FiArrowRight className="w-3.5 h-3.5" />
-					</button>
-				</div>
+				</button>
 			</div>
 		</div>
 	);

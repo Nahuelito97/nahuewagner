@@ -18,7 +18,7 @@ function Commitments() {
 			<m.div
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ amount: 0.2 }}
+				viewport={{ amount: 0.2, once: true }}
 				transition={{ duration: 0.6 }}
 				className="mb-8"
 			>
@@ -38,7 +38,7 @@ function Commitments() {
 							key={it.id}
 							initial={{ opacity: 0, y: 40 }}
 							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ amount: 0.2 }}
+							viewport={{ amount: 0.2, once: true }}
 							transition={{ duration: 0.55, delay: i * 0.12 }}
 							className="flex items-start gap-3 rounded-xl border border-outline bg-surface/60 backdrop-blur-sm p-4 hover:border-primary/40 transition-colors"
 						>
